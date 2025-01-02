@@ -119,6 +119,18 @@ public final class BankOpData {
                 AddInterest addInterest = new AddInterest();
                 returnVal = addInterest.execute(this);
                 break;
+            case "withdrawSavings":
+                WithdrawSavings withdrawSavings = new WithdrawSavings();
+                returnVal = withdrawSavings.execute(this);
+                break;
+            case "upgradePlan":
+                UpgradePlan upgradePlan = new UpgradePlan();
+                returnVal = upgradePlan.execute(this);
+                break;
+            case "cashWithdrawal":
+                CashWithdrawal cashWithdrawal = new CashWithdrawal();
+                returnVal = cashWithdrawal.execute(this);
+                break;
             default:
                 returnVal = null;
                 break;

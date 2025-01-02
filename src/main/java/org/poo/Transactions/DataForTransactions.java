@@ -27,6 +27,8 @@ public final class DataForTransactions {
     private double splitAmount;
     private String transferType;
     private double interestRate;
+    private String newPlan;
+    private String location;
 
     /**
      * includes a command
@@ -201,6 +203,28 @@ public final class DataForTransactions {
      */
     public DataForTransactions withInterestRate(final double interest) {
         this.interestRate = interest;
+        return this;
+    }
+
+    /**
+     * includes the new plan
+     * @param newPlan1
+     * -
+     * @return
+     * -
+     */
+    public DataForTransactions withNewPlan(final String newPlan1) {
+        this.newPlan = newPlan1;
+        return this;
+    }
+
+    /**
+     * sets the location of a cash withdrawal
+     * @param location1 -
+     * @return -
+     */
+    public DataForTransactions withLocation(final String location1) {
+        this.location = location1;
         return this;
     }
 }

@@ -23,12 +23,12 @@ public final class AddAccount implements BankingOperations {
             commandInput.setInterestRate(0);
         }
 
+
+        User user = emailDB.getUser(commandInput.getEmail());
         BankAccount bankAccount = new BankAccount(commandInput.getEmail(),
                 commandInput.getCurrency(),
                 commandInput.getAccountType(), commandInput.getTimestamp(),
-                commandInput.getInterestRate());
-
-        User user = emailDB.getUser(commandInput.getEmail());
+                commandInput.getInterestRate(), user.getOccupation());
         user.addBankAccount(bankAccount);
         aliasDB.addAlias(bankAccount.getIBAN() + user.getEmail(), bankAccount);
         ibanDB.addIBANReference(bankAccount.getIBAN(), user);

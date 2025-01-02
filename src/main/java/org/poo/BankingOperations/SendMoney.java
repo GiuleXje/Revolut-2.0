@@ -26,6 +26,7 @@ public final class SendMoney implements BankingOperations {
             return null;
         }
 
+
         BankAccount giverAccount = giverUser.
                 getBankAccounts().
                 getOrDefault(giver, null);
@@ -35,7 +36,9 @@ public final class SendMoney implements BankingOperations {
                     getAssociatedAliases().
                     getOrDefault(receiverAlias, null);
             double amount = commandInput.getAmount();
-
+            if (commandInput.getTimestamp() == 23) {
+                assert (receiverAccount != null);
+            }
             if (receiverAccount != null) {
                 nullCase(giverAccount, exchangeRate, receiverAccount, amount,
                         commandInput, transactionReport, ibanDB);
@@ -53,7 +56,8 @@ public final class SendMoney implements BankingOperations {
                                         receiverBAccount.
                                                 getCurrency());
 
-                        if (amount < giverAccount.getBalance()) {
+                        if (amount + giverAccount.getServicePlan().fee(amount)
+                                < giverAccount.getBalance()) {
                             giverAccount.pay(amount);
                             receiverBAccount.
                                     addFunds(amount * exRate);
@@ -140,7 +144,8 @@ public final class SendMoney implements BankingOperations {
                 getExchangeRate(accCurrency,
                         receiverAccount.getCurrency());
 
-        if (amount < giverAccount.getBalance()) {
+        if (amount * giverAccount.getServicePlan().fee(amount)
+                < giverAccount.getBalance()) {
             giverAccount.pay(amount);
             receiverAccount.addFunds(amount * exRate);
 

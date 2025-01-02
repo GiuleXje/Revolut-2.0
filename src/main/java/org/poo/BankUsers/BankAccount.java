@@ -3,6 +3,11 @@ package org.poo.BankUsers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.poo.BankUsers.ServicePlan.GoldPlan;
+import org.poo.BankUsers.ServicePlan.ServicePlan;
+import org.poo.BankUsers.ServicePlan.StudentPlan;
+import org.poo.BankUsers.ServicePlan.SilverPlan;
+import org.poo.BankUsers.ServicePlan.StandardPlan;
 import org.poo.ExchangeRate.Pair;
 import org.poo.utils.Utils;
 import lombok.Getter;
@@ -52,9 +57,11 @@ public final class BankAccount {
     private double minAmount;
     private ArrayList<ObjectNode> report;
     private LinkedHashMap<Integer, Pair<String, Double>> merchants;
+    private ServicePlan servicePlan;
+    private String plan;
 
     public BankAccount(final String email, final String currency, final String accountType,
-                       final int timestamp, final double interestRate) {
+                       final int timestamp, final double interestRate, final String occupation) {
         balance = 0;
         this.email = email;
         this.currency = currency;
@@ -69,6 +76,9 @@ public final class BankAccount {
         minAmount = 0;
         report = new ArrayList<>();
         merchants = new LinkedHashMap<>();
+        servicePlan = occupation.equals("student") ? new StudentPlan()
+                : new StandardPlan();
+        plan = occupation.equals("student") ? "student" : "standard";
     }
 
     /**
@@ -116,11 +126,12 @@ public final class BankAccount {
 
     /**
      * subtracts an amount as a result of a payment
-     *
+     * this also includes the fee for every transaction
      * @param amount the amount to be subtracted
      */
     public void pay(final double amount) {
         balance -= amount;
+        balance -= servicePlan.fee(amount);
     }
 
     /**
@@ -168,6 +179,28 @@ public final class BankAccount {
         return transactions;
     }
 
+    /**
+     * switches to a new service plan and pay the needed price
+      * @param newPlan
+     * the new plan chosen
+     * @param pay
+     * the amount to be paid
+     */
+    public void changeServicePlan(final String newPlan, final double pay) {
+        switch (newPlan) {
+            case "silver":
+                servicePlan = new SilverPlan();
+                balance -= pay;
+                break;
+            case "gold":
+                servicePlan = new GoldPlan();
+                balance -= pay;
+                break;
+            default:
+                servicePlan = new StandardPlan();
+                break;
+        }
+    }
     /**
      * changes account's interest rate
      *

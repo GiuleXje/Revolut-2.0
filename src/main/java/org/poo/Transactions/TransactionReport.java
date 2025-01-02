@@ -174,6 +174,34 @@ class ChangeInterest implements TransactionStrategy {
     }
 }
 
+class ChangeOfPlan implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("timestamp", data.getTimestamp());
+        output.put("description", "Upgrade plan");
+        output.put("accountIBAN", data.getAccount());
+        output.put("newPlanType", data.getNewPlan());
+        return output;
+    }
+}
+
+class TooYoung implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("description", "You don't have the minimum age required.");
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class CashWithdrawal implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(DataForTransactions data) {
+        return null;
+    }
+}
 public final class TransactionReport {
 
     /**
@@ -205,6 +233,8 @@ public final class TransactionReport {
                 case "poorFriend" -> new FailedSplittingBill();
                 case "noAcc" -> new NoAcc();
                 case "changeInterest" -> new ChangeInterest();
+                case "tooYoung" -> new TooYoung();
+                case "changeOfPlan" -> new ChangeOfPlan();
                 default -> null;
             };
         }

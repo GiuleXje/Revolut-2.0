@@ -46,7 +46,9 @@ public final class PayOnline implements BankingOperations {
             }
             double exRate = exchangeRate.
                     getExchangeRate(commandInput.getCurrency(), accCurrency);
-            if (amount * exRate <= bankAccount.getBalance()) {
+            if (amount * exRate
+                    + bankAccount.getServicePlan().fee(amount * exRate)
+                    <= bankAccount.getBalance()) {
                 if (bankAccount.getBalance()
                         - amount * exRate < bankAccount.getMinAmount()) {
                     bankAccount.freezeThisCard(cardNumber);

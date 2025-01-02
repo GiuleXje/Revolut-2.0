@@ -1,0 +1,22 @@
+[ {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 40,
+    "description" : "Card not found"
+  },
+  "timestamp" : 40
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 42,
+    "description" : "Card not found"
+  },
+  "timestamp" : 42
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 45,
+    "description" : "Card not found"
+  },
+  "timestamp" : 45
+} ]
