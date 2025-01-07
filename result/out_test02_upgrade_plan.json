@@ -144,7 +144,7 @@
     "lastName" : "Robinson",
     "email" : "Chad_Robinson@hotmail.us",
     "accounts" : [ {
-      "balance" : 515.22,
+      "balance" : 515.1,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -241,7 +241,7 @@
     "lastName" : "Robinson",
     "email" : "Chad_Robinson@hotmail.us",
     "accounts" : [ {
-      "balance" : 515.22,
+      "balance" : 515.1,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -326,7 +326,7 @@
     "lastName" : "Robinson",
     "email" : "Chad_Robinson@hotmail.us",
     "accounts" : [ {
-      "balance" : 515.22,
+      "balance" : 515.1,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",

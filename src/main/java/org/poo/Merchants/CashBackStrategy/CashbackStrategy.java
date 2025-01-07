@@ -1,6 +1,7 @@
 package org.poo.Merchants.CashBackStrategy;
 
 import org.poo.BankUsers.User;
+import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.Merchants.Merchant;
 import org.poo.BankUsers.BankAccount;
 
@@ -18,5 +19,5 @@ public interface CashbackStrategy {
      * the user's plan
      */
     void calculateCashback(double amount, BankAccount bankAccount, Merchant merchant,
-                           String plan);
+                           String plan, ExchangeRate exchangeRate);
 }

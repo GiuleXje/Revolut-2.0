@@ -2,7 +2,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 485.73,
+    "balance" : 487.35,
     "currency" : "USD",
     "transactions" : [ {
       "timestamp" : 4,
@@ -46,7 +46,7 @@
     "lastName" : "Leonard",
     "email" : "Tiffany_Leonard@hotmail.us",
     "accounts" : [ {
-      "balance" : 368.5,
+      "balance" : 529.02,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -81,7 +81,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 368.5,
+    "balance" : 529.02,
     "currency" : "USD",
     "transactions" : [ {
       "timestamp" : 4,

@@ -2,14 +2,56 @@
   "command" : "cashWithdrawal",
   "output" : {
     "description" : "User not found",
-    "timestamp" : 92
+    "timestamp" : 79
   },
-  "timestamp" : 92
+  "timestamp" : 79
 }, {
   "command" : "cashWithdrawal",
   "output" : {
     "description" : "User not found",
-    "timestamp" : 93
+    "timestamp" : 80
   },
-  "timestamp" : 93
+  "timestamp" : 80
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 210
+  },
+  "timestamp" : 210
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 395
+  },
+  "timestamp" : 395
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 396
+  },
+  "timestamp" : 396
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 398
+  },
+  "timestamp" : 398
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 399
+  },
+  "timestamp" : 399
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 400
+  },
+  "timestamp" : 400
 } ]

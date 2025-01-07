@@ -16,13 +16,15 @@ public final class PayOnline implements BankingOperations {
                             String merchantName, BankOpData command) {
         MerchantsDB merchantDB = command.getMerchantsDB();
         Merchant merchant = merchantDB.merchantInfo(merchantName);
+
         assert merchant != null;
 
-        if (merchant.getType().equals("spendingThreshold")) {
-            bankAccount.spendMore(paid);
+        if (merchant.getCashbackPlan().equals("spendingThreshold")) {
+            merchant.spendMore(paid, bankAccount);
         }
 
-        merchant.getCashback(paid, bankAccount, user.getPlan());
+        merchant.getCashback(paid, bankAccount,
+                user.getPlan(), command.getExchangeRate());
     }
     @Override
     public ObjectNode execute(final BankOpData command) {
@@ -59,7 +61,13 @@ public final class PayOnline implements BankingOperations {
                     getExchangeRate(commandInput.getCurrency(), accCurrency);
             User user = ibanDB.getUserFromIBAN(bankAccount.getIBAN());
             assert user != null;
-            double fee = user.getServicePlan().fee(amount * exRate);
+            if (amount == 0) {
+                return null;
+            }
+            double toRON = exchangeRate.getExchangeRate(accCurrency, "RON");
+            double amountInRON = amount * toRON;
+            double feeInRON = user.getServicePlan().fee(amountInRON);
+            double fee = feeInRON * exchangeRate.getExchangeRate("RON", accCurrency);
             if (amount * exRate
                     + fee
                     <= bankAccount.getBalance()) {
@@ -80,8 +88,9 @@ public final class PayOnline implements BankingOperations {
                     return null;
                 }
                 bankAccount.pay(amount * exRate + fee);
+                double toRon = exchangeRate.getExchangeRate(commandInput.getCurrency(), "RON");
                 bankAccount.increaseTransactions(); // add this transaction
-                getCashback(user, bankAccount, amount * exRate,
+                getCashback(user, bankAccount, amount * toRon,
                         commandInput.getCommerciant(), command);
                 DataForTransactions data = new DataForTransactions().
                         withCommand("payOnline").

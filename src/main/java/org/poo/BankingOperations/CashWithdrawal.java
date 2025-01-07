@@ -12,7 +12,6 @@ import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 import org.poo.BankUsers.CardDB;
 
-import javax.xml.crypto.Data;
 
 public class CashWithdrawal implements BankingOperations {
     @Override
@@ -49,12 +48,14 @@ public class CashWithdrawal implements BankingOperations {
             output.put("timestamp", timestamp);
             return output;
         }
-
         String currency = bankAccount.getCurrency();
         ExchangeRate exchangeRate = command.getExchangeRate();
-        double exRate = exchangeRate.getExchangeRate(currency, "RON");
+        double exRate = exchangeRate.getExchangeRate("RON", currency);
         double withdrawAmount = amount * exRate;
-        double fee = user.getServicePlan().fee(withdrawAmount);
+        double feeInRON = user.getServicePlan().fee(amount);
+        double rateInRON = exchangeRate.getExchangeRate("RON", currency);
+        double fee = feeInRON * rateInRON;
+
         if (withdrawAmount + fee > bankAccount.getBalance()) { // not enough money
             DataForTransactions data = new DataForTransactions().
                     withCommand("noFunds").
@@ -71,7 +72,7 @@ public class CashWithdrawal implements BankingOperations {
             System.out.println(fee);
         DataForTransactions data = new DataForTransactions().
                 withTimestamp(timestamp).
-                withAmount(withdrawAmount).
+                withAmount(amount).
                 withCommand("cashWithdrawal");
         TransactionReport transactionReport = command.getTransactionReport();
         ObjectNode report = transactionReport.executeOperation(data);

@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.poo.BankUsers.BankAccount;
 import org.poo.BankUsers.User;
+import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.Merchants.CashBackStrategy.CashbackStrategy;
 import org.poo.Merchants.CashBackStrategy.NrOfTransactions;
 import org.poo.Merchants.CashBackStrategy.SpendingThreshold;
@@ -33,8 +34,9 @@ public final class Merchant {
         buyers = new HashMap<>();
     }
 
-    public void getCashback(double amount, BankAccount account, String plan) {
-        cashbackStrategy.calculateCashback(amount, account, this, plan);
+    public void getCashback(final double amount, BankAccount account, final String plan,
+                            final ExchangeRate exchangeRate) {
+        cashbackStrategy.calculateCashback(amount, account, this, plan, exchangeRate);
     }
 
     public void spendMore(double amount, BankAccount bankAccount) {

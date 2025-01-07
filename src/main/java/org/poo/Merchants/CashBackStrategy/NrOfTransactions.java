@@ -1,6 +1,7 @@
 package org.poo.Merchants.CashBackStrategy;
 
 import org.poo.BankUsers.BankAccount;
+import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.Merchants.Merchant;
 
 public class NrOfTransactions implements CashbackStrategy {
@@ -13,27 +14,28 @@ public class NrOfTransactions implements CashbackStrategy {
 
     @Override
     public void calculateCashback(double amount, BankAccount bankAccount, Merchant merchant,
-                                  String plan) {
+                                  String plan, ExchangeRate exchangeRate) {
+        double exRate = exchangeRate.getExchangeRate("RON", bankAccount.getCurrency());
         switch (merchant.getType()) {
             case "Food":
                 if (!bankAccount.isUsedFoodCB()
                     && bankAccount.getTransactions() > FOOD_PURCHASES) {
                     bankAccount.setUsedFoodCB(true);
-                    bankAccount.addFunds(FOOD_CASHBACK * amount);
+                    bankAccount.addFunds(FOOD_CASHBACK * amount * exRate);
                 }
                 break;
             case "Clothes":
                 if (!bankAccount.isUsedClothesCB()
                     && bankAccount.getTransactions() > CLOTHES_PURCHASES) {
                     bankAccount.setUsedClothesCB(true);
-                    bankAccount.addFunds(CLOTHES_CASHBACK * amount);
+                    bankAccount.addFunds(CLOTHES_CASHBACK * amount * exRate);
                 }
                 break;
             case "Tech":
                 if (!bankAccount.isUsedTechCB()
                     && bankAccount.getTransactions() > TECH_PURCHASES) {
                     bankAccount.setUsedTechCB(true);
-                    bankAccount.addFunds(TECH_CASHBACK * amount);
+                    bankAccount.addFunds(TECH_CASHBACK * amount * exRate);
                 }
                 break;
             default:

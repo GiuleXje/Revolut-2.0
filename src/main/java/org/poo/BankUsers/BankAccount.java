@@ -56,7 +56,6 @@ public final class BankAccount {
     private boolean usedFoodCB;
     private boolean usedTechCB;
     private boolean usedClothesCB;
-    private double moneySpent;
 
     public BankAccount(final String email, final String currency, final String accountType,
                        final int timestamp, final double interestRate) {
@@ -78,7 +77,6 @@ public final class BankAccount {
         usedFoodCB = false;
         usedTechCB = false;
         usedClothesCB = false;
-        moneySpent = 0;
     }
 
     /**
@@ -184,9 +182,6 @@ public final class BankAccount {
         transactions++;
     }
 
-    public void spendMore(double amount) {
-        moneySpent += amount;
-    }
     /**
      * changes account's interest rate
      *

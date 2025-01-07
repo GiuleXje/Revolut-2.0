@@ -38,7 +38,7 @@
     "lastName" : "Dinu",
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
-      "balance" : 675.89,
+      "balance" : 676.69,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "RON",
       "type" : "classic",
@@ -116,7 +116,7 @@
     "lastName" : "Dinu",
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
-      "balance" : 686.55,
+      "balance" : 687.35,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "RON",
       "type" : "classic",
@@ -130,7 +130,7 @@
     "lastName" : "Nita",
     "email" : "Rada_Nita@gmail.ro",
     "accounts" : [ {
-      "balance" : 896.0,
+      "balance" : 896.86,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "RON",
       "type" : "classic",
