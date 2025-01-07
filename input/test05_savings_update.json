@@ -81,63 +81,63 @@
     },
     {
       "commerciant": "KFC",
-      "id": 106,
+      "id": 100,
       "account": "RO28POOB5923933391234057",
       "type": "Food",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "Samsung",
-      "id": 116,
+      "id": 113,
       "account": "RO25POOB4386521661484930",
       "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Burger King",
-      "id": 106,
+      "id": 108,
       "account": "RO32POOB8964686295716974",
       "type": "Food",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Amazon",
-      "id": 126,
+      "id": 118,
       "account": "RO75POOB9251835314648427",
       "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Microsoft",
-      "id": 126,
+      "id": 116,
       "account": "RO15POOB4333403266660236",
       "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "H&M",
-      "id": 83,
+      "id": 84,
       "account": "RO95POOB9807857732666986",
       "type": "Clothes",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "Apple",
-      "id": 113,
+      "id": 112,
       "account": "RO66POOB9463355196372136",
       "type": "Tech",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "McDonalds",
-      "id": 98,
+      "id": 99,
       "account": "RO01POOB5884922951883378",
       "type": "Food",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "Nike",
-      "id": 88,
+      "id": 90,
       "account": "RO17POOB8495306331082091",
       "type": "Clothes",
       "cashbackStrategy": "nrOfTransactions"
@@ -168,77 +168,77 @@
       "command": "createCard",
       "account": "RO58POOB7344468893732422",
       "email": "Caroline_Leleu@outlook.fr",
-      "timestamp": 2
+      "timestamp": 50
     },
     {
       "command": "addFunds",
       "email": "Caroline_Leleu@outlook.fr",
       "account": "RO58POOB7344468893732422",
       "amount": 599,
-      "timestamp": 3
+      "timestamp": 51
     },
     {
       "command": "addInterest",
       "account": "RO58POOB7344468893732422",
-      "timestamp": 4
+      "timestamp": 612
     },
     {
       "command": "printUsers",
-      "timestamp": 5
+      "timestamp": 613
     },
     {
       "command": "cashWithdrawal",
+      "email": "Caroline_Leleu@outlook.fr",
       "cardNumber": "8207906978464446",
       "amount": 639.0,
-      "email": "Caroline_Leleu@outlook.fr",
-      "location": "Ranginuku",
-      "timestamp": 6
+      "location": "Sandoz (AR)",
+      "timestamp": 614
     },
     {
       "command": "printTransactions",
       "email": "Caroline_Leleu@outlook.fr",
-      "timestamp": 7
+      "timestamp": 615
     },
     {
       "command": "withdrawSavings",
       "account": "RO58POOB7344468893732422",
       "amount": 4.0,
       "currency": "EUR",
-      "timestamp": 8
+      "timestamp": 616
     },
     {
       "command": "printTransactions",
       "email": "Caroline_Leleu@outlook.fr",
-      "timestamp": 9
+      "timestamp": 617
     },
     {
       "command": "addFunds",
       "email": "Caroline_Leleu@outlook.fr",
       "account": "RO58POOB7344468893732422",
       "amount": 103,
-      "timestamp": 10
+      "timestamp": 618
     },
     {
       "command": "withdrawSavings",
       "account": "RO58POOB7344468893732422",
       "amount": 106.92,
       "currency": "EUR",
-      "timestamp": 11
+      "timestamp": 619
     },
     {
       "command": "printTransactions",
       "email": "Caroline_Leleu@outlook.fr",
-      "timestamp": 12
+      "timestamp": 620
     },
     {
       "command": "deleteAccount",
       "email": "Caroline_Leleu@outlook.fr",
       "account": "RO58POOB7344468893732422",
-      "timestamp": 13
+      "timestamp": 621
     },
     {
       "command": "printUsers",
-      "timestamp": 14
+      "timestamp": 622
     }
   ]
 }

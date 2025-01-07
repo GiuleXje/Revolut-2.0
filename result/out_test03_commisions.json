@@ -21,6 +21,9 @@
     "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "101.0 RON",
     "transferType" : "sent"
+  }, {
+    "description" : "Insufficient funds",
+    "timestamp" : 8
   } ],
   "timestamp" : 9
 }, {
@@ -35,7 +38,7 @@
     "lastName" : "Dinu",
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
-      "balance" : 416.368,
+      "balance" : 675.89,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "RON",
       "type" : "classic",
@@ -60,7 +63,7 @@
 }, {
   "command" : "cashWithdrawal",
   "output" : {
-    "description" : "Account not found",
+    "description" : "Card not found",
     "timestamp" : 15
   },
   "timestamp" : 15
@@ -83,8 +86,8 @@
     "description" : "New card created",
     "timestamp" : 13
   }, {
-    "amount" : 354.0,
-    "commerciant" : "Microsoft",
+    "amount" : 428.0,
+    "commerciant" : "H&M",
     "description" : "Card payment",
     "timestamp" : 14
   }, {
@@ -113,7 +116,7 @@
     "lastName" : "Dinu",
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
-      "balance" : 415.8539999999999,
+      "balance" : 686.55,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "RON",
       "type" : "classic",
@@ -127,7 +130,7 @@
     "lastName" : "Nita",
     "email" : "Rada_Nita@gmail.ro",
     "accounts" : [ {
-      "balance" : 266.0,
+      "balance" : 896.0,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "RON",
       "type" : "classic",

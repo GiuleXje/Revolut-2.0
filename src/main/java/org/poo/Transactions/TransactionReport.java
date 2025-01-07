@@ -35,7 +35,8 @@ class SendMoneyReport implements TransactionStrategy {
         output.put("description", data.getDescription());
         output.put("senderIBAN", data.getPayerIBAN());
         output.put("receiverIBAN", data.getReceiverIBAN());
-        output.put("amount", data.getAmount() + " " + data.getCurrency());
+        output.put("amount", Math.round(data.getAmount() * 100) / 100.0
+                + " " + data.getCurrency());
         output.put("transferType", data.getTransferType());
         return output;
     }
@@ -81,7 +82,7 @@ class CardPaymentReport implements TransactionStrategy {
     @Override
     public ObjectNode generateReport(final DataForTransactions data) {
         ObjectNode output = new ObjectMapper().createObjectNode();
-        output.put("amount", data.getAmount());
+        output.put("amount", Math.round(data.getAmount() * 100) / 100.0);
         output.put("commerciant", data.getMerchant());
         output.put("description", "Card payment");
         output.put("timestamp", data.getTimestamp());
@@ -199,7 +200,11 @@ class TooYoung implements TransactionStrategy {
 class CashWithdrawal implements TransactionStrategy {
     @Override
     public ObjectNode generateReport(DataForTransactions data) {
-        return null;
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("amount", Math.round(data.getAmount() * 100) / 100.0);
+        output.put("description", "Cash withdrawal of " + data.getAmount());
+        output.put("timestamp", data.getTimestamp());
+        return output;
     }
 }
 public final class TransactionReport {
@@ -235,6 +240,7 @@ public final class TransactionReport {
                 case "changeInterest" -> new ChangeInterest();
                 case "tooYoung" -> new TooYoung();
                 case "changeOfPlan" -> new ChangeOfPlan();
+                case "cashWithdrawal" -> new CashWithdrawal();
                 default -> null;
             };
         }

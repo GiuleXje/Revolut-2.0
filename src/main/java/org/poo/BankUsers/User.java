@@ -3,6 +3,11 @@ package org.poo.BankUsers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.poo.BankUsers.ServicePlan.GoldPlan;
+import org.poo.BankUsers.ServicePlan.ServicePlan;
+import org.poo.BankUsers.ServicePlan.StudentPlan;
+import org.poo.BankUsers.ServicePlan.SilverPlan;
+import org.poo.BankUsers.ServicePlan.StandardPlan;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,6 +24,8 @@ public final class User {
     private final String occupation;
     private LinkedHashMap<String, BankAccount> bankAccounts;
     private ArrayList<ObjectNode> transactionReport;
+    private ServicePlan servicePlan;
+    private String plan;
 
     public User(final String firstName, final String lastName, final String email,
                 final String birthDate, final String occupation) {
@@ -29,6 +36,8 @@ public final class User {
         transactionReport = new ArrayList<>();
         this.birthDate = birthDate;
         this.occupation = occupation;
+        servicePlan = occupation.equals("student") ? new StudentPlan() : new StandardPlan();
+        plan = occupation.equals("student") ? "student" : "standard";
     }
 
     /**
@@ -99,6 +108,28 @@ public final class User {
             }
         }
         return null;
+    }
+
+    /**
+     * switches to a new service plan and pay the needed price
+     * @param newPlan
+     * the new plan chosen
+     */
+    public void changeServicePlan(final String newPlan) {
+        switch (newPlan) {
+            case "silver":
+                servicePlan = new SilverPlan();
+                plan = "silver";
+                break;
+            case "gold":
+                servicePlan = new GoldPlan();
+                plan = "gold";
+                break;
+            default:
+                servicePlan = new StandardPlan();
+                plan = "standard";
+                break;
+        }
     }
 
     @Override

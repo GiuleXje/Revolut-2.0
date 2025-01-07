@@ -6,11 +6,16 @@ import org.poo.BankUsers.AliasDB;
 import org.poo.BankUsers.BankAccount;
 import org.poo.BankUsers.IBANDB;
 import org.poo.ExchangeRate.ExchangeRate;
+import org.poo.Merchants.Merchant;
+import org.poo.Merchants.MerchantAccounts;
 import org.poo.Transactions.DataForTransactions;
 import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 
 public final class SendMoney implements BankingOperations {
+    public void itIsAMerchant() {
+
+    }
     @Override
     public ObjectNode execute(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
@@ -20,6 +25,15 @@ public final class SendMoney implements BankingOperations {
         AliasDB aliasDB = command.getAliasDB();
         String giver = commandInput.getAccount();
         String receiver = commandInput.getReceiver();
+
+        // check to see if the receiver is a merchant
+        MerchantAccounts merchantAccounts = command.getMerchantAccounts();
+        Merchant merchant = merchantAccounts.getMerchAccounts().getOrDefault(receiver, null);
+        if (merchant != null) {
+            itIsAMerchant();
+            return null;
+        }
+
         String email = commandInput.getEmail();
         User giverUser = ibanDB.getUserFromIBAN(giver);
         if (giverUser == null) {
@@ -36,9 +50,6 @@ public final class SendMoney implements BankingOperations {
                     getAssociatedAliases().
                     getOrDefault(receiverAlias, null);
             double amount = commandInput.getAmount();
-            if (commandInput.getTimestamp() == 23) {
-                assert (receiverAccount != null);
-            }
             if (receiverAccount != null) {
                 nullCase(giverAccount, exchangeRate, receiverAccount, amount,
                         commandInput, transactionReport, ibanDB);
@@ -56,9 +67,10 @@ public final class SendMoney implements BankingOperations {
                                         receiverBAccount.
                                                 getCurrency());
 
-                        if (amount + giverAccount.getServicePlan().fee(amount)
-                                < giverAccount.getBalance()) {
-                            giverAccount.pay(amount);
+                        double fee = giverUser.getServicePlan().fee(amount);
+                        if (amount + fee
+                                <= giverAccount.getBalance()) {
+                            giverAccount.pay(amount + fee);
                             receiverBAccount.
                                     addFunds(amount * exRate);
 
@@ -143,10 +155,12 @@ public final class SendMoney implements BankingOperations {
         double exRate = exchangeRate.
                 getExchangeRate(accCurrency,
                         receiverAccount.getCurrency());
-
-        if (amount * giverAccount.getServicePlan().fee(amount)
+        User giver = ibanDB.getUserFromIBAN(giverAccount.getIBAN());
+        assert (giver != null);
+        double fee = giver.getServicePlan().fee(amount);
+        if (amount + fee
                 < giverAccount.getBalance()) {
-            giverAccount.pay(amount);
+            giverAccount.pay(amount + fee);
             receiverAccount.addFunds(amount * exRate);
 
             DataForTransactions data = new DataForTransactions().

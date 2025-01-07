@@ -2,17 +2,28 @@ package org.poo.BankingOperations;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.poo.BankUsers.BankAccount;
-import org.poo.BankUsers.Card;
-import org.poo.BankUsers.CardDB;
-import org.poo.BankUsers.IBANDB;
+import org.poo.BankUsers.*;
 import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.ExchangeRate.Pair;
+import org.poo.Merchants.Merchant;
+import org.poo.Merchants.MerchantsDB;
 import org.poo.Transactions.DataForTransactions;
 import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 
 public final class PayOnline implements BankingOperations {
+    public void getCashback(User user, BankAccount bankAccount, double paid,
+                            String merchantName, BankOpData command) {
+        MerchantsDB merchantDB = command.getMerchantsDB();
+        Merchant merchant = merchantDB.merchantInfo(merchantName);
+        assert merchant != null;
+
+        if (merchant.getType().equals("spendingThreshold")) {
+            bankAccount.spendMore(paid);
+        }
+
+        merchant.getCashback(paid, bankAccount, user.getPlan());
+    }
     @Override
     public ObjectNode execute(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
@@ -46,11 +57,14 @@ public final class PayOnline implements BankingOperations {
             }
             double exRate = exchangeRate.
                     getExchangeRate(commandInput.getCurrency(), accCurrency);
+            User user = ibanDB.getUserFromIBAN(bankAccount.getIBAN());
+            assert user != null;
+            double fee = user.getServicePlan().fee(amount * exRate);
             if (amount * exRate
-                    + bankAccount.getServicePlan().fee(amount * exRate)
+                    + fee
                     <= bankAccount.getBalance()) {
                 if (bankAccount.getBalance()
-                        - amount * exRate < bankAccount.getMinAmount()) {
+                        - amount * exRate - fee < bankAccount.getMinAmount()) {
                     bankAccount.freezeThisCard(cardNumber);
                     DataForTransactions data = new DataForTransactions().
                             withCommand("frozen").
@@ -65,7 +79,10 @@ public final class PayOnline implements BankingOperations {
                     }
                     return null;
                 }
-                bankAccount.pay(amount * exRate);
+                bankAccount.pay(amount * exRate + fee);
+                bankAccount.increaseTransactions(); // add this transaction
+                getCashback(user, bankAccount, amount * exRate,
+                        commandInput.getCommerciant(), command);
                 DataForTransactions data = new DataForTransactions().
                         withCommand("payOnline").
                         withAmount(amount * exRate).

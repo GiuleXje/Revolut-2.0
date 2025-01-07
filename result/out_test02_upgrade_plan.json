@@ -59,7 +59,7 @@
     "lastName" : "Robinson",
     "email" : "Chad_Robinson@hotmail.us",
     "accounts" : [ {
-      "balance" : 125.0,
+      "balance" : 102.78,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -124,14 +124,16 @@
     "timestamp" : 2,
     "description" : "New account created"
   }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 4
+    "timestamp" : 4,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO58POOB7344468893732422",
+    "newPlanType" : "silver"
   }, {
     "timestamp" : 8,
     "description" : "Miscellaneous online expenses",
     "senderIBAN" : "RO58POOB7344468893732422",
     "receiverIBAN" : "RO69POOB6209498372540635",
-    "amount" : "31.0 USD",
+    "amount" : "122.0 USD",
     "transferType" : "sent"
   } ],
   "timestamp" : 9
@@ -142,7 +144,7 @@
     "lastName" : "Robinson",
     "email" : "Chad_Robinson@hotmail.us",
     "accounts" : [ {
-      "balance" : 684.0,
+      "balance" : 515.22,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -193,7 +195,7 @@
     "lastName" : "Fowler",
     "email" : "John_Fowler@gmail.us",
     "accounts" : [ {
-      "balance" : 31.0,
+      "balance" : 122.0,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "USD",
       "type" : "classic",
@@ -207,18 +209,22 @@
     "timestamp" : 2,
     "description" : "New account created"
   }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 4
+    "timestamp" : 4,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO58POOB7344468893732422",
+    "newPlanType" : "silver"
   }, {
     "timestamp" : 8,
     "description" : "Miscellaneous online expenses",
     "senderIBAN" : "RO58POOB7344468893732422",
     "receiverIBAN" : "RO69POOB6209498372540635",
-    "amount" : "31.0 USD",
+    "amount" : "122.0 USD",
     "transferType" : "sent"
   }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 11
+    "timestamp" : 11,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO58POOB7344468893732422",
+    "newPlanType" : "gold"
   } ],
   "timestamp" : 13
 }, {
@@ -235,7 +241,7 @@
     "lastName" : "Robinson",
     "email" : "Chad_Robinson@hotmail.us",
     "accounts" : [ {
-      "balance" : 213.0,
+      "balance" : 515.22,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -286,7 +292,7 @@
     "lastName" : "Fowler",
     "email" : "John_Fowler@gmail.us",
     "accounts" : [ {
-      "balance" : 502.0,
+      "balance" : 122.0,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "USD",
       "type" : "classic",
@@ -300,14 +306,16 @@
     "timestamp" : 17,
     "description" : "New account created"
   }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 19
+    "timestamp" : 19,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO90POOB5450777208072365",
+    "newPlanType" : "silver"
   } ],
   "timestamp" : 20
 }, {
   "command" : "deleteAccount",
   "output" : {
-    "error" : "Account couldn't be deleted - see org.poo.transactions for details",
+    "success" : "Account deleted",
     "timestamp" : 21
   },
   "timestamp" : 21
@@ -318,7 +326,7 @@
     "lastName" : "Robinson",
     "email" : "Chad_Robinson@hotmail.us",
     "accounts" : [ {
-      "balance" : 213.0,
+      "balance" : 515.22,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -363,19 +371,13 @@
     "firstName" : "Timothee",
     "lastName" : "Le Jacquet",
     "email" : "Timothee_Le_Jacquet@outlook.fr",
-    "accounts" : [ {
-      "balance" : 20.0,
-      "IBAN" : "RO90POOB5450777208072365",
-      "currency" : "EUR",
-      "type" : "classic",
-      "cards" : [ ]
-    } ]
+    "accounts" : [ ]
   }, {
     "firstName" : "John",
     "lastName" : "Fowler",
     "email" : "John_Fowler@gmail.us",
     "accounts" : [ {
-      "balance" : 502.0,
+      "balance" : 122.0,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "USD",
       "type" : "classic",

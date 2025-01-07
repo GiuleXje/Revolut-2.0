@@ -60,7 +60,7 @@
     "email" : "Roland_Pottier@gmail.fr",
     "accounts" : [ ]
   } ],
-  "timestamp" : 5
+  "timestamp" : 613
 }, {
   "command" : "printTransactions",
   "output" : [ {
@@ -71,19 +71,19 @@
     "card" : "8207906978464446",
     "cardHolder" : "Caroline_Leleu@outlook.fr",
     "description" : "New card created",
-    "timestamp" : 2
+    "timestamp" : 50
   }, {
     "description" : "Insufficient funds",
-    "timestamp" : 6
+    "timestamp" : 614
   } ],
-  "timestamp" : 7
+  "timestamp" : 615
 }, {
   "command" : "withdrawSavings",
   "output" : {
     "description" : "You do not have a classic account",
-    "timestamp" : 8
+    "timestamp" : 616
   },
-  "timestamp" : 8
+  "timestamp" : 616
 }, {
   "command" : "printTransactions",
   "output" : [ {
@@ -94,19 +94,19 @@
     "card" : "8207906978464446",
     "cardHolder" : "Caroline_Leleu@outlook.fr",
     "description" : "New card created",
-    "timestamp" : 2
+    "timestamp" : 50
   }, {
     "description" : "Insufficient funds",
-    "timestamp" : 6
+    "timestamp" : 614
   } ],
-  "timestamp" : 9
+  "timestamp" : 617
 }, {
   "command" : "withdrawSavings",
   "output" : {
     "description" : "You do not have a classic account",
-    "timestamp" : 11
+    "timestamp" : 619
   },
-  "timestamp" : 11
+  "timestamp" : 619
 }, {
   "command" : "printTransactions",
   "output" : [ {
@@ -117,19 +117,19 @@
     "card" : "8207906978464446",
     "cardHolder" : "Caroline_Leleu@outlook.fr",
     "description" : "New card created",
-    "timestamp" : 2
+    "timestamp" : 50
   }, {
     "description" : "Insufficient funds",
-    "timestamp" : 6
+    "timestamp" : 614
   } ],
-  "timestamp" : 12
+  "timestamp" : 620
 }, {
   "command" : "deleteAccount",
   "output" : {
     "error" : "Account couldn't be deleted - see org.poo.transactions for details",
-    "timestamp" : 13
+    "timestamp" : 621
   },
-  "timestamp" : 13
+  "timestamp" : 621
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -142,7 +142,7 @@
     "lastName" : "Leleu",
     "email" : "Caroline_Leleu@outlook.fr",
     "accounts" : [ {
-      "balance" : 150.92000000000002,
+      "balance" : 150.92,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "EUR",
       "type" : "savings",
@@ -192,5 +192,5 @@
     "email" : "Roland_Pottier@gmail.fr",
     "accounts" : [ ]
   } ],
-  "timestamp" : 14
+  "timestamp" : 622
 } ]

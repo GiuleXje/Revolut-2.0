@@ -12,6 +12,8 @@ import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 import org.poo.BankUsers.CardDB;
 
+import javax.xml.crypto.Data;
+
 public class CashWithdrawal implements BankingOperations {
     @Override
     public ObjectNode execute(BankOpData command) {
@@ -41,7 +43,7 @@ public class CashWithdrawal implements BankingOperations {
             ObjectNode output = new ObjectMapper().createObjectNode();
             output.put("command", "cashWithdrawal");
             ObjectNode out = new ObjectMapper().createObjectNode();
-            out.put("description", "Account not found");
+            out.put("description", "Card not found");
             out.put("timestamp", timestamp);
             output.set("output", out);
             output.put("timestamp", timestamp);
@@ -52,7 +54,7 @@ public class CashWithdrawal implements BankingOperations {
         ExchangeRate exchangeRate = command.getExchangeRate();
         double exRate = exchangeRate.getExchangeRate(currency, "RON");
         double withdrawAmount = amount * exRate;
-        double fee = bankAccount.getServicePlan().fee(withdrawAmount);
+        double fee = user.getServicePlan().fee(withdrawAmount);
         if (withdrawAmount + fee > bankAccount.getBalance()) { // not enough money
             DataForTransactions data = new DataForTransactions().
                     withCommand("noFunds").
@@ -64,8 +66,17 @@ public class CashWithdrawal implements BankingOperations {
             return null;
         }
 
-        // add the transaction report when I get its format
-        bankAccount.pay(withdrawAmount);
+        bankAccount.pay(withdrawAmount + fee);
+        if (timestamp == 8)
+            System.out.println(fee);
+        DataForTransactions data = new DataForTransactions().
+                withTimestamp(timestamp).
+                withAmount(withdrawAmount).
+                withCommand("cashWithdrawal");
+        TransactionReport transactionReport = command.getTransactionReport();
+        ObjectNode report = transactionReport.executeOperation(data);
+        user.addTransactionReport(report);
+        bankAccount.addReport(report);
         return null;
     }
 }

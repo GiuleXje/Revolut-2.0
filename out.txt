@@ -214,7 +214,7 @@
     "lastName" : "Chandler",
     "email" : "Jessica_Chandler@hotmail.us",
     "accounts" : [ {
-      "balance" : 328.86,
+      "balance" : 328.9,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -321,7 +321,7 @@
     "lastName" : "Popa",
     "email" : "Niculina_Popa@outlook.ro",
     "accounts" : [ {
-      "balance" : 3887.33,
+      "balance" : 3887.3,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "RON",
       "type" : "classic",
@@ -349,7 +349,7 @@
     "lastName" : "Chandler",
     "email" : "Jessica_Chandler@hotmail.us",
     "accounts" : [ {
-      "balance" : 161.86,
+      "balance" : 161.9,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",

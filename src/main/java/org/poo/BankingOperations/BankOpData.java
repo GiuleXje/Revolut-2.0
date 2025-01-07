@@ -7,6 +7,8 @@ import org.poo.BankUsers.IBANDB;
 import org.poo.BankUsers.CardDB;
 import org.poo.BankUsers.AccountDB;
 import org.poo.ExchangeRate.ExchangeRate;
+import org.poo.Merchants.MerchantAccounts;
+import org.poo.Merchants.MerchantsDB;
 import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 import lombok.Getter;
@@ -25,12 +27,15 @@ public final class BankOpData {
     private AliasDB aliasDB;
     private AccountDB accountDB;
     private TransactionReport transactionReport;
+    private MerchantsDB merchantsDB;
+    private MerchantAccounts merchantAccounts;
 
     public BankOpData(final CommandInput commandInput, final EmailDB emailDB, final IBANDB ibanDB,
                       final CardDB cardDB,
                       final ExchangeRate exchangeRate,
                       final AliasDB aliasDB,
-                      final AccountDB accountDB) {
+                      final AccountDB accountDB, final MerchantsDB merchantsDB,
+                      final MerchantAccounts merchantAccounts) {
         this.commandInput = commandInput;
         this.emailDB = emailDB;
         returnVal = null;
@@ -40,6 +45,8 @@ public final class BankOpData {
         this.aliasDB = aliasDB;
         this.accountDB = accountDB;
         transactionReport = new TransactionReport();
+        this.merchantsDB = merchantsDB;
+        this.merchantAccounts = merchantAccounts;
     }
 
     /**

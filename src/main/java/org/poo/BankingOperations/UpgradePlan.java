@@ -62,13 +62,15 @@ public class UpgradePlan implements BankingOperations {
 
         BankAccount bankAccount = user.getBankAccounts().get(account);
         assert bankAccount != null;
-        String currPlan = bankAccount.getPlan();
+        String currPlan = user.getPlan();
         String newPlan = commandInput.getNewPlanType();
         double upgradeCost = downgrade(currPlan, newPlan);
+
         if (upgradeCost > 0) {
+
             String accCurrency = bankAccount.getCurrency();
             ExchangeRate exchangeRate = command.getExchangeRate();
-            double exRate = exchangeRate.getExchangeRate(accCurrency, "RON");
+            double exRate = exchangeRate.getExchangeRate("RON", accCurrency);
             TransactionReport transactionReport = new TransactionReport();
             if (upgradeCost * exRate > bankAccount.getBalance()) {
                 DataForTransactions data = new DataForTransactions().
@@ -80,7 +82,8 @@ public class UpgradePlan implements BankingOperations {
                 return null;
             }
             // this also covers the payment
-            bankAccount.changeServicePlan(newPlan, upgradeCost * exRate);
+            user.changeServicePlan(newPlan);
+            bankAccount.pay(upgradeCost * exRate);
             DataForTransactions data = new DataForTransactions().
                     withTimestamp(commandInput.getTimestamp()).
                     withCommand("changeOfPlan").

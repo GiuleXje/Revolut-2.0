@@ -74,7 +74,7 @@
   "commerciants": [
     {
       "commerciant": "Samsung",
-      "id": 116,
+      "id": 113,
       "account": "RO22POOB3875162728202296",
       "type": "Tech",
       "cashbackStrategy": "nrOfTransactions"
@@ -88,56 +88,56 @@
     },
     {
       "commerciant": "Burger King",
-      "id": 106,
+      "id": 108,
       "account": "RO25POOB4386521661484930",
       "type": "Food",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Apple",
-      "id": 113,
+      "id": 112,
       "account": "RO32POOB8964686295716974",
       "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Nike",
-      "id": 88,
+      "id": 90,
       "account": "RO75POOB9251835314648427",
       "type": "Clothes",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Amazon",
-      "id": 126,
+      "id": 118,
       "account": "RO15POOB4333403266660236",
       "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Microsoft",
-      "id": 126,
+      "id": 116,
       "account": "RO95POOB9807857732666986",
       "type": "Tech",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "KFC",
-      "id": 106,
+      "id": 100,
       "account": "RO66POOB9463355196372136",
       "type": "Food",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "McDonalds",
-      "id": 98,
+      "id": 99,
       "account": "RO01POOB5884922951883378",
       "type": "Food",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "H&M",
-      "id": 83,
+      "id": 84,
       "account": "RO17POOB8495306331082091",
       "type": "Clothes",
       "cashbackStrategy": "nrOfTransactions"
@@ -191,9 +191,9 @@
         "RO69POOB6209498372540635",
         "RO58POOB7344468893732422"
       ],
-      "amount": 167.1,
+      "amount": 168.0,
       "amountForUsers": [
-        89.1,
+        90.0,
         78
       ],
       "currency": "RON",
@@ -247,7 +247,7 @@
       "command": "sendMoney",
       "account": "RO69POOB6209498372540635",
       "receiver": "RO90POOB5450777208072365",
-      "amount": 5087.3,
+      "amount": 926.0,
       "timestamp": 13,
       "email": "Manuel_Lawrence@yahoo.us",
       "description": "Electricity and internet bills"
@@ -285,7 +285,7 @@
       "command": "payOnline",
       "email": "Julieta_Aane@outlook.ro",
       "cardNumber": "4001829491527416",
-      "amount": 472,
+      "amount": 481,
       "currency": "RON",
       "timestamp": 19,
       "description": "Online payment",

@@ -9,6 +9,9 @@ import org.poo.BankUsers.EmailDB;
 import org.poo.BankUsers.User;
 import org.poo.fileio.CommandInput;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public final class PrintUsers implements BankingOperations {
     @Override
     public ObjectNode execute(final BankOpData command) {
@@ -25,7 +28,7 @@ public final class PrintUsers implements BankingOperations {
             ArrayNode bankAccInfo = new ObjectMapper().createArrayNode();
             for (BankAccount bankAccount : user.getBankAccounts().values()) {
                 ObjectNode bankAcc = new ObjectMapper().createObjectNode();
-                bankAcc.put("balance", bankAccount.getBalance());
+                bankAcc.put("balance", Math.round(bankAccount.getBalance() * 100.0) / 100.0);
                 ArrayNode cards = new ObjectMapper().createArrayNode();
                 for (Card card : bankAccount.getCards().values()) {
                     ObjectNode cardInfo = new ObjectMapper().createObjectNode();

@@ -5,7 +5,7 @@
     "lastName" : "Aane",
     "email" : "Julieta_Aane@outlook.ro",
     "accounts" : [ {
-      "balance" : 1177.45,
+      "balance" : 1177.0,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "RON",
       "type" : "classic",
@@ -16,7 +16,7 @@
     "lastName" : "Lawrence",
     "email" : "Manuel_Lawrence@yahoo.us",
     "accounts" : [ {
-      "balance" : 908.0606214285714,
+      "balance" : 908.0,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "USD",
       "type" : "classic",
@@ -71,9 +71,9 @@
     "description" : "New account created"
   }, {
     "timestamp" : 5,
-    "description" : "Split payment of 167.10 RON",
+    "description" : "Split payment of 168.00 RON",
     "currency" : "RON",
-    "amount" : 83.55,
+    "amount" : 84.0,
     "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB7344468893732422" ]
   } ],
   "timestamp" : 8
@@ -81,7 +81,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 1177.45,
+    "balance" : 1177.0,
     "currency" : "RON",
     "transactions" : [ ],
     "commerciants" : [ ]
@@ -101,9 +101,9 @@
     "description" : "New account created"
   }, {
     "timestamp" : 5,
-    "description" : "Split payment of 167.10 RON",
+    "description" : "Split payment of 168.00 RON",
     "currency" : "RON",
-    "amount" : 83.55,
+    "amount" : 84.0,
     "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB7344468893732422" ]
   }, {
     "description" : "Insufficient funds",
@@ -124,7 +124,7 @@
     "lastName" : "Aane",
     "email" : "Julieta_Aane@outlook.ro",
     "accounts" : [ {
-      "balance" : 1177.45,
+      "balance" : 1177.0,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "RON",
       "type" : "classic",
@@ -141,7 +141,7 @@
     "lastName" : "Lawrence",
     "email" : "Manuel_Lawrence@yahoo.us",
     "accounts" : [ {
-      "balance" : 908.0606214285714,
+      "balance" : 908.0,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "USD",
       "type" : "classic",
@@ -209,9 +209,9 @@
     "description" : "New account created"
   }, {
     "timestamp" : 5,
-    "description" : "Split payment of 167.10 RON",
+    "description" : "Split payment of 168.00 RON",
     "currency" : "RON",
-    "amount" : 83.55,
+    "amount" : 84.0,
     "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB7344468893732422" ]
   }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
@@ -228,9 +228,9 @@
     "description" : "New account created"
   }, {
     "timestamp" : 5,
-    "description" : "Split payment of 167.10 RON",
+    "description" : "Split payment of 168.00 RON",
     "currency" : "RON",
-    "amount" : 83.55,
+    "amount" : 84.0,
     "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB7344468893732422" ]
   }, {
     "description" : "Insufficient funds",

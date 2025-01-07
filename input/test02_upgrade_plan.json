@@ -81,7 +81,7 @@
     },
     {
       "commerciant": "Microsoft",
-      "id": 126,
+      "id": 116,
       "account": "RO28POOB5923933391234057",
       "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
@@ -146,7 +146,7 @@
       "command": "sendMoney",
       "account": "RO58POOB7344468893732422",
       "receiver": "RO69POOB6209498372540635",
-      "amount": 31.0,
+      "amount": 122.0,
       "timestamp": 8,
       "email": "Chad_Robinson@hotmail.us",
       "description": "Miscellaneous online expenses"
@@ -181,7 +181,7 @@
     {
       "command": "sendMoney",
       "account": "RO58POOB7344468893732422",
-      "amount": 471.0,
+      "amount": 593.0,
       "receiver": "RO69POOB6209498372540635",
       "timestamp": 14,
       "email": "Chad_Robinson@hotmail.us",

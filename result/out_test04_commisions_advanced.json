@@ -142,6 +142,13 @@
   } ],
   "timestamp" : 39
 }, {
+  "command" : "cashWithdrawal",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 43
+  },
+  "timestamp" : 43
+}, {
   "command" : "printTransactions",
   "output" : [ {
     "timestamp" : 37,
@@ -152,9 +159,6 @@
     "cardHolder" : "Dennis_Norris@yahoo.us",
     "description" : "New card created",
     "timestamp" : 38
-  }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 43
   } ],
   "timestamp" : 44
 }, {
@@ -313,11 +317,13 @@
     "timestamp" : 48
   }, {
     "amount" : 18.0,
-    "commerciant" : "Samsung",
+    "commerciant" : "Nike",
     "description" : "Card payment",
     "timestamp" : 49
   }, {
-    "description" : "Insufficient funds",
+    "amount" : 0.0,
+    "commerciant" : "H&M",
+    "description" : "Card payment",
     "timestamp" : 50
   }, {
     "timestamp" : 51,
@@ -328,6 +334,13 @@
     "transferType" : "sent"
   } ],
   "timestamp" : 52
+}, {
+  "command" : "cashWithdrawal",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 59
+  },
+  "timestamp" : 59
 }, {
   "command" : "printTransactions",
   "output" : [ {
@@ -341,11 +354,13 @@
     "timestamp" : 48
   }, {
     "amount" : 18.0,
-    "commerciant" : "Samsung",
+    "commerciant" : "Nike",
     "description" : "Card payment",
     "timestamp" : 49
   }, {
-    "description" : "Insufficient funds",
+    "amount" : 0.0,
+    "commerciant" : "H&M",
+    "description" : "Card payment",
     "timestamp" : 50
   }, {
     "timestamp" : 51,
@@ -355,16 +370,15 @@
     "amount" : "3.0 USD",
     "transferType" : "sent"
   }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 54
+    "timestamp" : 54,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO37POOB7013767509830666",
+    "newPlanType" : "silver"
   }, {
     "amount" : 244.0,
-    "commerciant" : "Burger King",
+    "commerciant" : "Samsung",
     "description" : "Card payment",
     "timestamp" : 56
-  }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 59
   } ],
   "timestamp" : 60
 }, {
@@ -395,7 +409,7 @@
     "lastName" : "Schultz",
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
-      "balance" : 2068.0,
+      "balance" : 2046.57,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "USD",
       "type" : "classic",
@@ -520,6 +534,13 @@
   } ],
   "timestamp" : 61
 }, {
+  "command" : "cashWithdrawal",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 67
+  },
+  "timestamp" : 67
+}, {
   "command" : "printTransactions",
   "output" : [ {
     "timestamp" : 1,
@@ -535,9 +556,6 @@
     "description" : "Upgrade plan",
     "accountIBAN" : "RO58POOB7344468893732422",
     "newPlanType" : "gold"
-  }, {
-    "description" : "Insufficient funds",
-    "timestamp" : 67
   } ],
   "timestamp" : 68
 }, {
@@ -568,7 +586,7 @@
     "lastName" : "Schultz",
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
-      "balance" : 2068.0,
+      "balance" : 2046.57,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "USD",
       "type" : "classic",
@@ -613,7 +631,7 @@
     "lastName" : "Carpenter",
     "email" : "Jason_Carpenter@hotmail.us",
     "accounts" : [ {
-      "balance" : 1343.6666666666665,
+      "balance" : 2902.0,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",

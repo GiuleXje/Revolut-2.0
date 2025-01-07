@@ -12,6 +12,7 @@ import org.poo.BankUsers.IBANDB;
 import org.poo.BankUsers.AliasDB;
 import org.poo.BankingOperations.BankOpData;
 import org.poo.ExchangeRate.ExchangeRate;
+import org.poo.Merchants.MerchantAccounts;
 import org.poo.checker.Checker;
 import org.poo.checker.CheckerConstants;
 import org.poo.fileio.*;
@@ -112,6 +113,8 @@ public final class Main {
         MerchantsDB merchantsDB = new MerchantsDB();
         //reset the card and IBAN generator
         Utils.resetRandom();
+        // set a new merchant account database
+        MerchantAccounts merchantAccounts = new MerchantAccounts();
 
         // get the users
         for (UserInput user : usersInfo) {
@@ -122,15 +125,17 @@ public final class Main {
 
         // get each merchant
         for (CommerciantInput merchant : merchants) {
-            merchantsDB.addMerchant(new Merchant(merchant.getCommerciant(),
+            Merchant newMerchant = new Merchant(merchant.getCommerciant(),
                     merchant.getId(), merchant.getAccount(),
-                    merchant.getType(), merchant.getCashbackStrategy()));
+                    merchant.getType(), merchant.getCashbackStrategy());
+            merchantsDB.addMerchant(newMerchant);
+            merchantAccounts.addMerchAccount(newMerchant.getAccount(), newMerchant);
         }
 
         // get each action
         for (CommandInput command : commands) {
             BankOpData commandHandler = new BankOpData(command, emailDB, ibanDB, cardDB,
-                    exchangeRate, aliasDB, accountDB);
+                    exchangeRate, aliasDB, accountDB, merchantsDB, merchantAccounts);
             commandHandler.execute(); // handle the given command
 
             // output for JSON, if needed

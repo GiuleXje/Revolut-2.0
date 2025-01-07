@@ -1,201 +1,166 @@
 {
   "users": [
     {
-      "firstName": "Barbu",
-      "lastName": "Suciu",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "birthDate": "2000-03-08",
-      "occupation": "student"
-    },
-    {
-      "firstName": "Paul",
-      "lastName": "Thomas",
-      "email": "Paul_Thomas@gmail.us",
-      "birthDate": "2002-08-14",
-      "occupation": "student"
-    },
-    {
-      "firstName": "Norbert",
-      "lastName": "Dochioiu",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "birthDate": "2001-02-12",
-      "occupation": "student"
-    },
-    {
-      "firstName": "Kyle",
-      "lastName": "Mcdonald",
-      "email": "Kyle_Mcdonald@gmail.us",
-      "birthDate": "1994-11-16",
-      "occupation": "firefighter"
-    },
-    {
-      "firstName": "Margaux",
-      "lastName": "de la Blot",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
-      "birthDate": "2002-07-05",
-      "occupation": "student"
-    },
-    {
-      "firstName": "Barbu",
-      "lastName": "Suciu",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "birthDate": "2000-03-08",
-      "occupation": "student"
-    },
-    {
-      "firstName": "Isaac",
-      "lastName": "Morris",
-      "email": "Isaac_Morris@outlook.us",
-      "birthDate": "1978-09-07",
+      "firstName": "Juliette-Gabrielle",
+      "lastName": "Le Gall",
+      "email": "Juliette-Gabrielle_Le_Gall@yahoo.fr",
+      "birthDate": "1973-03-11",
       "occupation": "pyrotechnician"
     },
     {
-      "firstName": "Paul",
-      "lastName": "Thomas",
-      "email": "Paul_Thomas@gmail.us",
-      "birthDate": "2002-08-14",
+      "firstName": "Nicolas",
+      "lastName": "de Leduc",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "birthDate": "1974-08-30",
+      "occupation": "footballer"
+    },
+    {
+      "firstName": "Gregoire",
+      "lastName": "Chretien",
+      "email": "Gregoire_Chretien@gmail.fr",
+      "birthDate": "1998-12-04",
       "occupation": "student"
     },
     {
-      "firstName": "Ducu",
-      "lastName": "Ene",
-      "email": "Ducu_Ene@outlook.ro",
-      "birthDate": "1971-06-26",
-      "occupation": "influencer"
+      "firstName": "Nicoleta",
+      "lastName": "Popa",
+      "email": "Nicoleta_Popa@hotmail.ro",
+      "birthDate": "1974-01-28",
+      "occupation": "director"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Shields",
+      "email": "John_Shields@outlook.us",
+      "birthDate": "1977-03-02",
+      "occupation": "barber"
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Ashley",
+      "email": "Michael_Ashley@yahoo.us",
+      "birthDate": "1989-11-15",
+      "occupation": "firefighter"
+    },
+    {
+      "firstName": "George",
+      "lastName": "Popa",
+      "email": "George_Popa@gmail.ro",
+      "birthDate": "2006-08-18",
+      "occupation": "student"
     },
     {
       "firstName": "Norbert",
       "lastName": "Dochioiu",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "birthDate": "2001-02-12",
+      "email": "Norbert_Dochioiu@gmail.ro",
+      "birthDate": "2005-01-22",
       "occupation": "student"
     },
     {
-      "firstName": "Valerie",
-      "lastName": "Rocher",
-      "email": "Valerie_Rocher@outlook.fr",
-      "birthDate": "2004-01-31",
+      "firstName": "Christina",
+      "lastName": "Hudson",
+      "email": "Christina_Hudson@outlook.us",
+      "birthDate": "1986-11-22",
+      "occupation": "firefighter"
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Miles",
+      "email": "Michael_Miles@hotmail.us",
+      "birthDate": "1985-05-13",
+      "occupation": "electrician"
+    },
+    {
+      "firstName": "Kelly",
+      "lastName": "Webb",
+      "email": "Kelly_Webb@hotmail.us",
+      "birthDate": "2006-03-11",
       "occupation": "student"
     },
     {
-      "firstName": "Eugen",
-      "lastName": "Barbu",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "birthDate": "1985-02-09",
+      "firstName": "Kevin",
+      "lastName": "Edwards",
+      "email": "Kevin_Edwards@outlook.us",
+      "birthDate": "1991-11-07",
+      "occupation": "farmer"
+    },
+    {
+      "firstName": "Barbu",
+      "lastName": "Suciu",
+      "email": "Barbu_Suciu@outlook.ro",
+      "birthDate": "1982-06-25",
       "occupation": "actor"
     },
     {
-      "firstName": "Briana",
-      "lastName": "Esparza",
-      "email": "Briana_Esparza@gmail.us",
-      "birthDate": "2001-01-03",
-      "occupation": "engineer"
-    },
-    {
-      "firstName": "Valerie",
-      "lastName": "Rocher",
-      "email": "Valerie_Rocher@outlook.fr",
-      "birthDate": "2004-01-31",
+      "firstName": "Floarea",
+      "lastName": "Dobre",
+      "email": "Floarea_Dobre@hotmail.ro",
+      "birthDate": "1999-12-15",
       "occupation": "student"
-    },
-    {
-      "firstName": "Jennifer",
-      "lastName": "Gross",
-      "email": "Jennifer_Gross@yahoo.us",
-      "birthDate": "1970-07-26",
-      "occupation": "doctor"
-    },
-    {
-      "firstName": "John",
-      "lastName": "Reyes",
-      "email": "John_Reyes@gmail.us",
-      "birthDate": "1982-11-05",
-      "occupation": "politician"
-    },
-    {
-      "firstName": "Margaux",
-      "lastName": "de la Blot",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
-      "birthDate": "2002-07-05",
-      "occupation": "student"
-    },
-    {
-      "firstName": "Tristan",
-      "lastName": "Wagner-Diallo",
-      "email": "Tristan_Wagner-Diallo@yahoo.fr",
-      "birthDate": "1979-03-11",
-      "occupation": "doctor"
-    },
-    {
-      "firstName": "Livia",
-      "lastName": "Ionita",
-      "email": "Livia_Ionita@outlook.ro",
-      "birthDate": "1997-07-10",
-      "occupation": "farmer"
     }
   ],
   "commerciants": [
     {
-      "commerciant": "Apple",
-      "id": 113,
+      "commerciant": "Burger King",
+      "id": 108,
       "account": "RO22POOB3875162728202296",
-      "type": "Tech",
-      "cashbackStrategy": "spendingThreshold"
+      "type": "Food",
+      "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "Samsung",
-      "id": 116,
+      "id": 113,
       "account": "RO28POOB5923933391234057",
       "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "KFC",
-      "id": 106,
+      "id": 100,
       "account": "RO25POOB4386521661484930",
       "type": "Food",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
-      "commerciant": "H&M",
-      "id": 83,
+      "commerciant": "Apple",
+      "id": 112,
       "account": "RO32POOB8964686295716974",
-      "type": "Clothes",
+      "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
-      "commerciant": "Burger King",
-      "id": 106,
+      "commerciant": "Microsoft",
+      "id": 116,
       "account": "RO75POOB9251835314648427",
+      "type": "Tech",
+      "cashbackStrategy": "spendingThreshold"
+    },
+    {
+      "commerciant": "McDonalds",
+      "id": 99,
+      "account": "RO15POOB4333403266660236",
       "type": "Food",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "Nike",
-      "id": 88,
-      "account": "RO15POOB4333403266660236",
+      "id": 90,
+      "account": "RO95POOB9807857732666986",
       "type": "Clothes",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
-      "commerciant": "McDonalds",
-      "id": 98,
-      "account": "RO95POOB9807857732666986",
-      "type": "Food",
+      "commerciant": "Amazon",
+      "id": 118,
+      "account": "RO66POOB9463355196372136",
+      "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
-      "commerciant": "Amazon",
-      "id": 126,
-      "account": "RO66POOB9463355196372136",
-      "type": "Tech",
-      "cashbackStrategy": "nrOfTransactions"
-    },
-    {
-      "commerciant": "Microsoft",
-      "id": 126,
+      "commerciant": "H&M",
+      "id": 84,
       "account": "RO01POOB5884922951883378",
-      "type": "Tech",
+      "type": "Clothes",
       "cashbackStrategy": "spendingThreshold"
     },
     {
@@ -208,676 +173,750 @@
   ],
   "exchangeRates": [
     {
-      "from": "EUR",
-      "to": "USD",
+      "from": "USD",
+      "to": "EUR",
       "rate": 0.9
     },
     {
       "from": "EUR",
       "to": "RON",
-      "rate": 4.2
+      "rate": 5.0
     }
   ],
   "commands": [
     {
       "command": "addAccount",
-      "email": "Valerie_Rocher@outlook.fr",
-      "currency": "EUR",
+      "email": "Christina_Hudson@outlook.us",
+      "currency": "USD",
       "accountType": "savings",
-      "interestRate": 0.35,
+      "interestRate": 0.58,
       "timestamp": 1
     },
     {
       "command": "addFunds",
-      "email": "Valerie_Rocher@outlook.fr",
+      "email": "Christina_Hudson@outlook.us",
       "account": "RO58POOB7344468893732422",
-      "amount": 1066.0,
-      "timestamp": 12
+      "amount": 1672.0,
+      "timestamp": 16
     },
     {
       "command": "addAccount",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "Floarea_Dobre@hotmail.ro",
       "currency": "RON",
       "accountType": "savings",
-      "interestRate": 0.51,
-      "timestamp": 13
+      "interestRate": 0.26,
+      "timestamp": 17
     },
     {
       "command": "addFunds",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "Floarea_Dobre@hotmail.ro",
       "account": "RO69POOB6209498372540635",
-      "amount": 1246.0,
-      "timestamp": 20
-    },
-    {
-      "command": "addAccount",
-      "email": "Valerie_Rocher@outlook.fr",
-      "currency": "EUR",
-      "accountType": "savings",
-      "interestRate": 0.93,
-      "timestamp": 21
-    },
-    {
-      "command": "addFunds",
-      "email": "Valerie_Rocher@outlook.fr",
-      "account": "RO90POOB5450777208072365",
-      "amount": 1858.0,
+      "amount": 1746.0,
       "timestamp": 38
     },
     {
       "command": "addAccount",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "currency": "RON",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "currency": "EUR",
       "accountType": "savings",
-      "interestRate": 0.02,
+      "interestRate": 0.52,
       "timestamp": 39
     },
     {
       "command": "addFunds",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "account": "RO65POOB8944016386845896",
-      "amount": 1481.0,
-      "timestamp": 50
-    },
-    {
-      "command": "addAccount",
-      "email": "Briana_Esparza@gmail.us",
-      "currency": "USD",
-      "accountType": "savings",
-      "interestRate": 0.3,
-      "timestamp": 51
-    },
-    {
-      "command": "addFunds",
-      "email": "Briana_Esparza@gmail.us",
-      "account": "RO58POOB2721178218599590",
-      "amount": 1746.0,
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "account": "RO90POOB5450777208072365",
+      "amount": 1126.0,
       "timestamp": 54
     },
     {
-      "command": "cashWithdrawal",
-      "email": "Valerie_Rocher@outlook.fr",
-      "cardNumber": "4001829491527416",
-      "amount": 448.0,
-      "location": "Hendersonside",
+      "command": "addAccount",
+      "email": "Barbu_Suciu@outlook.ro",
+      "currency": "RON",
+      "accountType": "savings",
+      "interestRate": 0.17,
       "timestamp": 55
     },
     {
-      "command": "cashWithdrawal",
-      "email": "Ducu_Ene@outlook.ro",
-      "cardNumber": "6769125583796385",
-      "amount": 1174.0,
-      "location": "Nyon",
-      "timestamp": 56
-    },
-    {
-      "command": "cashWithdrawal",
-      "email": "Valerie_Rocher@outlook.fr",
-      "cardNumber": "2827143779240285",
-      "amount": 579.0,
-      "location": "Sandersberg",
-      "timestamp": 57
-    },
-    {
-      "command": "cashWithdrawal",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "cardNumber": "4491799876006556",
-      "amount": 75.0,
-      "location": "Rey-Dessus",
-      "timestamp": 58
-    },
-    {
-      "command": "cashWithdrawal",
-      "email": "Briana_Esparza@gmail.us",
-      "cardNumber": "1752095065063305",
-      "amount": 8.0,
-      "location": "Sandersberg",
+      "command": "addFunds",
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO65POOB8944016386845896",
+      "amount": 1449.0,
       "timestamp": 59
+    },
+    {
+      "command": "addAccount",
+      "email": "Michael_Miles@hotmail.us",
+      "currency": "USD",
+      "accountType": "savings",
+      "interestRate": 0.42,
+      "timestamp": 60
+    },
+    {
+      "command": "addFunds",
+      "email": "Michael_Miles@hotmail.us",
+      "account": "RO58POOB2721178218599590",
+      "amount": 1313.0,
+      "timestamp": 63
+    },
+    {
+      "command": "cashWithdrawal",
+      "email": "Christina_Hudson@outlook.us",
+      "cardNumber": "4001829491527416",
+      "amount": 1611.0,
+      "location": "Lake Thomas",
+      "timestamp": 64
+    },
+    {
+      "command": "cashWithdrawal",
+      "email": "Floarea_Dobre@hotmail.ro",
+      "cardNumber": "6769125583796385",
+      "amount": 863.0,
+      "location": "Valencia",
+      "timestamp": 65
+    },
+    {
+      "command": "cashWithdrawal",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "cardNumber": "2827143779240285",
+      "amount": 222.0,
+      "location": "Sandoz (AR)",
+      "timestamp": 66
+    },
+    {
+      "command": "cashWithdrawal",
+      "email": "Barbu_Suciu@outlook.ro",
+      "cardNumber": "4491799876006556",
+      "amount": 20.0,
+      "location": "Sandersberg",
+      "timestamp": 67
+    },
+    {
+      "command": "cashWithdrawal",
+      "email": "Michael_Miles@hotmail.us",
+      "cardNumber": "1752095065063305",
+      "amount": 294.0,
+      "location": "Lynnbury",
+      "timestamp": 68
     },
     {
       "command": "withdrawSavings",
       "account": "RO58POOB7344468893732422",
-      "amount": 124.0,
-      "currency": "EUR",
-      "timestamp": 60
+      "amount": 37.0,
+      "currency": "USD",
+      "timestamp": 69
     },
     {
       "command": "withdrawSavings",
       "account": "RO69POOB6209498372540635",
-      "amount": 32.0,
+      "amount": 604.0,
       "currency": "RON",
-      "timestamp": 61
+      "timestamp": 70
     },
     {
       "command": "withdrawSavings",
       "account": "RO90POOB5450777208072365",
-      "amount": 754.0,
+      "amount": 717.0,
       "currency": "EUR",
-      "timestamp": 62
+      "timestamp": 71
     },
     {
       "command": "withdrawSavings",
       "account": "RO65POOB8944016386845896",
-      "amount": 1259.0,
+      "amount": 139.0,
       "currency": "RON",
-      "timestamp": 63
+      "timestamp": 72
     },
     {
       "command": "withdrawSavings",
       "account": "RO58POOB2721178218599590",
-      "amount": 14.0,
+      "amount": 84.0,
       "currency": "USD",
-      "timestamp": 64
+      "timestamp": 73
     },
     {
       "command": "addAccount",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "currency": "RON",
-      "accountType": "classic",
-      "timestamp": 65
-    },
-    {
-      "command": "addAccount",
-      "email": "Paul_Thomas@gmail.us",
-      "currency": "USD",
-      "accountType": "classic",
-      "timestamp": 67
-    },
-    {
-      "command": "addAccount",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "currency": "RON",
-      "accountType": "classic",
-      "timestamp": 87
-    },
-    {
-      "command": "addAccount",
-      "email": "Kyle_Mcdonald@gmail.us",
-      "currency": "USD",
-      "accountType": "classic",
-      "timestamp": 99
-    },
-    {
-      "command": "addAccount",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
+      "email": "Juliette-Gabrielle_Le_Gall@yahoo.fr",
       "currency": "EUR",
       "accountType": "classic",
-      "timestamp": 117
+      "timestamp": 74
     },
     {
       "command": "addAccount",
-      "email": "Barbu_Suciu@yahoo.ro",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "currency": "EUR",
+      "accountType": "classic",
+      "timestamp": 85
+    },
+    {
+      "command": "addAccount",
+      "email": "Gregoire_Chretien@gmail.fr",
+      "currency": "EUR",
+      "accountType": "classic",
+      "timestamp": 96
+    },
+    {
+      "command": "addAccount",
+      "email": "Nicoleta_Popa@hotmail.ro",
       "currency": "RON",
+      "accountType": "classic",
+      "timestamp": 107
+    },
+    {
+      "command": "addAccount",
+      "email": "John_Shields@outlook.us",
+      "currency": "USD",
+      "accountType": "classic",
+      "timestamp": 122
+    },
+    {
+      "command": "addAccount",
+      "email": "Michael_Ashley@yahoo.us",
+      "currency": "USD",
       "accountType": "classic",
       "timestamp": 131
     },
     {
       "command": "addAccount",
-      "email": "Isaac_Morris@outlook.us",
-      "currency": "USD",
-      "accountType": "classic",
-      "timestamp": 144
-    },
-    {
-      "command": "addAccount",
-      "email": "Paul_Thomas@gmail.us",
-      "currency": "USD",
-      "accountType": "classic",
-      "timestamp": 156
-    },
-    {
-      "command": "addAccount",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "George_Popa@gmail.ro",
       "currency": "RON",
       "accountType": "classic",
-      "timestamp": 166
+      "timestamp": 134
     },
     {
       "command": "addAccount",
-      "email": "Norbert_Dochioiu@yahoo.ro",
+      "email": "Norbert_Dochioiu@gmail.ro",
       "currency": "RON",
       "accountType": "classic",
-      "timestamp": 174
+      "timestamp": 149
     },
     {
       "command": "addAccount",
-      "email": "Valerie_Rocher@outlook.fr",
-      "currency": "EUR",
+      "email": "Christina_Hudson@outlook.us",
+      "currency": "USD",
       "accountType": "classic",
-      "timestamp": 194
+      "timestamp": 165
+    },
+    {
+      "command": "addAccount",
+      "email": "Michael_Miles@hotmail.us",
+      "currency": "USD",
+      "accountType": "classic",
+      "timestamp": 176
+    },
+    {
+      "command": "addAccount",
+      "email": "Kelly_Webb@hotmail.us",
+      "currency": "USD",
+      "accountType": "classic",
+      "timestamp": 183
     },
     {
       "command": "withdrawSavings",
       "account": "RO58POOB7344468893732422",
-      "amount": 77.0,
-      "currency": "EUR",
-      "timestamp": 205
+      "amount": 23.0,
+      "currency": "USD",
+      "timestamp": 195
     },
     {
       "command": "withdrawSavings",
       "account": "RO69POOB6209498372540635",
-      "amount": 38.0,
+      "amount": 203.0,
       "currency": "RON",
-      "timestamp": 206
+      "timestamp": 196
     },
     {
       "command": "withdrawSavings",
       "account": "RO90POOB5450777208072365",
-      "amount": 234.0,
+      "amount": 159.0,
       "currency": "EUR",
-      "timestamp": 207
+      "timestamp": 197
     },
     {
       "command": "withdrawSavings",
       "account": "RO65POOB8944016386845896",
-      "amount": 145.0,
+      "amount": 80.0,
       "currency": "RON",
-      "timestamp": 208
+      "timestamp": 198
     },
     {
       "command": "withdrawSavings",
       "account": "RO58POOB2721178218599590",
-      "amount": 183.0,
+      "amount": 375.0,
       "currency": "USD",
+      "timestamp": 199
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Juliette-Gabrielle_Le_Gall@yahoo.fr",
+      "account": "RO76POOB4035116042454483",
+      "timestamp": 200
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "account": "RO37POOB7013767509830666",
+      "timestamp": 201
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Gregoire_Chretien@gmail.fr",
+      "account": "RO19POOB4981055641668812",
+      "timestamp": 202
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Nicoleta_Popa@hotmail.ro",
+      "account": "RO30POOB9523423715747796",
+      "timestamp": 203
+    },
+    {
+      "command": "deleteAccount",
+      "email": "John_Shields@outlook.us",
+      "account": "RO79POOB3616857825600958",
+      "timestamp": 204
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Michael_Ashley@yahoo.us",
+      "account": "RO00POOB5687892910835215",
+      "timestamp": 205
+    },
+    {
+      "command": "deleteAccount",
+      "email": "George_Popa@gmail.ro",
+      "account": "RO96POOB6738272785416988",
+      "timestamp": 206
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Norbert_Dochioiu@gmail.ro",
+      "account": "RO33POOB4049920806186500",
+      "timestamp": 207
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Christina_Hudson@outlook.us",
+      "account": "RO69POOB9846198978826791",
+      "timestamp": 208
+    },
+    {
+      "command": "deleteAccount",
+      "email": "Michael_Miles@hotmail.us",
+      "account": "RO98POOB8412955460158769",
       "timestamp": 209
     },
     {
       "command": "deleteAccount",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "account": "RO76POOB4035116042454483",
+      "email": "Kelly_Webb@hotmail.us",
+      "account": "RO32POOB0130532963818359",
       "timestamp": 210
     },
     {
-      "command": "deleteAccount",
-      "email": "Paul_Thomas@gmail.us",
-      "account": "RO37POOB7013767509830666",
+      "command": "addFunds",
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO65POOB8944016386845896",
+      "amount": 99.0,
       "timestamp": 211
     },
     {
-      "command": "deleteAccount",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "account": "RO19POOB4981055641668812",
+      "command": "upgradePlan",
+      "account": "RO65POOB8944016386845896",
+      "newPlanType": "silver",
       "timestamp": 212
     },
     {
-      "command": "deleteAccount",
-      "email": "Kyle_Mcdonald@gmail.us",
-      "account": "RO30POOB9523423715747796",
+      "command": "addFunds",
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO65POOB8944016386845896",
+      "amount": 3.0,
       "timestamp": 213
     },
     {
-      "command": "deleteAccount",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
-      "account": "RO79POOB3616857825600958",
+      "command": "upgradePlan",
+      "account": "RO65POOB8944016386845896",
+      "newPlanType": "silver",
       "timestamp": 214
     },
     {
-      "command": "deleteAccount",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "account": "RO00POOB5687892910835215",
+      "command": "addFunds",
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO65POOB8944016386845896",
+      "amount": 2000.0,
       "timestamp": 215
     },
     {
-      "command": "deleteAccount",
-      "email": "Isaac_Morris@outlook.us",
-      "account": "RO96POOB6738272785416988",
+      "command": "printUsers",
       "timestamp": 216
     },
     {
-      "command": "deleteAccount",
-      "email": "Paul_Thomas@gmail.us",
-      "account": "RO33POOB4049920806186500",
-      "timestamp": 217
-    },
-    {
-      "command": "deleteAccount",
-      "email": "Ducu_Ene@outlook.ro",
-      "account": "RO69POOB9846198978826791",
-      "timestamp": 218
-    },
-    {
-      "command": "deleteAccount",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "account": "RO98POOB8412955460158769",
-      "timestamp": 219
-    },
-    {
-      "command": "deleteAccount",
-      "email": "Valerie_Rocher@outlook.fr",
-      "account": "RO32POOB0130532963818359",
-      "timestamp": 220
-    },
-    {
-      "command": "addFunds",
-      "email": "Ducu_Ene@outlook.ro",
-      "account": "RO69POOB6209498372540635",
-      "amount": 99.0,
-      "timestamp": 221
-    },
-    {
-      "command": "upgradePlan",
-      "account": "RO69POOB6209498372540635",
-      "newPlanType": "silver",
-      "timestamp": 222
-    },
-    {
-      "command": "addFunds",
-      "email": "Ducu_Ene@outlook.ro",
-      "account": "RO69POOB6209498372540635",
-      "amount": 3.0,
-      "timestamp": 223
-    },
-    {
-      "command": "upgradePlan",
-      "account": "RO69POOB6209498372540635",
-      "newPlanType": "silver",
-      "timestamp": 224
-    },
-    {
-      "command": "addFunds",
-      "email": "Ducu_Ene@outlook.ro",
-      "account": "RO69POOB6209498372540635",
-      "amount": 2000.0,
-      "timestamp": 225
-    },
-    {
-      "command": "printUsers",
-      "timestamp": 226
-    },
-    {
       "command": "payOnline",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "Barbu_Suciu@outlook.ro",
       "cardNumber": "9341628021029699",
-      "amount": 330,
+      "amount": 340,
       "currency": "RON",
-      "timestamp": 227,
+      "timestamp": 217,
       "description": "Online payment",
-      "commerciant": "Zara"
+      "commerciant": "Samsung"
     },
     {
       "command": "payOnline",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "Barbu_Suciu@outlook.ro",
       "cardNumber": "4374966931133138",
-      "amount": 327,
+      "amount": 314,
       "currency": "RON",
-      "timestamp": 228,
+      "timestamp": 218,
       "description": "Online payment",
-      "commerciant": "KFC"
+      "commerciant": "Microsoft"
     },
     {
       "command": "payOnline",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "Barbu_Suciu@outlook.ro",
       "cardNumber": "6097867366365266",
-      "amount": 326,
-      "currency": "RON",
-      "timestamp": 229,
+      "amount": 1735,
+      "currency": "EUR",
+      "timestamp": 219,
       "description": "Online payment",
-      "commerciant": "KFC"
+      "commerciant": "McDonalds"
     },
     {
       "command": "payOnline",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "Barbu_Suciu@outlook.ro",
       "cardNumber": "9284968684427386",
-      "amount": 315,
-      "currency": "RON",
-      "timestamp": 230,
-      "description": "Online payment",
-      "commerciant": "Zara"
-    },
-    {
-      "command": "payOnline",
-      "email": "Ducu_Ene@outlook.ro",
-      "cardNumber": "9317979456445303",
-      "amount": 390,
-      "currency": "RON",
-      "timestamp": 231,
-      "description": "Online payment",
-      "commerciant": "Zara"
-    },
-    {
-      "command": "printUsers",
-      "timestamp": 232
-    },
-    {
-      "command": "changeInterestRate",
-      "account": "RO69POOB6209498372540635",
-      "interestRate": 0.63,
-      "timestamp": 233
-    },
-    {
-      "command": "addInterest",
-      "account": "RO69POOB6209498372540635",
-      "timestamp": 234
-    },
-    {
-      "command": "spendingsReport",
-      "startTimestamp": 0,
-      "endTimestamp": 234,
-      "account": "RO69POOB6209498372540635",
-      "timestamp": 235
-    },
-    {
-      "command": "report",
-      "startTimestamp": 1,
-      "endTimestamp": 235,
-      "account": "RO69POOB6209498372540635",
-      "timestamp": 236
-    },
-    {
-      "command": "splitPayment",
-      "splitPaymentType": "equal",
-      "accounts": [
-        "RO58POOB7344468893732422",
-        "RO69POOB6209498372540635",
-        "RO90POOB5450777208072365",
-        "RO65POOB8944016386845896"
-      ],
-      "amount": 2695,
+      "amount": 1900,
       "currency": "EUR",
-      "timestamp": 237
-    },
-    {
-      "command": "printTransactions",
-      "email": "Valerie_Rocher@outlook.fr",
-      "timestamp": 238
-    },
-    {
-      "command": "printTransactions",
-      "email": "Ducu_Ene@outlook.ro",
-      "timestamp": 239
-    },
-    {
-      "command": "printTransactions",
-      "email": "Valerie_Rocher@outlook.fr",
-      "timestamp": 240
-    },
-    {
-      "command": "printTransactions",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "timestamp": 241
-    },
-    {
-      "command": "printTransactions",
-      "email": "Briana_Esparza@gmail.us",
-      "timestamp": 242
-    },
-    {
-      "command": "acceptSplitPayment",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "splitPaymentType": "custom",
-      "timestamp": 243
-    },
-    {
-      "command": "acceptSplitPayment",
-      "email": "Valerie_Rocher@outlook.fr",
-      "splitPaymentType": "custom",
-      "timestamp": 244
-    },
-    {
-      "command": "acceptSplitPayment",
-      "email": "Ducu_Ene@outlook.ro",
-      "splitPaymentType": "custom",
-      "timestamp": 245
-    },
-    {
-      "command": "acceptSplitPayment",
-      "email": "Valerie_Rocher@outlook.fr",
-      "splitPaymentType": "custom",
-      "timestamp": 246
-    },
-    {
-      "command": "printTransactions",
-      "email": "Valerie_Rocher@outlook.fr",
-      "timestamp": 247
-    },
-    {
-      "command": "printTransactions",
-      "email": "Ducu_Ene@outlook.ro",
-      "timestamp": 248
-    },
-    {
-      "command": "printTransactions",
-      "email": "Valerie_Rocher@outlook.fr",
-      "timestamp": 249
-    },
-    {
-      "command": "printTransactions",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "timestamp": 250
-    },
-    {
-      "command": "printTransactions",
-      "email": "Briana_Esparza@gmail.us",
-      "timestamp": 251
-    },
-    {
-      "command": "addFunds",
-      "email": "Briana_Esparza@gmail.us",
-      "account": "RO58POOB2721178218599590",
-      "amount": 3355.33,
-      "timestamp": 252
-    },
-    {
-      "command": "payOnline",
-      "email": "Briana_Esparza@gmail.us",
-      "cardNumber": "2411524438886950",
-      "amount": 336,
-      "currency": "USD",
-      "timestamp": 253,
-      "description": "Online payment",
-      "commerciant": "Burger King"
-    },
-    {
-      "command": "payOnline",
-      "email": "Briana_Esparza@gmail.us",
-      "cardNumber": "8482522718940812",
-      "amount": 430,
-      "currency": "USD",
-      "timestamp": 254,
-      "description": "Online payment",
-      "commerciant": "Amazon"
-    },
-    {
-      "command": "payOnline",
-      "email": "Briana_Esparza@gmail.us",
-      "cardNumber": "0909939046574276",
-      "amount": 279,
-      "currency": "EUR",
-      "timestamp": 255,
+      "timestamp": 220,
       "description": "Online payment",
       "commerciant": "Nike"
     },
     {
       "command": "payOnline",
-      "email": "Briana_Esparza@gmail.us",
-      "cardNumber": "6149001534774049",
-      "amount": 229,
-      "currency": "USD",
-      "timestamp": 256,
+      "email": "Barbu_Suciu@outlook.ro",
+      "cardNumber": "9317979456445303",
+      "amount": 1755,
+      "currency": "EUR",
+      "timestamp": 221,
       "description": "Online payment",
       "commerciant": "Microsoft"
     },
     {
-      "command": "addFunds",
-      "email": "Briana_Esparza@gmail.us",
-      "account": "RO58POOB2721178218599590",
-      "amount": 3405.33,
-      "timestamp": 257
-    },
-    {
-      "command": "sendMoney",
-      "account": "RO58POOB2721178218599590",
-      "amount": 3191.0,
-      "receiver": "RO22POOB3875162728202296",
-      "timestamp": 258,
-      "email": "Briana_Esparza@gmail.us",
-      "description": "Electricity and internet bills"
-    },
-    {
       "command": "printUsers",
-      "timestamp": 259
+      "timestamp": 222
+    },
+    {
+      "command": "changeInterestRate",
+      "account": "RO65POOB8944016386845896",
+      "interestRate": 0.17,
+      "timestamp": 223
+    },
+    {
+      "command": "addInterest",
+      "account": "RO65POOB8944016386845896",
+      "timestamp": 224
+    },
+    {
+      "command": "spendingsReport",
+      "startTimestamp": 0,
+      "endTimestamp": 224,
+      "account": "RO65POOB8944016386845896",
+      "timestamp": 225
+    },
+    {
+      "command": "report",
+      "startTimestamp": 1,
+      "endTimestamp": 225,
+      "account": "RO65POOB8944016386845896",
+      "timestamp": 226
+    },
+    {
+      "command": "splitPayment",
+      "splitPaymentType": "equal",
+      "accounts": [
+        "RO69POOB6209498372540635",
+        "RO58POOB2721178218599590",
+        "RO65POOB8944016386845896",
+        "RO58POOB7344468893732422"
+      ],
+      "amount": 1423,
+      "currency": "RON",
+      "timestamp": 227
     },
     {
       "command": "printTransactions",
-      "email": "Briana_Esparza@gmail.us",
-      "timestamp": 260
+      "email": "Christina_Hudson@outlook.us",
+      "timestamp": 228
+    },
+    {
+      "command": "printTransactions",
+      "email": "Floarea_Dobre@hotmail.ro",
+      "timestamp": 229
+    },
+    {
+      "command": "printTransactions",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "timestamp": 230
+    },
+    {
+      "command": "printTransactions",
+      "email": "Barbu_Suciu@outlook.ro",
+      "timestamp": 231
+    },
+    {
+      "command": "printTransactions",
+      "email": "Michael_Miles@hotmail.us",
+      "timestamp": 232
+    },
+    {
+      "command": "acceptSplitPayment",
+      "email": "Michael_Miles@hotmail.us",
+      "splitPaymentType": "custom",
+      "timestamp": 233
+    },
+    {
+      "command": "acceptSplitPayment",
+      "email": "Barbu_Suciu@outlook.ro",
+      "splitPaymentType": "custom",
+      "timestamp": 234
+    },
+    {
+      "command": "acceptSplitPayment",
+      "email": "Christina_Hudson@outlook.us",
+      "splitPaymentType": "custom",
+      "timestamp": 235
+    },
+    {
+      "command": "acceptSplitPayment",
+      "email": "Floarea_Dobre@hotmail.ro",
+      "splitPaymentType": "custom",
+      "timestamp": 236
+    },
+    {
+      "command": "printTransactions",
+      "email": "Christina_Hudson@outlook.us",
+      "timestamp": 237
+    },
+    {
+      "command": "printTransactions",
+      "email": "Floarea_Dobre@hotmail.ro",
+      "timestamp": 238
+    },
+    {
+      "command": "printTransactions",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "timestamp": 239
+    },
+    {
+      "command": "printTransactions",
+      "email": "Barbu_Suciu@outlook.ro",
+      "timestamp": 240
+    },
+    {
+      "command": "printTransactions",
+      "email": "Michael_Miles@hotmail.us",
+      "timestamp": 241
+    },
+    {
+      "command": "addFunds",
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO65POOB8944016386845896",
+      "amount": 1005.0,
+      "timestamp": 242
+    },
+    {
+      "command": "payOnline",
+      "email": "Barbu_Suciu@outlook.ro",
+      "cardNumber": "2411524438886950",
+      "amount": 100,
+      "currency": "RON",
+      "timestamp": 243,
+      "description": "Online payment",
+      "commerciant": "Nike"
+    },
+    {
+      "command": "payOnline",
+      "email": "Barbu_Suciu@outlook.ro",
+      "cardNumber": "8482522718940812",
+      "amount": 256,
+      "currency": "RON",
+      "timestamp": 244,
+      "description": "Online payment",
+      "commerciant": "Zara"
+    },
+    {
+      "command": "payOnline",
+      "email": "Barbu_Suciu@outlook.ro",
+      "cardNumber": "0909939046574276",
+      "amount": 14,
+      "currency": "RON",
+      "timestamp": 245,
+      "description": "Online payment",
+      "commerciant": "Samsung"
+    },
+    {
+      "command": "payOnline",
+      "email": "Barbu_Suciu@outlook.ro",
+      "cardNumber": "6149001534774049",
+      "amount": 157,
+      "currency": "RON",
+      "timestamp": 246,
+      "description": "Online payment",
+      "commerciant": "Samsung"
+    },
+    {
+      "command": "addFunds",
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO65POOB8944016386845896",
+      "amount": 1044.0,
+      "timestamp": 247
+    },
+    {
+      "command": "sendMoney",
+      "account": "RO65POOB8944016386845896",
+      "amount": 2760.0,
+      "receiver": "RO75POOB9251835314648427",
+      "timestamp": 248,
+      "email": "Barbu_Suciu@outlook.ro",
+      "description": "Cinema tickets for a weekend outing"
+    },
+    {
+      "command": "printUsers",
+      "timestamp": 249
+    },
+    {
+      "command": "printTransactions",
+      "email": "Barbu_Suciu@outlook.ro",
+      "timestamp": 250
     },
     {
       "command": "withdrawSavings",
-      "account": "RO58POOB2721178218599590",
-      "amount": 8301.66,
+      "account": "RO65POOB8944016386845896",
+      "amount": 5924.04,
+      "currency": "RON",
+      "timestamp": 251
+    },
+    {
+      "command": "addAccount",
+      "email": "Kevin_Edwards@outlook.us",
       "currency": "USD",
-      "timestamp": 261
-    },
-    {
-      "command": "addAccount",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "currency": "RON",
       "accountType": "business",
-      "timestamp": 262
+      "timestamp": 252
     },
     {
       "command": "addAccount",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "currency": "RON",
+      "email": "Kevin_Edwards@outlook.us",
+      "currency": "USD",
       "accountType": "savings",
-      "interestRate": 0.64,
-      "timestamp": 263
+      "interestRate": 0.02,
+      "timestamp": 253
     },
     {
       "command": "addFunds",
-      "email": "Eugen_Barbu@hotmail.ro",
+      "email": "Kevin_Edwards@outlook.us",
       "account": "RO10POOB4354933866366881",
-      "amount": 195,
-      "timestamp": 264
+      "amount": 56,
+      "timestamp": 254
     },
     {
       "command": "addFunds",
-      "email": "Eugen_Barbu@hotmail.ro",
+      "email": "Kevin_Edwards@outlook.us",
       "account": "RO68POOB1848616931405475",
-      "amount": 311,
-      "timestamp": 265
+      "amount": 210,
+      "timestamp": 255
     },
     {
       "command": "addInterest",
       "account": "RO10POOB4354933866366881",
-      "timestamp": 284
+      "timestamp": 272
     },
     {
       "command": "addInterest",
       "account": "RO10POOB4354933866366881",
-      "timestamp": 388
+      "timestamp": 377
     },
     {
       "command": "changeInterestRate",
       "account": "RO10POOB4354933866366881",
-      "interestRate": 0.26,
-      "timestamp": 389
+      "interestRate": 0.35,
+      "timestamp": 378
     },
     {
       "command": "withdrawSavings",
       "account": "RO10POOB4354933866366881",
-      "amount": 166.0,
+      "amount": 34.0,
+      "currency": "USD",
+      "timestamp": 379
+    },
+    {
+      "command": "printUsers",
+      "timestamp": 380
+    },
+    {
+      "command": "businessReport",
+      "startTimestamp": 0,
+      "endTimestamp": 379,
+      "account": "RO68POOB1848616931405475",
+      "type": "transaction",
+      "timestamp": 381
+    },
+    {
+      "command": "report",
+      "startTimestamp": 0,
+      "endTimestamp": 381,
+      "account": "RO10POOB4354933866366881",
+      "timestamp": 382
+    },
+    {
+      "command": "addAccount",
+      "email": "Kevin_Edwards@outlook.us",
+      "currency": "USD",
+      "accountType": "classic",
+      "timestamp": 383
+    },
+    {
+      "command": "addFunds",
+      "email": "Kevin_Edwards@outlook.us",
+      "account": "RO10POOB4354933866366881",
+      "amount": 816,
+      "timestamp": 384
+    },
+    {
+      "command": "withdrawSavings",
+      "account": "RO10POOB4354933866366881",
+      "amount": 227.0,
+      "currency": "USD",
+      "timestamp": 385
+    },
+    {
+      "command": "addAccount",
+      "email": "Barbu_Suciu@outlook.ro",
+      "currency": "RON",
+      "accountType": "savings",
+      "interestRate": 0.48,
+      "timestamp": 386
+    },
+    {
+      "command": "addAccount",
+      "email": "Barbu_Suciu@outlook.ro",
+      "currency": "RON",
+      "accountType": "savings",
+      "interestRate": 0.59,
+      "timestamp": 387
+    },
+    {
+      "command": "addFunds",
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO53POOB7122855990652257",
+      "amount": 27,
+      "timestamp": 388
+    },
+    {
+      "command": "printUsers",
+      "timestamp": 389
+    },
+    {
+      "command": "withdrawSavings",
+      "account": "RO53POOB7122855990652257",
+      "amount": 23.0,
       "currency": "RON",
       "timestamp": 390
     },
@@ -886,556 +925,383 @@
       "timestamp": 391
     },
     {
-      "command": "businessReport",
-      "startTimestamp": 1,
-      "endTimestamp": 391,
+      "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
-      "type": "transaction",
+      "role": "employee",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
       "timestamp": 392
     },
     {
-      "command": "report",
-      "startTimestamp": 1,
-      "endTimestamp": 392,
-      "account": "RO10POOB4354933866366881",
-      "timestamp": 393
-    },
-    {
-      "command": "addAccount",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "currency": "RON",
-      "accountType": "classic",
-      "timestamp": 394
-    },
-    {
-      "command": "addFunds",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "account": "RO10POOB4354933866366881",
-      "amount": 665,
-      "timestamp": 395
-    },
-    {
-      "command": "withdrawSavings",
-      "account": "RO10POOB4354933866366881",
-      "amount": 320.0,
-      "currency": "RON",
-      "timestamp": 396
-    },
-    {
-      "command": "addAccount",
-      "email": "Briana_Esparza@gmail.us",
-      "currency": "USD",
-      "accountType": "savings",
-      "interestRate": 0.89,
-      "timestamp": 397
-    },
-    {
-      "command": "addAccount",
-      "email": "Briana_Esparza@gmail.us",
-      "currency": "USD",
-      "accountType": "savings",
-      "interestRate": 0.15,
-      "timestamp": 398
-    },
-    {
-      "command": "addFunds",
-      "email": "Briana_Esparza@gmail.us",
-      "account": "RO53POOB7122855990652257",
-      "amount": 649,
-      "timestamp": 399
-    },
-    {
-      "command": "printUsers",
-      "timestamp": 400
-    },
-    {
-      "command": "withdrawSavings",
-      "account": "RO53POOB7122855990652257",
-      "amount": 22.0,
-      "currency": "USD",
-      "timestamp": 401
-    },
-    {
-      "command": "printUsers",
-      "timestamp": 402
+      "command": "addNewBusinessAssociate",
+      "account": "RO68POOB1848616931405475",
+      "role": "employee",
+      "email": "Barbu_Suciu@outlook.ro",
+      "timestamp": 407
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "employee",
-      "email": "Paul_Thomas@gmail.us",
-      "timestamp": 403
+      "email": "Nicoleta_Popa@hotmail.ro",
+      "timestamp": 414
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "employee",
-      "email": "Ducu_Ene@outlook.ro",
-      "timestamp": 417
+      "email": "Floarea_Dobre@hotmail.ro",
+      "timestamp": 424
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "employee",
-      "email": "Briana_Esparza@gmail.us",
-      "timestamp": 434
+      "email": "John_Shields@outlook.us",
+      "timestamp": 435
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "employee",
-      "email": "Jennifer_Gross@yahoo.us",
-      "timestamp": 440
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "employee",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
-      "timestamp": 454
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "employee",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
-      "timestamp": 471
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "employee",
-      "email": "Paul_Thomas@gmail.us",
-      "timestamp": 490
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "employee",
-      "email": "Livia_Ionita@outlook.ro",
-      "timestamp": 493
+      "email": "Kelly_Webb@hotmail.us",
+      "timestamp": 439
     },
     {
       "command": "changeSpendingLimit",
-      "email": "Eugen_Barbu@hotmail.ro",
+      "email": "Kevin_Edwards@outlook.us",
       "account": "RO68POOB1848616931405475",
-      "amount": 637,
-      "timestamp": 507
+      "amount": 189,
+      "timestamp": 453
     },
     {
       "command": "payOnline",
-      "email": "Paul_Thomas@gmail.us",
+      "email": "Floarea_Dobre@hotmail.ro",
       "cardNumber": "1689085620476974",
-      "amount": 142.0,
-      "currency": "RON",
-      "timestamp": 508,
-      "description": "Online payment",
-      "commerciant": 125
-    },
-    {
-      "command": "payOnline",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
-      "cardNumber": "1532206051720830",
-      "amount": 198.0,
-      "currency": "RON",
-      "timestamp": 509,
-      "description": "Online payment",
-      "commerciant": 164
-    },
-    {
-      "command": "payOnline",
-      "email": "Paul_Thomas@gmail.us",
-      "cardNumber": "5618142873067979",
-      "amount": 93.0,
-      "currency": "RON",
-      "timestamp": 510,
-      "description": "Online payment",
-      "commerciant": 178
-    },
-    {
-      "command": "payOnline",
-      "email": "Paul_Thomas@gmail.us",
-      "cardNumber": "1003132631143043",
-      "amount": 128.0,
-      "currency": "RON",
-      "timestamp": 511,
-      "description": "Online payment",
-      "commerciant": 190
-    },
-    {
-      "command": "payOnline",
-      "email": "Margaux_de_la_Blot@hotmail.fr",
-      "cardNumber": "6784853611217398",
-      "amount": 264.6,
+      "amount": 13.33,
       "currency": "EUR",
-      "timestamp": 512,
+      "timestamp": 454,
       "description": "Online payment",
-      "commerciant": 196
-    },
-    {
-      "command": "sendMoney",
-      "account": "RO68POOB1848616931405475",
-      "amount": 269.0,
-      "receiver": "RO38POOB0964823730995794",
-      "timestamp": 513,
-      "email": "Eugen_Barbu@hotmail.ro",
-      "description": "Weekly groceries from Carrefour"
-    },
-    {
-      "command": "sendMoney",
-      "account": "RO68POOB1848616931405475",
-      "amount": 252.0,
-      "receiver": "RO38POOB0964823730995794",
-      "timestamp": 514,
-      "email": "Eugen_Barbu@hotmail.ro",
-      "description": "Miscellaneous cash expenses"
+      "commerciant": 192
     },
     {
       "command": "payOnline",
-      "email": "Jennifer_Gross@yahoo.us",
+      "email": "John_Shields@outlook.us",
+      "cardNumber": "1532206051720830",
+      "amount": 43.33,
+      "currency": "RON",
+      "timestamp": 455,
+      "description": "Online payment",
+      "commerciant": 160
+    },
+    {
+      "command": "payOnline",
+      "email": "Norbert_Dochioiu@gmail.ro",
+      "cardNumber": "5618142873067979",
+      "amount": 150.0,
+      "currency": "RON",
+      "timestamp": 456,
+      "description": "Online payment",
+      "commerciant": 195
+    },
+    {
+      "command": "payOnline",
+      "email": "Floarea_Dobre@hotmail.ro",
+      "cardNumber": "1003132631143043",
+      "amount": 34.0,
+      "currency": "USD",
+      "timestamp": 457,
+      "description": "Online payment",
+      "commerciant": 149
+    },
+    {
+      "command": "sendMoney",
+      "account": "RO68POOB1848616931405475",
+      "amount": 10.0,
+      "receiver": "RO38POOB0964823730995794",
+      "timestamp": 458,
+      "email": "Kevin_Edwards@outlook.us",
+      "description": "Visit to a local healthcare clinic"
+    },
+    {
+      "command": "payOnline",
+      "email": "Michael_Ashley@yahoo.us",
+      "cardNumber": "6784853611217398",
+      "amount": 30.0,
+      "currency": "USD",
+      "timestamp": 459,
+      "description": "Online payment",
+      "commerciant": 118
+    },
+    {
+      "command": "payOnline",
+      "email": "Kelly_Webb@hotmail.us",
       "cardNumber": "5555143074802594",
-      "amount": 122.0,
-      "currency": "RON",
-      "timestamp": 515,
+      "amount": 167.0,
+      "currency": "USD",
+      "timestamp": 460,
       "description": "Online payment",
-      "commerciant": 141
+      "commerciant": 147
     },
     {
-      "command": "payOnline",
-      "email": "Ducu_Ene@outlook.ro",
-      "cardNumber": "7241081314709295",
-      "amount": 249.0,
-      "currency": "RON",
-      "timestamp": 516,
-      "description": "Online payment",
-      "commerciant": 115
+      "command": "sendMoney",
+      "account": "RO68POOB1848616931405475",
+      "amount": 179.0,
+      "receiver": "RO58POOB7344468893732422",
+      "timestamp": 461,
+      "email": "Kevin_Edwards@outlook.us",
+      "description": "Monthly rent payment for an apartment"
+    },
+    {
+      "command": "sendMoney",
+      "account": "RO68POOB1848616931405475",
+      "amount": 101.0,
+      "receiver": "RO53POOB7122855990652257",
+      "timestamp": 462,
+      "email": "Kevin_Edwards@outlook.us",
+      "description": "Netflix subscription renewal"
     },
     {
       "command": "printUsers",
-      "timestamp": 517
+      "timestamp": 463
     },
     {
       "command": "changeDepositLimit",
-      "email": "Eugen_Barbu@hotmail.ro",
+      "email": "Kevin_Edwards@outlook.us",
       "account": "RO68POOB1848616931405475",
       "amount": 1300,
-      "timestamp": 518
+      "timestamp": 464
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "manager",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "timestamp": 519
+      "email": "Michael_Ashley@yahoo.us",
+      "timestamp": 465
     },
     {
       "command": "addFunds",
-      "email": "Barbu_Suciu@yahoo.ro",
+      "email": "Michael_Ashley@yahoo.us",
       "account": "RO68POOB1848616931405475",
-      "amount": 1666.0,
-      "timestamp": 538
+      "amount": 1274.0,
+      "timestamp": 477
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "manager",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "timestamp": 539
+      "email": "George_Popa@gmail.ro",
+      "timestamp": 478
     },
     {
       "command": "addFunds",
-      "email": "Norbert_Dochioiu@yahoo.ro",
+      "email": "George_Popa@gmail.ro",
       "account": "RO68POOB1848616931405475",
-      "amount": 1880.0,
-      "timestamp": 541
+      "amount": 1875.0,
+      "timestamp": 486
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "manager",
-      "email": "Kyle_Mcdonald@gmail.us",
-      "timestamp": 542
+      "email": "Gregoire_Chretien@gmail.fr",
+      "timestamp": 487
     },
     {
       "command": "addFunds",
-      "email": "Kyle_Mcdonald@gmail.us",
+      "email": "Gregoire_Chretien@gmail.fr",
       "account": "RO68POOB1848616931405475",
-      "amount": 1014.0,
-      "timestamp": 548
+      "amount": 1302.0,
+      "timestamp": 507
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "manager",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "timestamp": 549
+      "email": "Christina_Hudson@outlook.us",
+      "timestamp": 508
     },
     {
       "command": "addFunds",
-      "email": "Barbu_Suciu@yahoo.ro",
+      "email": "Christina_Hudson@outlook.us",
       "account": "RO68POOB1848616931405475",
-      "amount": 1714.0,
-      "timestamp": 566
+      "amount": 1153.0,
+      "timestamp": 524
     },
     {
       "command": "addNewBusinessAssociate",
       "account": "RO68POOB1848616931405475",
       "role": "manager",
-      "email": "Isaac_Morris@outlook.us",
-      "timestamp": 567
+      "email": "Norbert_Dochioiu@gmail.ro",
+      "timestamp": 525
     },
     {
       "command": "addFunds",
-      "email": "Isaac_Morris@outlook.us",
+      "email": "Norbert_Dochioiu@gmail.ro",
       "account": "RO68POOB1848616931405475",
-      "amount": 1695.0,
-      "timestamp": 588
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "manager",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "timestamp": 589
-    },
-    {
-      "command": "addFunds",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "account": "RO68POOB1848616931405475",
-      "amount": 1981.0,
-      "timestamp": 595
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "manager",
-      "email": "Valerie_Rocher@outlook.fr",
-      "timestamp": 596
-    },
-    {
-      "command": "addFunds",
-      "email": "Valerie_Rocher@outlook.fr",
-      "account": "RO68POOB1848616931405475",
-      "amount": 1822.0,
-      "timestamp": 601
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "manager",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "timestamp": 602
-    },
-    {
-      "command": "addFunds",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "account": "RO68POOB1848616931405475",
-      "amount": 1848.0,
-      "timestamp": 605
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "manager",
-      "email": "Valerie_Rocher@outlook.fr",
-      "timestamp": 606
-    },
-    {
-      "command": "addFunds",
-      "email": "Valerie_Rocher@outlook.fr",
-      "account": "RO68POOB1848616931405475",
-      "amount": 1862.0,
-      "timestamp": 610
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "manager",
-      "email": "John_Reyes@gmail.us",
-      "timestamp": 611
-    },
-    {
-      "command": "addFunds",
-      "email": "John_Reyes@gmail.us",
-      "account": "RO68POOB1848616931405475",
-      "amount": 1451.0,
-      "timestamp": 626
-    },
-    {
-      "command": "addNewBusinessAssociate",
-      "account": "RO68POOB1848616931405475",
-      "role": "manager",
-      "email": "Tristan_Wagner-Diallo@yahoo.fr",
-      "timestamp": 627
-    },
-    {
-      "command": "addFunds",
-      "email": "Tristan_Wagner-Diallo@yahoo.fr",
-      "account": "RO68POOB1848616931405475",
-      "amount": 1968.0,
-      "timestamp": 634
+      "amount": 1606.0,
+      "timestamp": 527
     },
     {
       "command": "sendMoney",
       "account": "RO68POOB1848616931405475",
-      "amount": 674.0,
-      "receiver": "RO28POOB5923933391234057",
-      "timestamp": 635,
-      "email": "Eugen_Barbu@hotmail.ro",
-      "description": "Cinema tickets for a weekend outing"
+      "amount": 1628.0,
+      "receiver": "RO17POOB8495306331082091",
+      "timestamp": 528,
+      "email": "Kevin_Edwards@outlook.us",
+      "description": "Uber rides for commuting"
     },
     {
       "command": "payOnline",
-      "email": "Norbert_Dochioiu@yahoo.ro",
-      "cardNumber": "7255424823552585",
-      "amount": 1159.2,
-      "currency": "EUR",
-      "timestamp": 636,
-      "description": "Online payment",
-      "commerciant": 168
-    },
-    {
-      "command": "payOnline",
-      "email": "Kyle_Mcdonald@gmail.us",
-      "cardNumber": "6330276215468334",
-      "amount": 93.0,
-      "currency": "RON",
-      "timestamp": 637,
-      "description": "Online payment",
-      "commerciant": 191
-    },
-    {
-      "command": "payOnline",
-      "email": "Eugen_Barbu@hotmail.ro",
-      "cardNumber": "3274766564127905",
-      "amount": 346.0,
-      "currency": "RON",
-      "timestamp": 638,
-      "description": "Online payment",
-      "commerciant": 165
-    },
-    {
-      "command": "payOnline",
-      "email": "John_Reyes@gmail.us",
-      "cardNumber": "3146505796386360",
-      "amount": 93.0,
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "cardNumber": "7241081314709295",
+      "amount": 126.0,
       "currency": "USD",
-      "timestamp": 639,
+      "timestamp": 529,
       "description": "Online payment",
-      "commerciant": 141
+      "commerciant": 172
     },
     {
       "command": "payOnline",
-      "email": "Kyle_Mcdonald@gmail.us",
+      "email": "Michael_Ashley@yahoo.us",
+      "cardNumber": "7255424823552585",
+      "amount": 341.0,
+      "currency": "USD",
+      "timestamp": 530,
+      "description": "Online payment",
+      "commerciant": 126
+    },
+    {
+      "command": "payOnline",
+      "email": "Juliette-Gabrielle_Le_Gall@yahoo.fr",
+      "cardNumber": "6330276215468334",
+      "amount": 266.67,
+      "currency": "RON",
+      "timestamp": 531,
+      "description": "Online payment",
+      "commerciant": 136
+    },
+    {
+      "command": "payOnline",
+      "email": "Juliette-Gabrielle_Le_Gall@yahoo.fr",
+      "cardNumber": "3274766564127905",
+      "amount": 77.78,
+      "currency": "EUR",
+      "timestamp": 532,
+      "description": "Online payment",
+      "commerciant": 197
+    },
+    {
+      "command": "payOnline",
+      "email": "Christina_Hudson@outlook.us",
+      "cardNumber": "3146505796386360",
+      "amount": 368.89,
+      "currency": "EUR",
+      "timestamp": 533,
+      "description": "Online payment",
+      "commerciant": 128
+    },
+    {
+      "command": "payOnline",
+      "email": "Gregoire_Chretien@gmail.fr",
       "cardNumber": "2524615092540192",
-      "amount": 31.0,
-      "currency": "RON",
-      "timestamp": 640,
+      "amount": 315.0,
+      "currency": "USD",
+      "timestamp": 534,
       "description": "Online payment",
-      "commerciant": 101
+      "commerciant": 188
     },
     {
       "command": "payOnline",
-      "email": "Paul_Thomas@gmail.us",
+      "email": "Kelly_Webb@hotmail.us",
       "cardNumber": "3091165430920148",
-      "amount": 139.0,
-      "currency": "RON",
-      "timestamp": 641,
+      "amount": 289.0,
+      "currency": "USD",
+      "timestamp": 535,
       "description": "Online payment",
-      "commerciant": 124
-    },
-    {
-      "command": "payOnline",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "cardNumber": "8829901909775810",
-      "amount": 352.0,
-      "currency": "RON",
-      "timestamp": 642,
-      "description": "Online payment",
-      "commerciant": 138
+      "commerciant": 175
     },
     {
       "command": "businessReport",
       "startTimestamp": 0,
-      "endTimestamp": 642,
+      "endTimestamp": 535,
       "account": "RO68POOB1848616931405475",
       "type": "commerciant",
-      "timestamp": 643
+      "timestamp": 536
     },
     {
       "command": "printUsers",
-      "timestamp": 644
+      "timestamp": 537
     },
     {
       "command": "addFunds",
-      "email": "Eugen_Barbu@hotmail.ro",
+      "email": "Kevin_Edwards@outlook.us",
       "account": "RO68POOB1848616931405475",
-      "amount": 693,
-      "timestamp": 645
+      "amount": 591,
+      "timestamp": 538
     },
     {
       "command": "addFunds",
-      "email": "Ducu_Ene@outlook.ro",
-      "account": "RO69POOB6209498372540635",
-      "amount": 172.0,
-      "timestamp": 646
+      "email": "Barbu_Suciu@outlook.ro",
+      "account": "RO38POOB0964823730995794",
+      "amount": 166.0,
+      "timestamp": 539
     },
     {
       "command": "cashWithdrawal",
-      "email": "Ducu_Ene@outlook.ro",
+      "email": "Barbu_Suciu@outlook.ro",
+      "cardNumber": "8829901909775810",
+      "amount": 4.0,
+      "location": "Lynnbury",
+      "timestamp": 540
+    },
+    {
+      "command": "printTransactions",
+      "email": "Barbu_Suciu@outlook.ro",
+      "timestamp": 541
+    },
+    {
+      "command": "addFunds",
+      "email": "Christina_Hudson@outlook.us",
+      "account": "RO58POOB7344468893732422",
+      "amount": 171.0,
+      "timestamp": 542
+    },
+    {
+      "command": "cashWithdrawal",
+      "email": "Christina_Hudson@outlook.us",
       "cardNumber": "6369814641701052",
-      "amount": 2033.0,
-      "location": "Sandersberg",
-      "timestamp": 647
+      "amount": 43.0,
+      "location": "Valencia",
+      "timestamp": 543
     },
     {
       "command": "printTransactions",
-      "email": "Ducu_Ene@outlook.ro",
-      "timestamp": 648
+      "email": "Christina_Hudson@outlook.us",
+      "timestamp": 544
     },
     {
       "command": "addFunds",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "account": "RO65POOB8944016386845896",
-      "amount": 142.0,
-      "timestamp": 649
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "account": "RO90POOB5450777208072365",
+      "amount": 183.0,
+      "timestamp": 545
     },
     {
       "command": "cashWithdrawal",
-      "email": "Barbu_Suciu@yahoo.ro",
+      "email": "Nicolas_de_Leduc@hotmail.fr",
       "cardNumber": "3000569291689360",
-      "amount": 107.0,
-      "location": "Rey-Dessus",
-      "timestamp": 650
+      "amount": 202.0,
+      "location": "Lynnbury",
+      "timestamp": 546
     },
     {
       "command": "printTransactions",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "timestamp": 651
-    },
-    {
-      "command": "addFunds",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "account": "RO65POOB8944016386845896",
-      "amount": 146.0,
-      "timestamp": 652
-    },
-    {
-      "command": "cashWithdrawal",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "cardNumber": "2417279835438504",
-      "amount": 112.0,
-      "location": "Allain",
-      "timestamp": 653
-    },
-    {
-      "command": "printTransactions",
-      "email": "Barbu_Suciu@yahoo.ro",
-      "timestamp": 654
+      "email": "Nicolas_de_Leduc@hotmail.fr",
+      "timestamp": 547
     },
     {
       "command": "printUsers",
-      "timestamp": 655
+      "timestamp": 548
     }
   ]
 }
