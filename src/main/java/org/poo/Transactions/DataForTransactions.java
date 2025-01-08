@@ -29,6 +29,7 @@ public final class DataForTransactions {
     private double interestRate;
     private String newPlan;
     private String location;
+    private List<Double> payEach;
 
     /**
      * includes a command
@@ -225,6 +226,16 @@ public final class DataForTransactions {
      */
     public DataForTransactions withLocation(final String location1) {
         this.location = location1;
+        return this;
+    }
+
+    /**
+     * sets the amount that has to be paid by each bank account
+     * @param payEach1 -
+     * @return -
+     */
+    public DataForTransactions withPayEach(final List<Double> payEach1) {
+        this.payEach = payEach1;
         return this;
     }
 }

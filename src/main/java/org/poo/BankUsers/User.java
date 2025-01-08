@@ -26,6 +26,7 @@ public final class User {
     private ArrayList<ObjectNode> transactionReport;
     private ServicePlan servicePlan;
     private String plan;
+    private int payToWin;
 
     public User(final String firstName, final String lastName, final String email,
                 final String birthDate, final String occupation) {
@@ -38,6 +39,7 @@ public final class User {
         this.occupation = occupation;
         servicePlan = occupation.equals("student") ? new StudentPlan() : new StandardPlan();
         plan = occupation.equals("student") ? "student" : "standard";
+        payToWin = 0;
     }
 
     /**
@@ -110,6 +112,9 @@ public final class User {
         return null;
     }
 
+    public void incrementPayToWin() {
+        payToWin++;
+    }
     /**
      * switches to a new service plan and pay the needed price
      * @param newPlan
@@ -120,6 +125,7 @@ public final class User {
             case "silver":
                 servicePlan = new SilverPlan();
                 plan = "silver";
+                payToWin = 0;
                 break;
             case "gold":
                 servicePlan = new GoldPlan();
@@ -128,6 +134,7 @@ public final class User {
             default:
                 servicePlan = new StandardPlan();
                 plan = "standard";
+                payToWin = 0;
                 break;
         }
     }

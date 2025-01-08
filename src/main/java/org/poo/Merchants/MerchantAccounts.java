@@ -14,7 +14,12 @@ public class MerchantAccounts {
         merchAccounts = new HashMap<>();
     }
 
-    public void addMerchAccount(String account, Merchant merchant) {
+    /**
+     * adds a merchant account to the database
+     * @param account
+     * @param merchant
+     */
+    public void addMerchAccount(final String account, final Merchant merchant) {
         merchAccounts.put(account, merchant);
     }
 }

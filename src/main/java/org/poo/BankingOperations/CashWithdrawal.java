@@ -15,7 +15,7 @@ import org.poo.BankUsers.CardDB;
 
 public class CashWithdrawal implements BankingOperations {
     @Override
-    public ObjectNode execute(BankOpData command) {
+    public ObjectNode execute(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
         String cardNumber = commandInput.getCardNumber();
         double amount = commandInput.getAmount();

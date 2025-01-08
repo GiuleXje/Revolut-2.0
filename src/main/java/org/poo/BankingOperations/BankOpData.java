@@ -14,6 +14,7 @@ import org.poo.fileio.CommandInput;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
 
 @Getter
 @Setter
@@ -29,6 +30,11 @@ public final class BankOpData {
     private TransactionReport transactionReport;
     private MerchantsDB merchantsDB;
     private MerchantAccounts merchantAccounts;
+    private CustomSplit split;
+
+    public void changeSplit(final CustomSplit split1) {
+        this.split = split1;
+    }
 
     public BankOpData(final CommandInput commandInput, final EmailDB emailDB, final IBANDB ibanDB,
                       final CardDB cardDB,
@@ -47,6 +53,7 @@ public final class BankOpData {
         transactionReport = new TransactionReport();
         this.merchantsDB = merchantsDB;
         this.merchantAccounts = merchantAccounts;
+        split = null;
     }
 
     /**
@@ -108,6 +115,9 @@ public final class BankOpData {
                 break;
             case "splitPayment":
                 SplitPayment splitPayment = new SplitPayment();
+                if (commandInput.getSplitPaymentType().equals("custom")) {
+
+                }
                 returnVal = splitPayment.execute(this);
                 break;
             case "report":
@@ -137,6 +147,14 @@ public final class BankOpData {
             case "cashWithdrawal":
                 CashWithdrawal cashWithdrawal = new CashWithdrawal();
                 returnVal = cashWithdrawal.execute(this);
+                break;
+            case "acceptSplitPayment":
+                AcceptSplitPayment acc = new AcceptSplitPayment();
+                returnVal = acc.execute(this);
+                break;
+            case "rejectSplitPayment":
+                RejectSplitPayment rep = new RejectSplitPayment();
+                returnVal = rep.execute(this);
                 break;
             default:
                 returnVal = null;

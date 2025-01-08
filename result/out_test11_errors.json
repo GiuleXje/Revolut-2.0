@@ -853,7 +853,7 @@
     "lastName" : "de Delmas",
     "email" : "Bernadette_de_Delmas@gmail.fr",
     "accounts" : [ {
-      "balance" : 1428.0,
+      "balance" : 1428.000476190476,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -909,7 +909,7 @@
     "lastName" : "Michel",
     "email" : "Chantal_Michel@outlook.fr",
     "accounts" : [ {
-      "balance" : 1708.0,
+      "balance" : 1708.000476190476,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -926,7 +926,7 @@
     "lastName" : "Johnson",
     "email" : "Rebecca_Johnson@yahoo.us",
     "accounts" : [ {
-      "balance" : 2106.9,
+      "balance" : 2106.9014285714284,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "USD",
       "type" : "classic",
@@ -943,7 +943,7 @@
     "lastName" : "Bates",
     "email" : "Robert_Bates@yahoo.us",
     "accounts" : [ {
-      "balance" : 1761.9,
+      "balance" : 1761.9014285714286,
       "IBAN" : "RO33POOB4049920806186500",
       "currency" : "USD",
       "type" : "classic",
@@ -954,7 +954,7 @@
     "lastName" : "Hubert",
     "email" : "Marcel_Hubert@outlook.fr",
     "accounts" : [ {
-      "balance" : 1105.0,
+      "balance" : 1105.000476190476,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "EUR",
       "type" : "classic",
@@ -988,7 +988,7 @@
     "lastName" : "Moreau",
     "email" : "Suzanne_Moreau@gmail.fr",
     "accounts" : [ {
-      "balance" : 1282.0,
+      "balance" : 1282.000476190476,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "EUR",
       "type" : "classic",
@@ -999,7 +999,7 @@
     "lastName" : "Price",
     "email" : "David_Price@gmail.us",
     "accounts" : [ {
-      "balance" : 2270.9,
+      "balance" : 2270.9014285714284,
       "IBAN" : "RO10POOB4354933866366881",
       "currency" : "USD",
       "type" : "classic",
@@ -1010,7 +1010,7 @@
     "lastName" : "Marshall",
     "email" : "Deborah_Marshall@hotmail.us",
     "accounts" : [ {
-      "balance" : 2283.9,
+      "balance" : 2283.9014285714284,
       "IBAN" : "RO33POOB9999273999620457",
       "currency" : "USD",
       "type" : "classic",
@@ -1027,7 +1027,7 @@
     "lastName" : "Neal",
     "email" : "Joshua_Neal@outlook.us",
     "accounts" : [ {
-      "balance" : 1697.9,
+      "balance" : 1697.9014285714286,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "USD",
       "type" : "classic",
@@ -1109,7 +1109,7 @@
     "lastName" : "de Delmas",
     "email" : "Bernadette_de_Delmas@gmail.fr",
     "accounts" : [ {
-      "balance" : 1428.0,
+      "balance" : 1428.000476190476,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -1165,7 +1165,7 @@
     "lastName" : "Michel",
     "email" : "Chantal_Michel@outlook.fr",
     "accounts" : [ {
-      "balance" : 1708.0,
+      "balance" : 1708.000476190476,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1182,7 +1182,7 @@
     "lastName" : "Johnson",
     "email" : "Rebecca_Johnson@yahoo.us",
     "accounts" : [ {
-      "balance" : 2106.9,
+      "balance" : 2106.9014285714284,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "USD",
       "type" : "classic",
@@ -1199,7 +1199,7 @@
     "lastName" : "Bates",
     "email" : "Robert_Bates@yahoo.us",
     "accounts" : [ {
-      "balance" : 1761.9,
+      "balance" : 1761.9014285714286,
       "IBAN" : "RO33POOB4049920806186500",
       "currency" : "USD",
       "type" : "classic",
@@ -1210,7 +1210,7 @@
     "lastName" : "Hubert",
     "email" : "Marcel_Hubert@outlook.fr",
     "accounts" : [ {
-      "balance" : 1105.0,
+      "balance" : 1105.000476190476,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "EUR",
       "type" : "classic",
@@ -1244,7 +1244,7 @@
     "lastName" : "Moreau",
     "email" : "Suzanne_Moreau@gmail.fr",
     "accounts" : [ {
-      "balance" : 1282.0,
+      "balance" : 1282.000476190476,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "EUR",
       "type" : "classic",
@@ -1255,7 +1255,7 @@
     "lastName" : "Price",
     "email" : "David_Price@gmail.us",
     "accounts" : [ {
-      "balance" : 2270.9,
+      "balance" : 2270.9014285714284,
       "IBAN" : "RO10POOB4354933866366881",
       "currency" : "USD",
       "type" : "classic",
@@ -1266,7 +1266,7 @@
     "lastName" : "Marshall",
     "email" : "Deborah_Marshall@hotmail.us",
     "accounts" : [ {
-      "balance" : 2283.9,
+      "balance" : 2283.9014285714284,
       "IBAN" : "RO33POOB9999273999620457",
       "currency" : "USD",
       "type" : "classic",
@@ -1283,7 +1283,7 @@
     "lastName" : "Neal",
     "email" : "Joshua_Neal@outlook.us",
     "accounts" : [ {
-      "balance" : 1697.9,
+      "balance" : 1697.9014285714286,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "USD",
       "type" : "classic",
@@ -1379,7 +1379,7 @@
     "lastName" : "de Delmas",
     "email" : "Bernadette_de_Delmas@gmail.fr",
     "accounts" : [ {
-      "balance" : 1428.0,
+      "balance" : 1428.000476190476,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -1435,7 +1435,7 @@
     "lastName" : "Michel",
     "email" : "Chantal_Michel@outlook.fr",
     "accounts" : [ {
-      "balance" : 1708.0,
+      "balance" : 1708.000476190476,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1452,7 +1452,7 @@
     "lastName" : "Johnson",
     "email" : "Rebecca_Johnson@yahoo.us",
     "accounts" : [ {
-      "balance" : 2106.9,
+      "balance" : 2106.9014285714284,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "USD",
       "type" : "classic",
@@ -1469,7 +1469,7 @@
     "lastName" : "Bates",
     "email" : "Robert_Bates@yahoo.us",
     "accounts" : [ {
-      "balance" : 1761.9,
+      "balance" : 1761.9014285714286,
       "IBAN" : "RO33POOB4049920806186500",
       "currency" : "USD",
       "type" : "classic",
@@ -1480,7 +1480,7 @@
     "lastName" : "Hubert",
     "email" : "Marcel_Hubert@outlook.fr",
     "accounts" : [ {
-      "balance" : 1105.0,
+      "balance" : 1105.000476190476,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "EUR",
       "type" : "classic",
@@ -1514,7 +1514,7 @@
     "lastName" : "Moreau",
     "email" : "Suzanne_Moreau@gmail.fr",
     "accounts" : [ {
-      "balance" : 1282.0,
+      "balance" : 1282.000476190476,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "EUR",
       "type" : "classic",
@@ -1525,7 +1525,7 @@
     "lastName" : "Price",
     "email" : "David_Price@gmail.us",
     "accounts" : [ {
-      "balance" : 2270.9,
+      "balance" : 2270.9014285714284,
       "IBAN" : "RO10POOB4354933866366881",
       "currency" : "USD",
       "type" : "classic",
@@ -1536,7 +1536,7 @@
     "lastName" : "Marshall",
     "email" : "Deborah_Marshall@hotmail.us",
     "accounts" : [ {
-      "balance" : 2283.9,
+      "balance" : 2283.9014285714284,
       "IBAN" : "RO33POOB9999273999620457",
       "currency" : "USD",
       "type" : "classic",
@@ -1553,7 +1553,7 @@
     "lastName" : "Neal",
     "email" : "Joshua_Neal@outlook.us",
     "accounts" : [ {
-      "balance" : 1697.9,
+      "balance" : 1697.9014285714286,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "USD",
       "type" : "classic",
@@ -1642,7 +1642,7 @@
     "lastName" : "de Delmas",
     "email" : "Bernadette_de_Delmas@gmail.fr",
     "accounts" : [ {
-      "balance" : 1428.0,
+      "balance" : 1428.000476190476,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -1698,7 +1698,7 @@
     "lastName" : "Michel",
     "email" : "Chantal_Michel@outlook.fr",
     "accounts" : [ {
-      "balance" : 1708.0,
+      "balance" : 1708.000476190476,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1715,7 +1715,7 @@
     "lastName" : "Johnson",
     "email" : "Rebecca_Johnson@yahoo.us",
     "accounts" : [ {
-      "balance" : 2106.9,
+      "balance" : 2106.9014285714284,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "USD",
       "type" : "classic",
@@ -1732,7 +1732,7 @@
     "lastName" : "Bates",
     "email" : "Robert_Bates@yahoo.us",
     "accounts" : [ {
-      "balance" : 1761.9,
+      "balance" : 1761.9014285714286,
       "IBAN" : "RO33POOB4049920806186500",
       "currency" : "USD",
       "type" : "classic",
@@ -1743,7 +1743,7 @@
     "lastName" : "Hubert",
     "email" : "Marcel_Hubert@outlook.fr",
     "accounts" : [ {
-      "balance" : 1105.0,
+      "balance" : 1105.000476190476,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "EUR",
       "type" : "classic",
@@ -1777,7 +1777,7 @@
     "lastName" : "Moreau",
     "email" : "Suzanne_Moreau@gmail.fr",
     "accounts" : [ {
-      "balance" : 1282.0,
+      "balance" : 1282.000476190476,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "EUR",
       "type" : "classic",
@@ -1788,7 +1788,7 @@
     "lastName" : "Price",
     "email" : "David_Price@gmail.us",
     "accounts" : [ {
-      "balance" : 2270.9,
+      "balance" : 2270.9014285714284,
       "IBAN" : "RO10POOB4354933866366881",
       "currency" : "USD",
       "type" : "classic",
@@ -1799,7 +1799,7 @@
     "lastName" : "Marshall",
     "email" : "Deborah_Marshall@hotmail.us",
     "accounts" : [ {
-      "balance" : 2283.9,
+      "balance" : 2283.9014285714284,
       "IBAN" : "RO33POOB9999273999620457",
       "currency" : "USD",
       "type" : "classic",
@@ -1816,7 +1816,7 @@
     "lastName" : "Neal",
     "email" : "Joshua_Neal@outlook.us",
     "accounts" : [ {
-      "balance" : 1697.9,
+      "balance" : 1697.9014285714286,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "USD",
       "type" : "classic",
@@ -1907,7 +1907,7 @@
     "lastName" : "de Delmas",
     "email" : "Bernadette_de_Delmas@gmail.fr",
     "accounts" : [ {
-      "balance" : 1428.0,
+      "balance" : 1428.000476190476,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -1963,7 +1963,7 @@
     "lastName" : "Michel",
     "email" : "Chantal_Michel@outlook.fr",
     "accounts" : [ {
-      "balance" : 1708.0,
+      "balance" : 1708.000476190476,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1980,7 +1980,7 @@
     "lastName" : "Johnson",
     "email" : "Rebecca_Johnson@yahoo.us",
     "accounts" : [ {
-      "balance" : 2106.9,
+      "balance" : 2106.9014285714284,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "USD",
       "type" : "classic",
@@ -1997,7 +1997,7 @@
     "lastName" : "Bates",
     "email" : "Robert_Bates@yahoo.us",
     "accounts" : [ {
-      "balance" : 1761.9,
+      "balance" : 1761.9014285714286,
       "IBAN" : "RO33POOB4049920806186500",
       "currency" : "USD",
       "type" : "classic",
@@ -2008,7 +2008,7 @@
     "lastName" : "Hubert",
     "email" : "Marcel_Hubert@outlook.fr",
     "accounts" : [ {
-      "balance" : 1105.0,
+      "balance" : 1105.000476190476,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "EUR",
       "type" : "classic",
@@ -2042,7 +2042,7 @@
     "lastName" : "Moreau",
     "email" : "Suzanne_Moreau@gmail.fr",
     "accounts" : [ {
-      "balance" : 1282.0,
+      "balance" : 1282.000476190476,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "EUR",
       "type" : "classic",
@@ -2053,7 +2053,7 @@
     "lastName" : "Price",
     "email" : "David_Price@gmail.us",
     "accounts" : [ {
-      "balance" : 2270.9,
+      "balance" : 2270.9014285714284,
       "IBAN" : "RO10POOB4354933866366881",
       "currency" : "USD",
       "type" : "classic",
@@ -2064,7 +2064,7 @@
     "lastName" : "Marshall",
     "email" : "Deborah_Marshall@hotmail.us",
     "accounts" : [ {
-      "balance" : 2283.9,
+      "balance" : 2283.9014285714284,
       "IBAN" : "RO33POOB9999273999620457",
       "currency" : "USD",
       "type" : "classic",
@@ -2081,7 +2081,7 @@
     "lastName" : "Neal",
     "email" : "Joshua_Neal@outlook.us",
     "accounts" : [ {
-      "balance" : 1697.9,
+      "balance" : 1697.9014285714286,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "USD",
       "type" : "classic",
@@ -2105,7 +2105,7 @@
 }, {
   "command" : "upgradePlan",
   "output" : {
-    "description" : "The user already has the silver plan.",
+    "description" : "You cannot downgrade your plan",
     "timestamp" : 711
   },
   "timestamp" : 711

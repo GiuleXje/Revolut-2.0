@@ -527,7 +527,7 @@
     "lastName" : "Gibbs",
     "email" : "Margaret_Gibbs@yandex.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "GBP",
       "type" : "classic",
@@ -555,7 +555,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 4.44,
+      "balance" : 4.444444444444571,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -583,7 +583,7 @@
     "lastName" : "Williams",
     "email" : "Alexandra_Williams@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "GBP",
       "type" : "classic",
@@ -625,7 +625,7 @@
     "lastName" : "Carey",
     "email" : "Frank_Carey@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO79POOB3616857825600958",
       "currency" : "GBP",
       "type" : "classic",
@@ -765,7 +765,7 @@
     "lastName" : "Kelly",
     "email" : "Tracey_Kelly@icloud.nz",
     "accounts" : [ {
-      "balance" : 0.44,
+      "balance" : 0.44444444444444287,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "NZD",
       "type" : "classic",
@@ -891,7 +891,7 @@
     "lastName" : "Pa",
     "email" : "Baljiwan_Pa@icloud.in",
     "accounts" : [ {
-      "balance" : 4.44,
+      "balance" : 4.444444444444571,
       "IBAN" : "RO52POOB6271107854467609",
       "currency" : "INR",
       "type" : "classic",
@@ -919,7 +919,7 @@
     "lastName" : "Brown",
     "email" : "Alice_Brown@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO50POOB3359236199018963",
       "currency" : "GBP",
       "type" : "classic",
@@ -1126,7 +1126,7 @@
     "lastName" : "Gibbs",
     "email" : "Margaret_Gibbs@yandex.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "GBP",
       "type" : "classic",
@@ -1154,7 +1154,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 4.44,
+      "balance" : 4.444444444444571,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -1182,7 +1182,7 @@
     "lastName" : "Williams",
     "email" : "Alexandra_Williams@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "GBP",
       "type" : "classic",
@@ -1224,7 +1224,7 @@
     "lastName" : "Carey",
     "email" : "Frank_Carey@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO79POOB3616857825600958",
       "currency" : "GBP",
       "type" : "classic",
@@ -1364,7 +1364,7 @@
     "lastName" : "Kelly",
     "email" : "Tracey_Kelly@icloud.nz",
     "accounts" : [ {
-      "balance" : 0.44,
+      "balance" : 0.44444444444444287,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "NZD",
       "type" : "classic",
@@ -1445,7 +1445,7 @@
     "lastName" : "Pa",
     "email" : "Baljiwan_Pa@icloud.in",
     "accounts" : [ {
-      "balance" : 4.44,
+      "balance" : 4.444444444444571,
       "IBAN" : "RO52POOB6271107854467609",
       "currency" : "INR",
       "type" : "classic",
@@ -1473,7 +1473,7 @@
     "lastName" : "Brown",
     "email" : "Alice_Brown@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO50POOB3359236199018963",
       "currency" : "GBP",
       "type" : "classic",
@@ -1543,7 +1543,7 @@
     "lastName" : "Gould",
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
-      "balance" : 1322.98,
+      "balance" : 1322.9814285714285,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "CAD",
       "type" : "classic",
@@ -1557,7 +1557,7 @@
     "lastName" : "Musy",
     "email" : "Marie_Musy@yandex.ch",
     "accounts" : [ {
-      "balance" : 650.83,
+      "balance" : 650.8299999999999,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "CHF",
       "type" : "classic",
@@ -1571,7 +1571,7 @@
     "lastName" : "Gibbs",
     "email" : "Margaret_Gibbs@yandex.gb",
     "accounts" : [ {
-      "balance" : 813.78,
+      "balance" : 813.7777777777778,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "GBP",
       "type" : "classic",
@@ -1585,7 +1585,7 @@
     "lastName" : "Sheppard",
     "email" : "Heather_Sheppard@hotmail.ch",
     "accounts" : [ {
-      "balance" : 1497.05,
+      "balance" : 1497.0548,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "CHF",
       "type" : "classic",
@@ -1599,7 +1599,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 16893.86,
+      "balance" : 16893.868055555555,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -1613,7 +1613,7 @@
     "lastName" : "Esquivel",
     "email" : "Alfredo_Esquivel@aol.mx",
     "accounts" : [ {
-      "balance" : 1329.35,
+      "balance" : 1329.3519999999999,
       "IBAN" : "RO76POOB4035116042454483",
       "currency" : "MXN",
       "type" : "classic",
@@ -1627,7 +1627,7 @@
     "lastName" : "Williams",
     "email" : "Alexandra_Williams@gmail.gb",
     "accounts" : [ {
-      "balance" : 765.09,
+      "balance" : 765.0913431013431,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "GBP",
       "type" : "classic",
@@ -1641,7 +1641,7 @@
     "lastName" : "Graves",
     "email" : "Phillip_Graves@yandex.au",
     "accounts" : [ {
-      "balance" : 1221.93,
+      "balance" : 1221.926,
       "IBAN" : "RO19POOB4981055641668812",
       "currency" : "AUD",
       "type" : "classic",
@@ -1655,7 +1655,7 @@
     "lastName" : "Camiscione-Rugger",
     "email" : "Emilio_Camiscione-Rugger@hushmail.it",
     "accounts" : [ {
-      "balance" : 1769.87,
+      "balance" : 1769.872,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1669,7 +1669,7 @@
     "lastName" : "Carey",
     "email" : "Frank_Carey@gmail.gb",
     "accounts" : [ {
-      "balance" : 1589.68,
+      "balance" : 1589.677090909091,
       "IBAN" : "RO79POOB3616857825600958",
       "currency" : "GBP",
       "type" : "classic",
@@ -1697,7 +1697,7 @@
     "lastName" : "Villa",
     "email" : "Dorothy_Villa@zoho.au",
     "accounts" : [ {
-      "balance" : 1600.18,
+      "balance" : 1600.181818181818,
       "IBAN" : "RO96POOB6738272785416988",
       "currency" : "AUD",
       "type" : "classic",
@@ -1767,7 +1767,7 @@
     "lastName" : "Savard-Mathieu",
     "email" : "Pauline_Savard-Mathieu@outlook.ca",
     "accounts" : [ {
-      "balance" : 298.73,
+      "balance" : 298.73333333333335,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "CAD",
       "type" : "classic",
@@ -1809,7 +1809,7 @@
     "lastName" : "Kelly",
     "email" : "Tracey_Kelly@icloud.nz",
     "accounts" : [ {
-      "balance" : 755.44,
+      "balance" : 755.4444444444445,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "NZD",
       "type" : "classic",
@@ -1962,7 +1962,7 @@
     "lastName" : "Pa",
     "email" : "Baljiwan_Pa@icloud.in",
     "accounts" : [ {
-      "balance" : 25.44,
+      "balance" : 25.44444444444457,
       "IBAN" : "RO52POOB6271107854467609",
       "currency" : "INR",
       "type" : "classic",
@@ -2008,7 +2008,7 @@
     "lastName" : "Brown",
     "email" : "Alice_Brown@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO50POOB3359236199018963",
       "currency" : "GBP",
       "type" : "classic",
@@ -2247,7 +2247,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO90POOB5450777208072365",
-    "balance" : 813.78,
+    "balance" : 813.7777777777778,
     "currency" : "GBP",
     "transactions" : [ ],
     "commerciants" : [ ]
@@ -2273,7 +2273,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO65POOB8944016386845896",
-    "balance" : 1497.05,
+    "balance" : 1497.0548,
     "currency" : "CHF",
     "transactions" : [ {
       "timestamp" : 632,
@@ -2371,7 +2371,7 @@
     "lastName" : "Gould",
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
-      "balance" : 3471.1,
+      "balance" : 3471.098967032967,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "CAD",
       "type" : "classic",
@@ -2385,7 +2385,7 @@
     "lastName" : "Musy",
     "email" : "Marie_Musy@yandex.ch",
     "accounts" : [ {
-      "balance" : 650.83,
+      "balance" : 650.8299999999999,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "CHF",
       "type" : "classic",
@@ -2405,7 +2405,7 @@
     "lastName" : "Gibbs",
     "email" : "Margaret_Gibbs@yandex.gb",
     "accounts" : [ {
-      "balance" : 813.78,
+      "balance" : 813.7777777777778,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "GBP",
       "type" : "classic",
@@ -2419,7 +2419,7 @@
     "lastName" : "Sheppard",
     "email" : "Heather_Sheppard@hotmail.ch",
     "accounts" : [ {
-      "balance" : 1497.05,
+      "balance" : 1497.0548,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "CHF",
       "type" : "classic",
@@ -2433,7 +2433,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 16893.86,
+      "balance" : 16893.868055555555,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -2447,7 +2447,7 @@
     "lastName" : "Esquivel",
     "email" : "Alfredo_Esquivel@aol.mx",
     "accounts" : [ {
-      "balance" : 1329.35,
+      "balance" : 1329.3519999999999,
       "IBAN" : "RO76POOB4035116042454483",
       "currency" : "MXN",
       "type" : "classic",
@@ -2461,7 +2461,7 @@
     "lastName" : "Williams",
     "email" : "Alexandra_Williams@gmail.gb",
     "accounts" : [ {
-      "balance" : 765.09,
+      "balance" : 765.0913431013431,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "GBP",
       "type" : "classic",
@@ -2475,7 +2475,7 @@
     "lastName" : "Graves",
     "email" : "Phillip_Graves@yandex.au",
     "accounts" : [ {
-      "balance" : 1221.93,
+      "balance" : 1221.926,
       "IBAN" : "RO19POOB4981055641668812",
       "currency" : "AUD",
       "type" : "classic",
@@ -2489,7 +2489,7 @@
     "lastName" : "Camiscione-Rugger",
     "email" : "Emilio_Camiscione-Rugger@hushmail.it",
     "accounts" : [ {
-      "balance" : 1769.87,
+      "balance" : 1769.872,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -2503,7 +2503,7 @@
     "lastName" : "Carey",
     "email" : "Frank_Carey@gmail.gb",
     "accounts" : [ {
-      "balance" : 1589.68,
+      "balance" : 1589.677090909091,
       "IBAN" : "RO79POOB3616857825600958",
       "currency" : "GBP",
       "type" : "classic",
@@ -2531,7 +2531,7 @@
     "lastName" : "Villa",
     "email" : "Dorothy_Villa@zoho.au",
     "accounts" : [ {
-      "balance" : 1600.18,
+      "balance" : 1600.181818181818,
       "IBAN" : "RO96POOB6738272785416988",
       "currency" : "AUD",
       "type" : "classic",
@@ -2601,7 +2601,7 @@
     "lastName" : "Savard-Mathieu",
     "email" : "Pauline_Savard-Mathieu@outlook.ca",
     "accounts" : [ {
-      "balance" : 298.73,
+      "balance" : 298.73333333333335,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "CAD",
       "type" : "classic",
@@ -2643,7 +2643,7 @@
     "lastName" : "Kelly",
     "email" : "Tracey_Kelly@icloud.nz",
     "accounts" : [ {
-      "balance" : 755.44,
+      "balance" : 755.4444444444445,
       "IBAN" : "RO38POOB0964823730995794",
       "currency" : "NZD",
       "type" : "classic",
@@ -2796,7 +2796,7 @@
     "lastName" : "Pa",
     "email" : "Baljiwan_Pa@icloud.in",
     "accounts" : [ {
-      "balance" : 25.44,
+      "balance" : 25.44444444444457,
       "IBAN" : "RO52POOB6271107854467609",
       "currency" : "INR",
       "type" : "classic",
@@ -2842,7 +2842,7 @@
     "lastName" : "Brown",
     "email" : "Alice_Brown@gmail.gb",
     "accounts" : [ {
-      "balance" : 0.22,
+      "balance" : 0.22222222222222143,
       "IBAN" : "RO50POOB3359236199018963",
       "currency" : "GBP",
       "type" : "classic",
@@ -2916,7 +2916,7 @@
     "lastName" : "du Mendes",
     "email" : "Thibault_du_Mendes@zoho.fr",
     "accounts" : [ {
-      "balance" : 235.48,
+      "balance" : 235.46699999999996,
       "IBAN" : "RO01POOB9893132718323396",
       "currency" : "EUR",
       "type" : "savings",
@@ -2931,7 +2931,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 3471.1,
+    "balance" : 3471.098967032967,
     "currency" : "CAD",
     "transactions" : [ {
       "timestamp" : 620,

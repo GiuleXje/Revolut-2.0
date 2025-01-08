@@ -14,6 +14,12 @@ import java.util.HashMap;
 @Getter
 @Setter
 public final class Merchant {
+    private static final int FOOD_TR = 2;
+    private static final int CLOTHES_TR = 5;
+    private static final int TECH_TR = 10;
+    private static final double FOOD_CB = 0.02;
+    private static final double CLOTHES_CB = 0.05;
+    private static final double TECH_CB = 0.1;
     private final String name;
     private final int id;
     private final String account;
@@ -39,10 +45,26 @@ public final class Merchant {
         cashbackStrategy.calculateCashback(amount, account, this, plan, exchangeRate);
     }
 
-    public void spendMore(double amount, BankAccount bankAccount) {
+    public void spendMore(final double amount, final BankAccount bankAccount) {
         double amountSpent = buyers.getOrDefault(bankAccount, 0.0);
         amountSpent += amount;
         buyers.remove(bankAccount);
         buyers.put(bankAccount, amountSpent);
+    }
+
+    public void forceCashback(final double amount, final BankAccount bankAccount) {
+        int transactions = bankAccount.getTransactions();
+        if (transactions >= FOOD_TR && type.equals("Food") && !bankAccount.isUsedFoodCB()) {
+            bankAccount.setUsedFoodCB(true);
+            bankAccount.addFunds(amount * FOOD_CB);
+        } else if (transactions >= CLOTHES_TR && type.equals("Clothes")
+                && !bankAccount.isUsedClothesCB()) {
+            bankAccount.setUsedClothesCB(true);
+            bankAccount.addFunds(amount * CLOTHES_CB);
+        } else if (transactions >= TECH_TR && type.equals("Tech")
+                && !bankAccount.isUsedTechCB()) {
+            bankAccount.setUsedTechCB(true);
+            bankAccount.addFunds(amount * TECH_CB);
+        }
     }
 }

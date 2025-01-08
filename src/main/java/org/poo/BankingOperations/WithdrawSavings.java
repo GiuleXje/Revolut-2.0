@@ -45,7 +45,7 @@ public final class WithdrawSavings implements BankingOperations {
             out.put("timestamp", commandInput.getTimestamp());
             output.set("output", out);
             output.put("timestamp", commandInput.getTimestamp());
-            return output;
+            return null;
         }
 
         int currentYear = LocalDate.now().getYear();
@@ -91,14 +91,14 @@ public final class WithdrawSavings implements BankingOperations {
 
         BankAccount classicAccount = user.getFirstAccountWithCurrency(currency);
         if (classicAccount == null) { // you don't have a classic account
-            ObjectNode output = new ObjectMapper().createObjectNode();
-            output.put("command", "withdrawSavings");
-            ObjectNode out = new ObjectMapper().createObjectNode();
-            out.put("description", "You do not have a classic account");
-            out.put("timestamp", commandInput.getTimestamp());
-            output.set("output", out);
-            output.put("timestamp", commandInput.getTimestamp());
-            return output;
+            DataForTransactions data = new DataForTransactions().
+                    withTimestamp(commandInput.getTimestamp()).
+                    withCommand("noClassic");
+            ObjectNode report = transactionReport.executeOperation(data);
+            assert report != null;
+            user.addTransactionReport(report);
+            bankAccount.addReport(report);
+            return null;
         }
 
         double classicExRate = exchangeRate.getExchangeRate(currency, classicAccount.getCurrency());

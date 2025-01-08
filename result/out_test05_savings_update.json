@@ -10,7 +10,7 @@
     "lastName" : "Leleu",
     "email" : "Caroline_Leleu@outlook.fr",
     "accounts" : [ {
-      "balance" : 47.92,
+      "balance" : 646.92,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "EUR",
       "type" : "savings",
@@ -73,18 +73,17 @@
     "description" : "New card created",
     "timestamp" : 50
   }, {
-    "description" : "Insufficient funds",
+    "amount" : 47.92,
+    "currency" : "EUR",
+    "description" : "Interest rate income",
+    "timestamp" : 612
+  }, {
+    "amount" : 639.0,
+    "description" : "Cash withdrawal of 639.0",
     "timestamp" : 614
   } ],
   "timestamp" : 615
 }, {
-  "command" : "withdrawSavings",
-  "output" : {
-    "description" : "You do not have a classic account",
-    "timestamp" : 616
-  },
-  "timestamp" : 616
-}, {
   "command" : "printTransactions",
   "output" : [ {
     "timestamp" : 1,
@@ -96,18 +95,20 @@
     "description" : "New card created",
     "timestamp" : 50
   }, {
-    "description" : "Insufficient funds",
+    "amount" : 47.92,
+    "currency" : "EUR",
+    "description" : "Interest rate income",
+    "timestamp" : 612
+  }, {
+    "amount" : 639.0,
+    "description" : "Cash withdrawal of 639.0",
     "timestamp" : 614
+  }, {
+    "description" : "You do not have a classic account.",
+    "timestamp" : 616
   } ],
   "timestamp" : 617
 }, {
-  "command" : "withdrawSavings",
-  "output" : {
-    "description" : "You do not have a classic account",
-    "timestamp" : 619
-  },
-  "timestamp" : 619
-}, {
   "command" : "printTransactions",
   "output" : [ {
     "timestamp" : 1,
@@ -119,8 +120,20 @@
     "description" : "New card created",
     "timestamp" : 50
   }, {
-    "description" : "Insufficient funds",
+    "amount" : 47.92,
+    "currency" : "EUR",
+    "description" : "Interest rate income",
+    "timestamp" : 612
+  }, {
+    "amount" : 639.0,
+    "description" : "Cash withdrawal of 639.0",
     "timestamp" : 614
+  }, {
+    "description" : "You do not have a classic account.",
+    "timestamp" : 616
+  }, {
+    "description" : "You do not have a classic account.",
+    "timestamp" : 619
   } ],
   "timestamp" : 620
 }, {
@@ -142,7 +155,7 @@
     "lastName" : "Leleu",
     "email" : "Caroline_Leleu@outlook.fr",
     "accounts" : [ {
-      "balance" : 150.92,
+      "balance" : 621.8643999999999,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "EUR",
       "type" : "savings",

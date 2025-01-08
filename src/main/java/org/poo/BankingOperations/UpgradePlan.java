@@ -44,7 +44,7 @@ public class UpgradePlan implements BankingOperations {
         };
     }
     @Override
-    public ObjectNode execute(BankOpData command) {
+    public ObjectNode execute(final BankOpData command) {
         IBANDB ibanDB = command.getIbanDB();
         CommandInput commandInput = command.getCommandInput();
         String account = commandInput.getAccount();

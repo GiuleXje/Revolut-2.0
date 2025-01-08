@@ -3,6 +3,7 @@ package org.poo.Transactions;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import org.poo.BankingOperations.CustomSplit;
 
 import java.util.List;
 
@@ -35,7 +36,7 @@ class SendMoneyReport implements TransactionStrategy {
         output.put("description", data.getDescription());
         output.put("senderIBAN", data.getPayerIBAN());
         output.put("receiverIBAN", data.getReceiverIBAN());
-        output.put("amount", Math.round(data.getAmount() * 100) / 100.0
+        output.put("amount", data.getAmount()
                 + " " + data.getCurrency());
         output.put("transferType", data.getTransferType());
         return output;
@@ -82,7 +83,7 @@ class CardPaymentReport implements TransactionStrategy {
     @Override
     public ObjectNode generateReport(final DataForTransactions data) {
         ObjectNode output = new ObjectMapper().createObjectNode();
-        output.put("amount", Math.round(data.getAmount() * 100) / 100.0);
+        output.put("amount", data.getAmount());
         output.put("commerciant", data.getMerchant());
         output.put("description", "Card payment");
         output.put("timestamp", data.getTimestamp());
@@ -199,7 +200,7 @@ class TooYoung implements TransactionStrategy {
 
 class CashWithdrawal implements TransactionStrategy {
     @Override
-    public ObjectNode generateReport(DataForTransactions data) {
+    public ObjectNode generateReport(final DataForTransactions data) {
         ObjectNode output = new ObjectMapper().createObjectNode();
         output.put("amount", Math.round(data.getAmount() * 100) / 100.0);
         output.put("description", "Cash withdrawal of " + data.getAmount());
@@ -207,6 +208,53 @@ class CashWithdrawal implements TransactionStrategy {
         return output;
     }
 }
+
+class InterestRate implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("amount", data.getAmount());
+        output.put("currency", data.getCurrency());
+        output.put("description", "Interest rate income");
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class NoClassicAccount implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("description", "You do not have a classic account.");
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class CustomSplitPayment implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("timestamp", data.getTimestamp());
+        output.put("description", "Custom split payment of "
+        + data.getAmount() + " " + data.getCurrency());
+        output.put("splitPaymentType", "custom");
+        output.put("currency", data.getCurrency());
+        ArrayNode forEach = new ObjectMapper().createArrayNode();
+        for (double sum : data.getPayEach()) {
+            forEach.add(sum);
+        }
+        output.set("amountForUsers", forEach);
+        ArrayNode involved = new ObjectMapper().createArrayNode();
+        List<String> accounts = data.getAccounts();
+        for (String account : accounts) {
+            involved.add(account);
+        }
+        output.set("involvedAccounts", involved);
+        return output;
+    }
+}
+
 public final class TransactionReport {
 
     /**
@@ -241,6 +289,9 @@ public final class TransactionReport {
                 case "tooYoung" -> new TooYoung();
                 case "changeOfPlan" -> new ChangeOfPlan();
                 case "cashWithdrawal" -> new CashWithdrawal();
+                case "interest" -> new InterestRate();
+                case "noClassic" -> new NoClassicAccount();
+                case "customSplit" -> new CustomSplitPayment();
                 default -> null;
             };
         }

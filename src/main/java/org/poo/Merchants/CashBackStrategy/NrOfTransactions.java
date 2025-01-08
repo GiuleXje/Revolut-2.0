@@ -13,8 +13,9 @@ public class NrOfTransactions implements CashbackStrategy {
     static private final int TECH_PURCHASES = 10;
 
     @Override
-    public void calculateCashback(double amount, BankAccount bankAccount, Merchant merchant,
-                                  String plan, ExchangeRate exchangeRate) {
+    public void calculateCashback(final double amount, final BankAccount bankAccount,
+                                  final Merchant merchant,
+                                  final String plan, final ExchangeRate exchangeRate) {
         double exRate = exchangeRate.getExchangeRate("RON", bankAccount.getCurrency());
         switch (merchant.getType()) {
             case "Food":

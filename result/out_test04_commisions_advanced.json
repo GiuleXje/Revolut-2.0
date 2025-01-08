@@ -266,7 +266,7 @@
     "lastName" : "Norris",
     "email" : "Dennis_Norris@yahoo.us",
     "accounts" : [ {
-      "balance" : 79374.57,
+      "balance" : 79374.57142857143,
       "IBAN" : "RO76POOB4035116042454483",
       "currency" : "USD",
       "type" : "classic",
@@ -407,7 +407,7 @@
     "lastName" : "Schultz",
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
-      "balance" : 1917.63,
+      "balance" : 1917.6274285714285,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "USD",
       "type" : "classic",
@@ -489,7 +489,7 @@
     "lastName" : "Norris",
     "email" : "Dennis_Norris@yahoo.us",
     "accounts" : [ {
-      "balance" : 79377.57,
+      "balance" : 79377.57142857143,
       "IBAN" : "RO76POOB4035116042454483",
       "currency" : "USD",
       "type" : "classic",
@@ -588,7 +588,7 @@
     "lastName" : "Schultz",
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
-      "balance" : 1917.63,
+      "balance" : 1917.6274285714285,
       "IBAN" : "RO37POOB7013767509830666",
       "currency" : "USD",
       "type" : "classic",
@@ -633,7 +633,7 @@
     "lastName" : "Carpenter",
     "email" : "Jason_Carpenter@hotmail.us",
     "accounts" : [ {
-      "balance" : 2773.43,
+      "balance" : 2773.4285714285716,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "USD",
       "type" : "classic",
@@ -673,7 +673,7 @@
     "lastName" : "Norris",
     "email" : "Dennis_Norris@yahoo.us",
     "accounts" : [ {
-      "balance" : 79377.57,
+      "balance" : 79377.57142857143,
       "IBAN" : "RO76POOB4035116042454483",
       "currency" : "USD",
       "type" : "classic",

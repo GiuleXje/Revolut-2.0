@@ -20,8 +20,9 @@ public class SpendingThreshold implements CashbackStrategy {
     static private final double GOLD_THIRD = 0.025;
 
     @Override
-    public void calculateCashback(double amount, BankAccount bankAccount, Merchant merchant,
-                                  String plan, ExchangeRate exchangeRate) {
+    public void calculateCashback(final double amount, final BankAccount bankAccount,
+                                  final Merchant merchant,
+                                  final String plan, final ExchangeRate exchangeRate) {
         double spentOn = merchant.getBuyers().getOrDefault(bankAccount, 0.0);
         double exRate = exchangeRate.getExchangeRate("RON", bankAccount.getCurrency());
         if (spentOn < FIRST_CAP) {

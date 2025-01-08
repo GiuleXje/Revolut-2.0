@@ -14,11 +14,20 @@ public class MerchantsDB {
         merchants = new HashMap<>();
     }
 
-    public void addMerchant(Merchant merchant) {
+    /**
+     * adds a merchant into the database
+     * @param merchant -
+     */
+    public void addMerchant(final Merchant merchant) {
         merchants.put(merchant.getName(), merchant);
     }
 
-    public Merchant merchantInfo(String name) {
+    /**
+     * returns a merchant info
+     * @param name -
+     * @return -
+     */
+    public Merchant merchantInfo(final String name) {
         return merchants.getOrDefault(name, null);
     }
 }

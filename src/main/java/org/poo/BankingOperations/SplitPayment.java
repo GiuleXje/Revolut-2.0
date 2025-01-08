@@ -12,9 +12,25 @@ import org.poo.fileio.CommandInput;
 import java.util.List;
 
 public final class SplitPayment implements BankingOperations {
-    @Override
-    public ObjectNode execute(final BankOpData command) {
+    public ObjectNode customSplitPayment(BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
+        List<String> accounts = commandInput.getAccounts();
+        List<Double> payEach = commandInput.getAmountForUsers();
+        Double amount = commandInput.getAmount();
+        String currency = commandInput.getCurrency();
+        int timestamp = commandInput.getTimestamp();
+
+        CustomSplit split = new CustomSplit(accounts, payEach, currency, timestamp, amount);
+        command.changeSplit(split);
+        return null;
+    }
+    @Override
+    public ObjectNode execute(BankOpData command) {
+        CommandInput commandInput = command.getCommandInput();
+        String type = commandInput.getSplitPaymentType();
+        if (type.equals("custom")) {
+            return customSplitPayment(command);
+        }
         IBANDB ibanDB = command.getIbanDB();
         ExchangeRate exchangeRate = command.getExchangeRate();
         TransactionReport transactionReport = command.getTransactionReport();

@@ -28,7 +28,7 @@ public final class PrintUsers implements BankingOperations {
             ArrayNode bankAccInfo = new ObjectMapper().createArrayNode();
             for (BankAccount bankAccount : user.getBankAccounts().values()) {
                 ObjectNode bankAcc = new ObjectMapper().createObjectNode();
-                bankAcc.put("balance", Math.round(bankAccount.getBalance() * 100.0) / 100.0);
+                bankAcc.put("balance", bankAccount.getBalance());
                 ArrayNode cards = new ObjectMapper().createArrayNode();
                 for (Card card : bankAccount.getCards().values()) {
                     ObjectNode cardInfo = new ObjectMapper().createObjectNode();

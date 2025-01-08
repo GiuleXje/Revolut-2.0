@@ -63,6 +63,9 @@ public final class SendMoney implements BankingOperations {
         }
 
         account.pay(amount + fee);
+        if (amount * toRON >= 300) {
+            giverUser.incrementPayToWin();
+        }
         account.increaseTransactions();
         if (merchant.getCashbackPlan().equals("spendingThreshold")) {
             merchant.spendMore(amount * toRON, account);
@@ -70,6 +73,7 @@ public final class SendMoney implements BankingOperations {
 
         merchant.getCashback(amount * toRON, account,
                 giverUser.getPlan(), exchangeRate);
+        //merchant.forceCashback(amount, account);
 
         DataForTransactions data =
                 new DataForTransactions().
@@ -92,6 +96,9 @@ public final class SendMoney implements BankingOperations {
                     getUserFromIBAN(account.
                             getIBAN()).
                     addTransactionReport(output);
+        }
+        if (giverUser.getPayToWin() == 5 && giverUser.getPlan().equals("silver")) {
+            giverUser.changeServicePlan("gold");
         }
         return null;
     }
@@ -159,7 +166,6 @@ public final class SendMoney implements BankingOperations {
                             giverAccount.pay(amount + fee);
                             receiverBAccount.
                                     addFunds(amount * exRate);
-
                             DataForTransactions data =
                                     new DataForTransactions().
                                             withCommand("sendMoney").
@@ -257,10 +263,9 @@ public final class SendMoney implements BankingOperations {
         double feeInRON = giver.getServicePlan().fee(amountInRON);
         double fee = feeInRON * exchangeRate.getExchangeRate("RON", accCurrency);
         if (amount + fee
-                < giverAccount.getBalance()) {
+                <= giverAccount.getBalance()) {
             giverAccount.pay(amount + fee);
             receiverAccount.addFunds(amount * exRate);
-
             DataForTransactions data = new DataForTransactions().
                     withCommand("sendMoney").
                     withTimestamp(commandInput.getTimestamp()).

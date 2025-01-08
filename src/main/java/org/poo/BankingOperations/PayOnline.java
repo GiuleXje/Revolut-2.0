@@ -12,8 +12,11 @@ import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 
 public final class PayOnline implements BankingOperations {
-    public void getCashback(User user, BankAccount bankAccount, double paid,
-                            String merchantName, BankOpData command) {
+    private static final double SILVER_TO_GOLD = 300.0;
+    private static final int RANK_UP = 5;
+    public void getCashback(final User user, final BankAccount bankAccount, final double paid,
+                            final String merchantName, final BankOpData command,
+                            final double amount) {
         MerchantsDB merchantDB = command.getMerchantsDB();
         Merchant merchant = merchantDB.merchantInfo(merchantName);
 
@@ -25,6 +28,7 @@ public final class PayOnline implements BankingOperations {
 
         merchant.getCashback(paid, bankAccount,
                 user.getPlan(), command.getExchangeRate());
+        //merchant.forceCashback(amount, bankAccount);
     }
     @Override
     public ObjectNode execute(final BankOpData command) {
@@ -64,8 +68,11 @@ public final class PayOnline implements BankingOperations {
             if (amount == 0) {
                 return null;
             }
-            double toRON = exchangeRate.getExchangeRate(accCurrency, "RON");
+            double toRON = exchangeRate.getExchangeRate(commandInput.getCurrency(), "RON");
             double amountInRON = amount * toRON;
+            if (amountInRON >= SILVER_TO_GOLD) {
+                user.incrementPayToWin();
+            }
             double feeInRON = user.getServicePlan().fee(amountInRON);
             double fee = feeInRON * exchangeRate.getExchangeRate("RON", accCurrency);
             if (amount * exRate
@@ -91,7 +98,14 @@ public final class PayOnline implements BankingOperations {
                 double toRon = exchangeRate.getExchangeRate(commandInput.getCurrency(), "RON");
                 bankAccount.increaseTransactions(); // add this transaction
                 getCashback(user, bankAccount, amount * toRon,
-                        commandInput.getCommerciant(), command);
+                        commandInput.getCommerciant(), command, amount);
+                // if 5 payments were recorded and the user has a silver plan
+                if (amount * toRON >= 300) {
+                    user.incrementPayToWin();
+                }
+                if (user.getPayToWin() == RANK_UP && user.getPlan().equals("silver")) {
+                    user.changeServicePlan("gold");
+                }
                 DataForTransactions data = new DataForTransactions().
                         withCommand("payOnline").
                         withAmount(amount * exRate).
