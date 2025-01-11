@@ -70,10 +70,11 @@ public final class SendMoney implements BankingOperations {
         if (merchant.getCashbackPlan().equals("spendingThreshold")) {
             merchant.spendMore(amount * toRON, account);
         }
+        account.increaseTransactions();
 
         merchant.getCashback(amount * toRON, account,
                 giverUser.getPlan(), exchangeRate);
-        //merchant.forceCashback(amount, account);
+        merchant.forceCashback(amount, account);
 
         DataForTransactions data =
                 new DataForTransactions().
@@ -113,6 +114,7 @@ public final class SendMoney implements BankingOperations {
         if (merchant != null) {
             return itIsAMerchant(command, merchant);
         }
+
         TransactionReport transactionReport = command.getTransactionReport();
         IBANDB ibanDB = command.getIbanDB();
         ExchangeRate exchangeRate = command.getExchangeRate();

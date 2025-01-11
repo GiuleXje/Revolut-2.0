@@ -14,10 +14,10 @@ public class SpendingThreshold implements CashbackStrategy {
     static private final double GOLD_FIRST = 0.005;
     static private final double STANDARD_SECOND = 0.002;
     static private final double SILVER_SECOND = 0.004;
-    static private final double GOLD_SECOND = 0.055;
-    static private final double STANDARD_THIRD = 0.025;
-    static private final double SILVER_THIRD = 0.05;
-    static private final double GOLD_THIRD = 0.025;
+    static private final double GOLD_SECOND = 0.0055;
+    static private final double STANDARD_THIRD = 0.0025;
+    static private final double SILVER_THIRD = 0.005;
+    static private final double GOLD_THIRD = 0.007;
 
     @Override
     public void calculateCashback(final double amount, final BankAccount bankAccount,

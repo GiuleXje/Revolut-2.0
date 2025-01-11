@@ -1666,7 +1666,7 @@
     "lastName" : "Stanescu",
     "email" : "Todor_Stanescu@gmail.ro",
     "accounts" : [ {
-      "balance" : 2213.6679999999997,
+      "balance" : 2204.3305,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "RON",
       "type" : "classic",
@@ -1680,7 +1680,7 @@
     "lastName" : "de Evrard",
     "email" : "Jeannine_de_Evrard@yahoo.fr",
     "accounts" : [ {
-      "balance" : 1682.4150000000002,
+      "balance" : 1382.0399999999997,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -1778,7 +1778,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3303.6259999999997,
+      "balance" : 3268.661,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",
@@ -1880,7 +1880,7 @@
     "lastName" : "Stanescu",
     "email" : "Todor_Stanescu@gmail.ro",
     "accounts" : [ {
-      "balance" : 2213.6679999999997,
+      "balance" : 2204.3305,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "RON",
       "type" : "classic",
@@ -1894,7 +1894,7 @@
     "lastName" : "de Evrard",
     "email" : "Jeannine_de_Evrard@yahoo.fr",
     "accounts" : [ {
-      "balance" : 1682.4150000000002,
+      "balance" : 1382.0399999999997,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -1992,7 +1992,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3303.6259999999997,
+      "balance" : 3268.661,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",
@@ -2094,7 +2094,7 @@
     "lastName" : "Stanescu",
     "email" : "Todor_Stanescu@gmail.ro",
     "accounts" : [ {
-      "balance" : 2058.9304999999995,
+      "balance" : 2037.5240000000001,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "RON",
       "type" : "classic",
@@ -2108,7 +2108,7 @@
     "lastName" : "de Evrard",
     "email" : "Jeannine_de_Evrard@yahoo.fr",
     "accounts" : [ {
-      "balance" : 1685.1950000000002,
+      "balance" : 1384.8199999999997,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -2206,7 +2206,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3328.5759999999996,
+      "balance" : 3271.156,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",
@@ -2476,7 +2476,7 @@
     "lastName" : "Stanescu",
     "email" : "Todor_Stanescu@gmail.ro",
     "accounts" : [ {
-      "balance" : 2158.9304999999995,
+      "balance" : 2137.5240000000003,
       "IBAN" : "RO90POOB5450777208072365",
       "currency" : "RON",
       "type" : "classic",
@@ -2490,7 +2490,7 @@
     "lastName" : "de Evrard",
     "email" : "Jeannine_de_Evrard@yahoo.fr",
     "accounts" : [ {
-      "balance" : 1685.255,
+      "balance" : 1384.8799999999997,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -2588,7 +2588,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3333.5759999999996,
+      "balance" : 3276.156,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",

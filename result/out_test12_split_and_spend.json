@@ -347,6 +347,29 @@
     "description" : "Interest rate of the account changed to 0.96",
     "timestamp" : 138
   }, {
+    "amountForUsers" : [ 1123.5, 211.0, 912.0, 575.1 ],
+    "currency" : "USD",
+    "description" : "Split payment of 2821.60 USD",
+    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment.",
+    "involvedAccounts" : [ "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "timestamp" : 143
+  }, {
+    "amountForUsers" : [ 611.0, 1490.0, 1007.78, 573.33, 714.44, 405.56, 135.0 ],
+    "currency" : "EUR",
+    "description" : "Split payment of 4937.11 EUR",
+    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment.",
+    "involvedAccounts" : [ "RO76POOB4035116042454483", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO37POOB7013767509830666", "RO58POOB2721178218599590", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "timestamp" : 150
+  }, {
+    "timestamp" : 151,
+    "description" : "Split payment of 7196.53 RON",
+    "splitPaymentType" : "custom",
+    "currency" : "RON",
+    "amountForUsers" : [ 1010.0, 1577.2, 1093.33, 836.67, 1068.0, 1033.33, 578.0 ],
+    "involvedAccounts" : [ "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO37POOB7013767509830666", "RO58POOB7344468893732422", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO69POOB6209498372540635" ]
+  }, {
     "amount" : 2.0,
     "commerciant" : "Microsoft",
     "description" : "Card payment",
@@ -384,11 +407,36 @@
     "description" : "New card created",
     "timestamp" : 11
   }, {
-    "timestamp" : 152,
-    "description" : "Split payment of 4411.00 EUR",
+    "amountForUsers" : [ 1123.5, 211.0, 912.0, 575.1 ],
+    "currency" : "USD",
+    "description" : "Split payment of 2821.60 USD",
+    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment.",
+    "involvedAccounts" : [ "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "timestamp" : 143
+  }, {
+    "amountForUsers" : [ 611.0, 1490.0, 1007.78, 573.33, 714.44, 405.56, 135.0 ],
     "currency" : "EUR",
+    "description" : "Split payment of 4937.11 EUR",
+    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment.",
+    "involvedAccounts" : [ "RO76POOB4035116042454483", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO37POOB7013767509830666", "RO58POOB2721178218599590", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "timestamp" : 150
+  }, {
+    "timestamp" : 151,
+    "description" : "Split payment of 7196.53 RON",
+    "splitPaymentType" : "custom",
+    "currency" : "RON",
+    "amountForUsers" : [ 1010.0, 1577.2, 1093.33, 836.67, 1068.0, 1033.33, 578.0 ],
+    "involvedAccounts" : [ "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO37POOB7013767509830666", "RO58POOB7344468893732422", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO69POOB6209498372540635" ]
+  }, {
     "amount" : 735.1666666666666,
-    "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ]
+    "currency" : "EUR",
+    "description" : "Split payment of 4411.00 EUR",
+    "error" : "Account RO58POOB7344468893732422 has insufficient funds for a split payment.",
+    "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ],
+    "splitPaymentType" : "equal",
+    "timestamp" : 152
   }, {
     "amount" : 420.0,
     "description" : "Cash withdrawal of 420.0",
@@ -408,8 +456,10 @@
     "description" : "Card payment",
     "timestamp" : 177
   }, {
-    "timestamp" : 211,
-    "description" : "The card is frozen"
+    "amount" : 235.55555555555557,
+    "commerciant" : "Apple",
+    "description" : "Card payment",
+    "timestamp" : 211
   } ],
   "timestamp" : 212
 }, {
@@ -437,11 +487,28 @@
     "description" : "Interest rate of the account changed to 0.33",
     "timestamp" : 140
   }, {
-    "timestamp" : 152,
-    "description" : "Split payment of 4411.00 EUR",
+    "amountForUsers" : [ 611.0, 1490.0, 1007.78, 573.33, 714.44, 405.56, 135.0 ],
     "currency" : "EUR",
+    "description" : "Split payment of 4937.11 EUR",
+    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment.",
+    "involvedAccounts" : [ "RO76POOB4035116042454483", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO37POOB7013767509830666", "RO58POOB2721178218599590", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "timestamp" : 150
+  }, {
+    "timestamp" : 151,
+    "description" : "Split payment of 7196.53 RON",
+    "splitPaymentType" : "custom",
+    "currency" : "RON",
+    "amountForUsers" : [ 1010.0, 1577.2, 1093.33, 836.67, 1068.0, 1033.33, 578.0 ],
+    "involvedAccounts" : [ "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO37POOB7013767509830666", "RO58POOB7344468893732422", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO69POOB6209498372540635" ]
+  }, {
     "amount" : 735.1666666666666,
-    "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ]
+    "currency" : "EUR",
+    "description" : "Split payment of 4411.00 EUR",
+    "error" : "Account RO58POOB7344468893732422 has insufficient funds for a split payment.",
+    "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ],
+    "splitPaymentType" : "equal",
+    "timestamp" : 152
   }, {
     "timestamp" : 162,
     "description" : "Upgrade plan",

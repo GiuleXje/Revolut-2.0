@@ -16,7 +16,7 @@ import java.util.LinkedHashMap;
 
 @Setter
 @Getter
-public final class User {
+public class User {
     private final String firstName;
     private final String lastName;
     private final String email;

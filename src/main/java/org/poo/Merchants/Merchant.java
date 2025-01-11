@@ -54,14 +54,14 @@ public final class Merchant {
 
     public void forceCashback(final double amount, final BankAccount bankAccount) {
         int transactions = bankAccount.getTransactions();
-        if (transactions >= FOOD_TR && type.equals("Food") && !bankAccount.isUsedFoodCB()) {
+        if (transactions > FOOD_TR && type.equals("Food") && !bankAccount.isUsedFoodCB()) {
             bankAccount.setUsedFoodCB(true);
             bankAccount.addFunds(amount * FOOD_CB);
-        } else if (transactions >= CLOTHES_TR && type.equals("Clothes")
+        } else if (transactions > CLOTHES_TR && type.equals("Clothes")
                 && !bankAccount.isUsedClothesCB()) {
             bankAccount.setUsedClothesCB(true);
             bankAccount.addFunds(amount * CLOTHES_CB);
-        } else if (transactions >= TECH_TR && type.equals("Tech")
+        } else if (transactions > TECH_TR && type.equals("Tech")
                 && !bankAccount.isUsedTechCB()) {
             bankAccount.setUsedTechCB(true);
             bankAccount.addFunds(amount * TECH_CB);

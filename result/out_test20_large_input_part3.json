@@ -1531,7 +1531,7 @@
   "timestamp" : 610
 }, {
   "command" : "deleteAccount",
-  "output" : {
+  "status" : {
     "success" : "Account deleted",
     "timestamp" : 764
   },
@@ -1599,7 +1599,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 16893.868055555555,
+      "balance" : 16843.243055555555,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -2371,7 +2371,7 @@
     "lastName" : "Gould",
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
-      "balance" : 3471.098967032967,
+      "balance" : 3308.488582417582,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "CAD",
       "type" : "classic",
@@ -2394,7 +2394,7 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 4711.0,
+      "balance" : 0.0,
       "IBAN" : "RO73POOB7862625166958832",
       "currency" : "CHF",
       "type" : "business",
@@ -2433,7 +2433,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 16893.868055555555,
+      "balance" : 16843.243055555555,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -2916,7 +2916,7 @@
     "lastName" : "du Mendes",
     "email" : "Thibault_du_Mendes@zoho.fr",
     "accounts" : [ {
-      "balance" : 235.46699999999996,
+      "balance" : 145.84199999999996,
       "IBAN" : "RO01POOB9893132718323396",
       "currency" : "EUR",
       "type" : "savings",
@@ -2931,7 +2931,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 3471.098967032967,
+    "balance" : 3308.488582417582,
     "currency" : "CAD",
     "transactions" : [ {
       "timestamp" : 620,

@@ -816,10 +816,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -943,7 +940,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1116,10 +1113,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -1243,7 +1237,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1299,7 +1293,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -1350,7 +1344,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -1425,10 +1419,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -1552,7 +1543,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1608,7 +1599,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -1636,7 +1627,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -1659,7 +1650,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
@@ -1668,7 +1659,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -1743,10 +1734,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -1809,12 +1797,12 @@
     "lastName" : "van de Veen-Verhoeven",
     "email" : "Nick_van_de_Veen-Verhoeven@zoho.nl",
     "accounts" : [ {
-      "balance" : 1860.98,
+      "balance" : 1832.99,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -1870,7 +1858,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1926,7 +1914,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -1954,7 +1942,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -1977,7 +1965,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
@@ -1986,7 +1974,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     }, {
@@ -1995,7 +1983,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -2070,10 +2058,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -2136,12 +2121,12 @@
     "lastName" : "van de Veen-Verhoeven",
     "email" : "Nick_van_de_Veen-Verhoeven@zoho.nl",
     "accounts" : [ {
-      "balance" : 1860.98,
+      "balance" : 1832.99,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -2197,7 +2182,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -2253,7 +2238,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -2281,7 +2266,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -2295,7 +2280,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     }, {
@@ -2304,7 +2289,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
@@ -2313,7 +2298,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     }, {
@@ -2322,7 +2307,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     }, {
@@ -2331,7 +2316,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -2384,7 +2369,7 @@
       "currency" : "AUD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -2406,10 +2391,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -2472,12 +2454,12 @@
     "lastName" : "van de Veen-Verhoeven",
     "email" : "Nick_van_de_Veen-Verhoeven@zoho.nl",
     "accounts" : [ {
-      "balance" : 1860.98,
+      "balance" : 1832.99,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -2533,7 +2515,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -2589,7 +2571,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -2617,7 +2599,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -2631,7 +2613,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     }, {
@@ -2640,7 +2622,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
@@ -2649,7 +2631,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     }, {
@@ -2658,7 +2640,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     }, {
@@ -2667,7 +2649,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     }, {
@@ -2676,7 +2658,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -2693,13 +2675,6 @@
     "cardHolder" : "Ruth_Turnbull@yandex.nz",
     "description" : "New card created",
     "timestamp" : 290
-  }, {
-    "amount" : 303.95,
-    "currency" : "EUR",
-    "description" : "Split payment of 6079.00 EUR",
-    "error" : "Account RO10POOB4354933866366881 has insufficient funds for a split payment.",
-    "involvedAccounts" : [ "RO65POOB8944016386845896", "RO68POOB1848616931405475", "RO69POOB9846198978826791", "RO38POOB0964823730995794", "RO30POOB9523423715747796", "RO69POOB6209498372540635", "RO33POOB4049920806186500", "RO79POOB3616857825600958", "RO58POOB7344468893732422", "RO00POOB5687892910835215", "RO90POOB5450777208072365", "RO98POOB8412955460158769", "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO96POOB6738272785416988", "RO10POOB4354933866366881", "RO19POOB4981055641668812", "RO33POOB9999273999620457", "RO37POOB7013767509830666", "RO32POOB0130532963818359" ],
-    "timestamp" : 399
   }, {
     "timestamp" : 479,
     "description" : "New account created"
@@ -2756,7 +2731,7 @@
       "currency" : "AUD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     }, {
@@ -2784,10 +2759,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -2862,12 +2834,12 @@
     "lastName" : "van de Veen-Verhoeven",
     "email" : "Nick_van_de_Veen-Verhoeven@zoho.nl",
     "accounts" : [ {
-      "balance" : 1860.98,
+      "balance" : 1832.99,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     }, {
@@ -2929,7 +2901,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -2985,7 +2957,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -3019,7 +2991,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -3033,7 +3005,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     }, {
@@ -3042,7 +3014,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
@@ -3051,7 +3023,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     }, {
@@ -3060,7 +3032,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     }, {
@@ -3069,7 +3041,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     }, {
@@ -3078,7 +3050,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -3131,7 +3103,7 @@
       "currency" : "AUD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     }, {
@@ -3159,10 +3131,7 @@
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -3237,12 +3206,12 @@
     "lastName" : "van de Veen-Verhoeven",
     "email" : "Nick_van_de_Veen-Verhoeven@zoho.nl",
     "accounts" : [ {
-      "balance" : 1860.98,
+      "balance" : 1832.99,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     }, {
@@ -3304,7 +3273,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -3360,7 +3329,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -3394,7 +3363,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -3408,7 +3377,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     }, {
@@ -3417,7 +3386,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
@@ -3426,7 +3395,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     }, {
@@ -3435,7 +3404,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     }, {
@@ -3444,7 +3413,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     }, {
@@ -3453,12 +3422,152 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
   } ],
   "timestamp" : 531
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 543,
+    "description" : "Card not found"
+  },
+  "timestamp" : 543
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 545,
+    "description" : "Card not found"
+  },
+  "timestamp" : 545
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 547,
+    "description" : "Card not found"
+  },
+  "timestamp" : 547
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 549,
+    "description" : "Card not found"
+  },
+  "timestamp" : 549
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 551,
+    "description" : "Card not found"
+  },
+  "timestamp" : 551
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 553,
+    "description" : "Card not found"
+  },
+  "timestamp" : 553
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 555,
+    "description" : "Card not found"
+  },
+  "timestamp" : 555
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 557,
+    "description" : "Card not found"
+  },
+  "timestamp" : 557
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 559,
+    "description" : "Card not found"
+  },
+  "timestamp" : 559
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 561,
+    "description" : "Card not found"
+  },
+  "timestamp" : 561
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 563,
+    "description" : "Card not found"
+  },
+  "timestamp" : 563
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 565,
+    "description" : "Card not found"
+  },
+  "timestamp" : 565
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 567,
+    "description" : "Card not found"
+  },
+  "timestamp" : 567
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 569,
+    "description" : "Card not found"
+  },
+  "timestamp" : 569
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 571,
+    "description" : "Card not found"
+  },
+  "timestamp" : 571
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 573,
+    "description" : "Card not found"
+  },
+  "timestamp" : 573
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 575,
+    "description" : "Card not found"
+  },
+  "timestamp" : 575
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 577,
+    "description" : "Card not found"
+  },
+  "timestamp" : 577
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 579,
+    "description" : "Card not found"
+  },
+  "timestamp" : 579
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 581,
+    "description" : "Card not found"
+  },
+  "timestamp" : 581
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -3499,7 +3608,7 @@
       "currency" : "AUD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     }, {
@@ -3523,14 +3632,11 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 66.45124969545448,
+      "balance" : 1297.0,
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Brandon",
@@ -3605,12 +3711,12 @@
     "lastName" : "van de Veen-Verhoeven",
     "email" : "Nick_van_de_Veen-Verhoeven@zoho.nl",
     "accounts" : [ {
-      "balance" : 1860.98,
+      "balance" : 1832.99,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     }, {
@@ -3672,7 +3778,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -3728,7 +3834,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -3752,14 +3858,11 @@
       "type" : "savings",
       "cards" : [ ]
     }, {
-      "balance" : 17247.0,
+      "balance" : 7018.0,
       "IBAN" : "RO75POOB8279679254660818",
       "currency" : "NZD",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "6988686155235949",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Marcus",
@@ -3771,7 +3874,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -3785,7 +3888,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     }, {
@@ -3794,7 +3897,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
@@ -3803,7 +3906,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     }, {
@@ -3812,7 +3915,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     }, {
@@ -3821,7 +3924,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     }, {
@@ -3830,12 +3933,19 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
   } ],
   "timestamp" : 600
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "timestamp" : 602,
+    "description" : "Card not found"
+  },
+  "timestamp" : 602
 }, {
   "command" : "deleteAccount",
   "output" : {
@@ -3883,7 +3993,7 @@
       "currency" : "AUD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     }, {
@@ -3907,21 +4017,18 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 66.45124969545448,
+      "balance" : 1297.0,
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "9281102140265301",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     }, {
       "balance" : 390.0,
       "IBAN" : "RO40POOB2135483650246268",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -3998,12 +4105,12 @@
     "lastName" : "van de Veen-Verhoeven",
     "email" : "Nick_van_de_Veen-Verhoeven@zoho.nl",
     "accounts" : [ {
-      "balance" : 1860.98,
+      "balance" : 1832.99,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     }, {
@@ -4032,7 +4139,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "9295697829422937",
         "status" : "active"
       } ]
     } ]
@@ -4069,12 +4176,12 @@
     "lastName" : "del Andres",
     "email" : "Lisandro_del_Andres@hushmail.es",
     "accounts" : [ {
-      "balance" : 1381.84624,
+      "balance" : 1384.8665542857143,
       "IBAN" : "RO33POOB4049920806186500",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     } ]
@@ -4125,12 +4232,12 @@
     "lastName" : "Zavala",
     "email" : "Donna_Zavala@hotmail.us",
     "accounts" : [ {
-      "balance" : 3303.6279382539688,
+      "balance" : 3362.724188253969,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "8145060794847555",
         "status" : "active"
       } ]
     }, {
@@ -4139,7 +4246,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     }, {
@@ -4148,7 +4255,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9295697829422937",
+        "cardNumber" : "2107645074675430",
         "status" : "active"
       } ]
     } ]
@@ -4172,26 +4279,23 @@
       "type" : "savings",
       "cards" : [ ]
     }, {
-      "balance" : 17247.0,
+      "balance" : 7018.0,
       "IBAN" : "RO75POOB8279679254660818",
       "currency" : "NZD",
       "type" : "business",
-      "cards" : [ {
-        "cardNumber" : "6988686155235949",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Marcus",
     "lastName" : "Reed",
     "email" : "Marcus_Reed@hushmail.us",
     "accounts" : [ {
-      "balance" : 2315.0237666666667,
+      "balance" : 2315.224166666667,
       "IBAN" : "RO33POOB9999273999620457",
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8145060794847555",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     }, {
@@ -4200,7 +4304,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -4214,25 +4318,25 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     }, {
-      "balance" : 332.6142857142857,
+      "balance" : 238.33125,
       "IBAN" : "RO71POOB1634969878734749",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     }, {
-      "balance" : 304.3144545454545,
+      "balance" : 345.82,
       "IBAN" : "RO09POOB4346339013848470",
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     }, {
@@ -4241,7 +4345,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     }, {
@@ -4250,7 +4354,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     }, {
@@ -4259,7 +4363,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]

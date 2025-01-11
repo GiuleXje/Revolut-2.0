@@ -447,12 +447,6 @@
   }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 208
-  }, {
-    "timestamp" : 227,
-    "description" : "Split payment of 1423.00 RON",
-    "currency" : "RON",
-    "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
   } ],
   "timestamp" : 228
 }, {
@@ -466,12 +460,6 @@
   }, {
     "description" : "You do not have a classic account.",
     "timestamp" : 196
-  }, {
-    "timestamp" : 227,
-    "description" : "Split payment of 1423.00 RON",
-    "currency" : "RON",
-    "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
   } ],
   "timestamp" : 229
 }, {
@@ -514,12 +502,6 @@
     "currency" : "RON",
     "description" : "Interest rate income",
     "timestamp" : 224
-  }, {
-    "timestamp" : 227,
-    "description" : "Split payment of 1423.00 RON",
-    "currency" : "RON",
-    "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
   } ],
   "timestamp" : 231
 }, {
@@ -536,12 +518,6 @@
   }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 209
-  }, {
-    "timestamp" : 227,
-    "description" : "Split payment of 1423.00 RON",
-    "currency" : "RON",
-    "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
   } ],
   "timestamp" : 232
 }, {
@@ -786,7 +762,7 @@
     "lastName" : "Suciu",
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
-      "balance" : 3106.16,
+      "balance" : 2981.96,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "RON",
       "type" : "savings",
@@ -959,7 +935,7 @@
     "lastName" : "Suciu",
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
-      "balance" : 3106.16,
+      "balance" : 2981.96,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "RON",
       "type" : "savings",
@@ -1127,7 +1103,7 @@
     "lastName" : "Suciu",
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
-      "balance" : 3106.16,
+      "balance" : 2981.96,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "RON",
       "type" : "savings",
@@ -1279,7 +1255,7 @@
     "lastName" : "Suciu",
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
-      "balance" : 3106.16,
+      "balance" : 2981.96,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "RON",
       "type" : "savings",
@@ -1473,7 +1449,7 @@
     "lastName" : "Suciu",
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
-      "balance" : 3106.16,
+      "balance" : 2981.96,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "RON",
       "type" : "savings",
@@ -1651,7 +1627,7 @@
     "lastName" : "Edwards",
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
-      "balance" : 5599.366,
+      "balance" : 20.621999999999986,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "USD",
       "type" : "business",
@@ -1674,7 +1650,7 @@
     "lastName" : "Suciu",
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
-      "balance" : 3106.16,
+      "balance" : 2981.96,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "RON",
       "type" : "savings",
@@ -1927,7 +1903,7 @@
     "lastName" : "Edwards",
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
-      "balance" : 6190.366,
+      "balance" : 20.621999999999986,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "USD",
       "type" : "business",
@@ -1950,7 +1926,7 @@
     "lastName" : "Suciu",
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
-      "balance" : 3106.16,
+      "balance" : 2981.96,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "RON",
       "type" : "savings",

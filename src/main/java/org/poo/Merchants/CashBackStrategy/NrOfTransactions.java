@@ -30,6 +30,8 @@ public class NrOfTransactions implements CashbackStrategy {
                     && bankAccount.getTransactions() > CLOTHES_PURCHASES) {
                     bankAccount.setUsedClothesCB(true);
                     bankAccount.addFunds(CLOTHES_CASHBACK * amount * exRate);
+                    if (bankAccount.getIBAN().equals("RO79POOB3616857825600958"))
+                        System.out.println("Cashback: " + amount * CLOTHES_CASHBACK * exRate);
                 }
                 break;
             case "Tech":

@@ -14,7 +14,11 @@ import org.poo.fileio.CommandInput;
 public final class PayOnline implements BankingOperations {
     private static final double SILVER_TO_GOLD = 300.0;
     private static final int RANK_UP = 5;
-    public void getCashback(final User user, final BankAccount bankAccount, final double paid,
+
+    private void handleBusinessAccount(final BankAccount bankAccount, final BankOpData data) {
+        CommandInput commandInput = new CommandInput();
+    }
+    private void getCashback(final User user, final BankAccount bankAccount, final double paid,
                             final String merchantName, final BankOpData command,
                             final double amount) {
         MerchantsDB merchantDB = command.getMerchantsDB();
@@ -25,10 +29,11 @@ public final class PayOnline implements BankingOperations {
         if (merchant.getCashbackPlan().equals("spendingThreshold")) {
             merchant.spendMore(paid, bankAccount);
         }
+        bankAccount.increaseTransactions();
 
         merchant.getCashback(paid, bankAccount,
                 user.getPlan(), command.getExchangeRate());
-        //merchant.forceCashback(amount, bankAccount);
+        merchant.forceCashback(amount, bankAccount);
     }
     @Override
     public ObjectNode execute(final BankOpData command) {
@@ -44,6 +49,10 @@ public final class PayOnline implements BankingOperations {
                 getOrDefault(cardNumber, null);
         String merchant = commandInput.getCommerciant();
         if (bankAccount != null) {
+            if (bankAccount.getAccountType().equals("business")) {
+                handleBusinessAccount(bankAccount, command);
+                return null;
+            }
             double amount = commandInput.getAmount();
             String accCurrency = bankAccount.getCurrency();
             Card card = bankAccount.getCards().getOrDefault(cardNumber, null);
@@ -94,9 +103,9 @@ public final class PayOnline implements BankingOperations {
                     }
                     return null;
                 }
+
                 bankAccount.pay(amount * exRate + fee);
                 double toRon = exchangeRate.getExchangeRate(commandInput.getCurrency(), "RON");
-                bankAccount.increaseTransactions(); // add this transaction
                 getCashback(user, bankAccount, amount * toRon,
                         commandInput.getCommerciant(), command, amount);
                 // if 5 payments were recorded and the user has a silver plan

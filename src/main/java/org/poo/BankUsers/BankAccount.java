@@ -9,6 +9,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 
 interface InterestStrategy {
@@ -38,7 +40,9 @@ class ClassicInterest implements InterestStrategy {
 
 @Setter
 @Getter
-public final class BankAccount {
+public class BankAccount {
+    private static final double INIT_LIMIT = 500;
+
     private double balance;
     private final String email;
     private final String currency;
@@ -56,6 +60,13 @@ public final class BankAccount {
     private boolean usedFoodCB;
     private boolean usedTechCB;
     private boolean usedClothesCB;
+    private User owner;
+    private HashSet<User> managers;
+    private HashSet<User> employees;
+    private double spendingLimit;
+    private double depositLimit;
+    // the key is the card number
+    private HashMap<String, User> businessCards;
 
     public BankAccount(final String email, final String currency, final String accountType,
                        final int timestamp, final double interestRate) {
@@ -79,6 +90,31 @@ public final class BankAccount {
         usedClothesCB = false;
     }
 
+    public BankAccount(final String email, final String currency, final User owner,
+                       final int timestamp) {
+        balance = 0;
+        this.email = email;
+        this.currency = currency;
+        this.owner = owner;
+        this.timestamp = timestamp;
+        iBAN = Utils.generateIBAN();
+        cards = new LinkedHashMap<>();
+        alias = "";
+        minAmount = 0;
+        interestStrategy = new ClassicInterest();
+        interestRate = 0;
+        report = new ArrayList<>();
+        merchants = new LinkedHashMap<>();
+        transactions = 0;
+        usedFoodCB = false;
+        usedTechCB = false;
+        usedClothesCB = false;
+        managers = new HashSet<>();
+        employees = new HashSet<>();
+        accountType = "business";
+        spendingLimit = depositLimit = INIT_LIMIT;
+        businessCards = new LinkedHashMap<>();
+    }
     /**
      * Computes the account's balance for a given interest rate
      *
@@ -189,4 +225,29 @@ public final class BankAccount {
         interestRate = interestRate1;
     }
 
+
+    /**
+     * adds a new employee to a business account
+     * @param employee -
+     */
+    public void addEmployee(final User employee) {
+        employees.add(employee);
+    }
+
+    /**
+     * adds a new manager to a business account
+     * @param manager -
+     */
+    public void addManager(final User manager) {
+        managers.add(manager);
+    }
+
+    /**
+     * adds a new card related to a certain user that created it
+     * @param card -
+     * @param businessCard -
+     */
+    public void addBusinessCard(final String card, final User businessCard) {
+        businessCards.put(card, businessCard);
+    }
 }

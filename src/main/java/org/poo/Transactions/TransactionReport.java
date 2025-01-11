@@ -3,7 +3,6 @@ package org.poo.Transactions;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import org.poo.BankingOperations.CustomSplit;
 
 import java.util.List;
 
@@ -130,6 +129,7 @@ class FailedSplittingBill implements TransactionStrategy {
             accs.add(acc);
         }
         output.set("involvedAccounts", accs);
+        output.put("splitPaymentType", "equal");
         output.put("timestamp", data.getTimestamp());
         return output;
     }
@@ -236,8 +236,8 @@ class CustomSplitPayment implements TransactionStrategy {
     public ObjectNode generateReport(final DataForTransactions data) {
         ObjectNode output = new ObjectMapper().createObjectNode();
         output.put("timestamp", data.getTimestamp());
-        output.put("description", "Custom split payment of "
-        + data.getAmount() + " " + data.getCurrency());
+        output.put("description", "Split payment of "
+        + String.format("%.2f", data.getAmount()) + " " + data.getCurrency());
         output.put("splitPaymentType", "custom");
         output.put("currency", data.getCurrency());
         ArrayNode forEach = new ObjectMapper().createArrayNode();
@@ -252,6 +252,45 @@ class CustomSplitPayment implements TransactionStrategy {
         }
         output.set("involvedAccounts", involved);
         return output;
+    }
+}
+
+class FailedCustomSplit implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        ArrayNode forEach = new ObjectMapper().createArrayNode();
+        for (double sum : data.getPayEach()) {
+            forEach.add(sum);
+        }
+        output.set("amountForUsers", forEach);
+        output.put("currency", data.getCurrency());
+        output.put("description", "Split payment of " + String.format("%.2f", data.getAmount())
+                + " " + data.getCurrency());
+        output.put("error", "Account " + data.getAccount() + " has insufficient " +
+                "funds for a split payment.");
+        ArrayNode involved = new ObjectMapper().createArrayNode();
+        for (String account : data.getAccounts()) {
+            involved.add(account);
+        }
+        output.set("involvedAccounts", involved);
+        output.put("splitPaymentType", "custom");
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class MerchantReport implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        return null;
+    }
+}
+
+class BusinessTransactionReport implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        return null;
     }
 }
 
@@ -292,6 +331,9 @@ public final class TransactionReport {
                 case "interest" -> new InterestRate();
                 case "noClassic" -> new NoClassicAccount();
                 case "customSplit" -> new CustomSplitPayment();
+                case "poorFriendV2" -> new FailedCustomSplit();
+                case "merchant" -> new MerchantReport();
+                case "businessTransaction" -> new BusinessTransactionReport();
                 default -> null;
             };
         }

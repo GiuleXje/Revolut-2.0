@@ -11,9 +11,13 @@ import org.poo.Merchants.MerchantAccounts;
 import org.poo.Merchants.MerchantsDB;
 import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
+import org.poo.BankUsers.CustomSplit;
+
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
 import java.util.List;
 
 @Getter
@@ -30,18 +34,15 @@ public final class BankOpData {
     private TransactionReport transactionReport;
     private MerchantsDB merchantsDB;
     private MerchantAccounts merchantAccounts;
-    private CustomSplit split;
-
-    public void changeSplit(final CustomSplit split1) {
-        this.split = split1;
-    }
+    private LinkedHashSet<CustomSplit> activeSplits;
 
     public BankOpData(final CommandInput commandInput, final EmailDB emailDB, final IBANDB ibanDB,
                       final CardDB cardDB,
                       final ExchangeRate exchangeRate,
                       final AliasDB aliasDB,
                       final AccountDB accountDB, final MerchantsDB merchantsDB,
-                      final MerchantAccounts merchantAccounts) {
+                      final MerchantAccounts merchantAccounts,
+                      final LinkedHashSet<CustomSplit> activeSplits) {
         this.commandInput = commandInput;
         this.emailDB = emailDB;
         returnVal = null;
@@ -53,7 +54,7 @@ public final class BankOpData {
         transactionReport = new TransactionReport();
         this.merchantsDB = merchantsDB;
         this.merchantAccounts = merchantAccounts;
-        split = null;
+        this.activeSplits = activeSplits;
     }
 
     /**
@@ -115,10 +116,8 @@ public final class BankOpData {
                 break;
             case "splitPayment":
                 SplitPayment splitPayment = new SplitPayment();
-                if (commandInput.getSplitPaymentType().equals("custom")) {
-
-                }
                 returnVal = splitPayment.execute(this);
+
                 break;
             case "report":
                 Report report = new Report();
@@ -155,6 +154,18 @@ public final class BankOpData {
             case "rejectSplitPayment":
                 RejectSplitPayment rep = new RejectSplitPayment();
                 returnVal = rep.execute(this);
+                break;
+            case "addNewBusinessAssociated":
+                AddNewBusinessAssociate addNewBusinessAssociate = new AddNewBusinessAssociate();
+                returnVal = addNewBusinessAssociate.execute(this);
+                break;
+            case "changeSpendingLimit":
+                ChangeSpendingLimit changeSpendingLimit = new ChangeSpendingLimit();
+                returnVal = changeSpendingLimit.execute(this);
+                break;
+            case "changeDepositLimit":
+                ChangeDepositLimit changeDepositLimit = new ChangeDepositLimit();
+                returnVal = changeDepositLimit.execute(this);
                 break;
             default:
                 returnVal = null;

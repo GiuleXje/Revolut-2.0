@@ -4,12 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
-import org.poo.BankUsers.User;
-import org.poo.BankUsers.EmailDB;
-import org.poo.BankUsers.AccountDB;
-import org.poo.BankUsers.CardDB;
-import org.poo.BankUsers.IBANDB;
-import org.poo.BankUsers.AliasDB;
+import org.poo.BankUsers.*;
 import org.poo.BankingOperations.BankOpData;
 import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.Merchants.MerchantAccounts;
@@ -27,6 +22,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedHashSet;
 import java.util.Objects;
 
 /**
@@ -115,6 +111,8 @@ public final class Main {
         Utils.resetRandom();
         // set a new merchant account database
         MerchantAccounts merchantAccounts = new MerchantAccounts();
+        // new custom split
+        LinkedHashSet<CustomSplit> activeSplits = new LinkedHashSet<>();
 
         // get the users
         for (UserInput user : usersInfo) {
@@ -135,7 +133,8 @@ public final class Main {
         // get each action
         for (CommandInput command : commands) {
             BankOpData commandHandler = new BankOpData(command, emailDB, ibanDB, cardDB,
-                    exchangeRate, aliasDB, accountDB, merchantsDB, merchantAccounts);
+                    exchangeRate, aliasDB, accountDB, merchantsDB, merchantAccounts,
+                    activeSplits);
             commandHandler.execute(); // handle the given command
 
             // output for JSON, if needed
