@@ -23,7 +23,7 @@ public class SpendingThreshold implements CashbackStrategy {
     public void calculateCashback(final double amount, final BankAccount bankAccount,
                                   final Merchant merchant,
                                   final String plan, final ExchangeRate exchangeRate) {
-        double spentOn = merchant.getBuyers().getOrDefault(bankAccount, 0.0);
+        double spentOn = merchant.getBuyers().get(bankAccount);
         double exRate = exchangeRate.getExchangeRate("RON", bankAccount.getCurrency());
         if (spentOn < FIRST_CAP) {
             return;
@@ -31,7 +31,6 @@ public class SpendingThreshold implements CashbackStrategy {
             switch (plan) {
                 case "student", "standard":
                     bankAccount.addFunds(amount * STANDARD_FIRST * exRate);
-                    System.out.println(amount * STANDARD_FIRST * exRate);
                     break;
                 case "silver":
                     bankAccount.addFunds(amount * SILVER_FIRST * exRate);
@@ -45,13 +44,13 @@ public class SpendingThreshold implements CashbackStrategy {
         } else if (spentOn < THIRD_CAP) {
             switch (plan) {
                 case "student", "standard":
-                    bankAccount.addFunds(amount * STANDARD_SECOND);
+                    bankAccount.addFunds(amount * STANDARD_SECOND * exRate);
                     break;
                 case "silver":
-                    bankAccount.addFunds(amount * SILVER_SECOND);
+                    bankAccount.addFunds(amount * SILVER_SECOND * exRate);
                     break;
                 case "gold":
-                    bankAccount.addFunds(amount * GOLD_SECOND);
+                    bankAccount.addFunds(amount * GOLD_SECOND * exRate);
                     break;
                 default:
                     break;
@@ -59,13 +58,13 @@ public class SpendingThreshold implements CashbackStrategy {
         } else {
             switch (plan) {
                 case "student", "standard":
-                    bankAccount.addFunds(amount * STANDARD_THIRD);
+                    bankAccount.addFunds(amount * STANDARD_THIRD * exRate);
                     break;
                 case "silver":
-                    bankAccount.addFunds(amount * SILVER_THIRD);
+                    bankAccount.addFunds(amount * SILVER_THIRD * exRate);
                     break;
                 case "gold":
-                    bankAccount.addFunds(amount * GOLD_THIRD);
+                    bankAccount.addFunds(amount * GOLD_THIRD * exRate);
                     break;
                 default:
                     break;

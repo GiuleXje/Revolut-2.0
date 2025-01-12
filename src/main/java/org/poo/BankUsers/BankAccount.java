@@ -8,10 +8,7 @@ import org.poo.utils.Utils;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
+import java.util.*;
 
 interface InterestStrategy {
     /**
@@ -40,7 +37,7 @@ class ClassicInterest implements InterestStrategy {
 
 @Setter
 @Getter
-public class BankAccount {
+public final class BankAccount {
     private static final double INIT_LIMIT = 500;
 
     private double balance;
@@ -57,16 +54,21 @@ public class BankAccount {
     private ArrayList<ObjectNode> report;
     private LinkedHashMap<Integer, Pair<String, Double>> merchants;
     private int transactions;
-    private boolean usedFoodCB;
-    private boolean usedTechCB;
-    private boolean usedClothesCB;
+    private String usedFoodCB;
+    private String usedTechCB;
+    private String usedClothesCB;
     private User owner;
-    private HashSet<User> managers;
-    private HashSet<User> employees;
+    private LinkedHashSet<User> managers;
+    private LinkedHashSet<User> employees;
     private double spendingLimit;
     private double depositLimit;
     // the key is the card number
     private HashMap<String, User> businessCards;
+    private HashMap<User, ArrayList<Pair<Double,Integer>>> spentByEmployees;
+    private HashMap<User, ArrayList<Pair<Double,Integer>>> spentByManagers;
+    private HashMap<User, ArrayList<Pair<Double,Integer>>> addedByEmployees;
+    private HashMap<User, ArrayList<Pair<Double,Integer>>> addedByManagers;
+    private double spending;
 
     public BankAccount(final String email, final String currency, final String accountType,
                        final int timestamp, final double interestRate) {
@@ -85,9 +87,10 @@ public class BankAccount {
         report = new ArrayList<>();
         merchants = new LinkedHashMap<>();
         transactions = 0;
-        usedFoodCB = false;
-        usedTechCB = false;
-        usedClothesCB = false;
+        usedFoodCB = "locked";
+        usedTechCB = "locked";
+        usedClothesCB = "locked";
+        spending = 0;
     }
 
     public BankAccount(final String email, final String currency, final User owner,
@@ -106,14 +109,19 @@ public class BankAccount {
         report = new ArrayList<>();
         merchants = new LinkedHashMap<>();
         transactions = 0;
-        usedFoodCB = false;
-        usedTechCB = false;
-        usedClothesCB = false;
-        managers = new HashSet<>();
-        employees = new HashSet<>();
+        usedFoodCB = "locked";
+        usedTechCB = "locked";
+        usedClothesCB = "locked";
+        managers = new LinkedHashSet<>();
+        employees = new LinkedHashSet<>();
         accountType = "business";
         spendingLimit = depositLimit = INIT_LIMIT;
         businessCards = new LinkedHashMap<>();
+        spentByEmployees = new LinkedHashMap<>();
+        addedByEmployees = new LinkedHashMap<>();
+        addedByManagers = new LinkedHashMap<>();
+        spentByManagers = new LinkedHashMap<>();
+        spending = 0;
     }
     /**
      * Computes the account's balance for a given interest rate
@@ -249,5 +257,37 @@ public class BankAccount {
      */
     public void addBusinessCard(final String card, final User businessCard) {
         businessCards.put(card, businessCard);
+    }
+
+    public void spendMore(final double amount, final User spender, final int timestamp) {
+        if (employees.contains(spender)) {
+            if (!spentByEmployees.containsKey(spender)) {
+                spentByEmployees.put(spender, new ArrayList<>());
+            }
+            spentByEmployees.get(spender).add(new Pair<>(amount, timestamp));
+        } else if (managers.contains(spender)) {
+            if (!spentByManagers.containsKey(spender)) {
+                spentByManagers.put(spender, new ArrayList<>());
+            }
+            spentByManagers.get(spender).add(new Pair<>(amount, timestamp));
+        }
+    }
+
+    public void addMore(final double amount, final User adder, final int timestamp) {
+        if (employees.contains(adder)) {
+            if (!addedByEmployees.containsKey(adder)) {
+                addedByEmployees.put(adder, new ArrayList<>());
+            }
+            addedByEmployees.get(adder).add(new Pair<>(amount, timestamp));
+        } else if (managers.contains(adder)) {
+            if (!addedByManagers.containsKey(adder)) {
+                addedByManagers.put(adder, new ArrayList<>());
+            }
+            addedByManagers.get(adder).add(new Pair<>(amount, timestamp));
+        }
+    }
+
+    public void increaseSpending(final double amount) {
+        spending += amount;
     }
 }

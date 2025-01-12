@@ -9,6 +9,7 @@ public class AddNewBusinessAssociate implements BankingOperations {
     public ObjectNode execute(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
         String iban = commandInput.getAccount();
+        AccountDB accountDB = command.getAccountDB();
         String role = commandInput.getRole();
         String email = commandInput.getEmail();
 
@@ -18,7 +19,7 @@ public class AddNewBusinessAssociate implements BankingOperations {
         if (user == null) {
             return null;
         }
-        BankAccount bankAccount = user.getBankAccounts().get(iban);
+        BankAccount bankAccount = accountDB.getAccounts().get(iban);
         if (!bankAccount.getAccountType().equals("business")) {
             return null;
         }

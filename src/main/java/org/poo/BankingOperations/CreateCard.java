@@ -28,6 +28,7 @@ public final class CreateCard implements BankingOperations {
         Card card = new Card();
         cardDB.addCard(card, bankAccount);
         bankAccount.addBusinessCard(card.getNumber(), user);
+        bankAccount.addCard(card);
         DataForTransactions data = new DataForTransactions().
                 withCommand("createCard").
                 withCardNumber(card.getNumber()).
@@ -49,13 +50,13 @@ public final class CreateCard implements BankingOperations {
             return null;
         }
 
-        Card card = new Card();
         BankAccount bankAccount = user.getBankAccounts().get(iban);
         if (bankAccount != null) {
             if (bankAccount.getAccountType().equals("business")) {
                 handleBusinessAccount(bankAccount, command);
                 return null;
             }
+            Card card = new Card();
             bankAccount.addCard(card);
             cardDB.addCard(card, bankAccount);
             DataForTransactions data = new DataForTransactions().

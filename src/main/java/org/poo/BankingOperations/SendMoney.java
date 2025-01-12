@@ -66,16 +66,33 @@ public final class SendMoney implements BankingOperations {
         if (amount * toRON >= 300) {
             giverUser.incrementPayToWin();
         }
-        account.increaseTransactions();
         if (merchant.getCashbackPlan().equals("spendingThreshold")) {
+            account.increaseSpending(amount * toRON);
             merchant.spendMore(amount * toRON, account);
+        } else {
+            if (!merchant.getTransactions().containsKey(account)) {
+                merchant.getTransactions().put(account, 1);
+            } else {
+                int nr = merchant.getTransactions().get(account);
+                merchant.getTransactions().remove(account);
+                merchant.getTransactions().put(account, nr + 1);
+            }
         }
-        account.increaseTransactions();
-
         merchant.getCashback(amount * toRON, account,
                 giverUser.getPlan(), exchangeRate);
         merchant.forceCashback(amount, account);
-
+        if (merchant.getCashbackPlan().equals("nrOfTransactions")) {
+            int transactions = merchant.getTransactions().get(account);
+            if (transactions >= 2 && account.getUsedFoodCB().equals("locked")) {
+                account.setUsedFoodCB("unlocked");
+            }
+            if (transactions >= 5 && account.getUsedClothesCB().equals("locked")) {
+                account.setUsedClothesCB("unlocked");
+            }
+            if (transactions >= 10 && account.getUsedTechCB().equals("locked")) {
+                account.setUsedTechCB("unlocked");
+            }
+        }
         DataForTransactions data =
                 new DataForTransactions().
                         withCommand("sendMoney").

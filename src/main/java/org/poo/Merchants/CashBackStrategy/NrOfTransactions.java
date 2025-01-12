@@ -17,28 +17,24 @@ public class NrOfTransactions implements CashbackStrategy {
                                   final Merchant merchant,
                                   final String plan, final ExchangeRate exchangeRate) {
         double exRate = exchangeRate.getExchangeRate("RON", bankAccount.getCurrency());
-        switch (merchant.getType()) {
+        String type = merchant.getType();
+
+        switch (type) {
             case "Food":
-                if (!bankAccount.isUsedFoodCB()
-                    && bankAccount.getTransactions() > FOOD_PURCHASES) {
-                    bankAccount.setUsedFoodCB(true);
-                    bankAccount.addFunds(FOOD_CASHBACK * amount * exRate);
+                if (bankAccount.getUsedFoodCB().equals("unlocked")) {
+                    bankAccount.setUsedFoodCB("used");
+                    bankAccount.addFunds(amount * exRate * FOOD_CASHBACK);
                 }
                 break;
             case "Clothes":
-                if (!bankAccount.isUsedClothesCB()
-                    && bankAccount.getTransactions() > CLOTHES_PURCHASES) {
-                    bankAccount.setUsedClothesCB(true);
-                    bankAccount.addFunds(CLOTHES_CASHBACK * amount * exRate);
-                    if (bankAccount.getIBAN().equals("RO79POOB3616857825600958"))
-                        System.out.println("Cashback: " + amount * CLOTHES_CASHBACK * exRate);
+                if (bankAccount.getUsedClothesCB().equals("unlocked")) {
+                    bankAccount.setUsedClothesCB("used");
+                    bankAccount.addFunds(amount * CLOTHES_CASHBACK * exRate);
                 }
                 break;
             case "Tech":
-                if (!bankAccount.isUsedTechCB()
-                    && bankAccount.getTransactions() > TECH_PURCHASES) {
-                    bankAccount.setUsedTechCB(true);
-                    bankAccount.addFunds(TECH_CASHBACK * amount * exRate);
+                if (bankAccount.getUsedTechCB().equals("unlocked")) {
+                    bankAccount.setUsedTechCB("used");
                 }
                 break;
             default:

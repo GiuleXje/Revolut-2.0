@@ -1,4 +1,27 @@
 [ {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 0.0,
+    "currency" : "USD",
+    "deposit limit" : 107.14285714285714,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Sharp Aaron"
+    } ],
+    "IBAN" : "RO65POOB8944016386845896",
+    "managers" : [ {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Pop Zaharia"
+    } ],
+    "spending limit" : 107.14285714285714,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 0.0
+  },
+  "timestamp" : 31
+}, {
   "command" : "payOnline",
   "output" : {
     "timestamp" : 33,
@@ -19,4 +42,27 @@
     "description" : "Card not found"
   },
   "timestamp" : 38
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 155.35800000000017,
+    "currency" : "USD",
+    "deposit limit" : 0.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Sharp Aaron"
+    } ],
+    "IBAN" : "RO65POOB8944016386845896",
+    "managers" : [ {
+      "deposited" : 3483.0,
+      "spent" : 0.0,
+      "username" : "Pop Zaharia"
+    } ],
+    "spending limit" : 564.0,
+    "statistics type" : "transaction",
+    "total deposited" : 3483.0,
+    "total spent" : 0.0
+  },
+  "timestamp" : 42
 } ]

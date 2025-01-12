@@ -955,6 +955,21 @@
   } ],
   "timestamp" : 380
 }, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 210.0,
+    "currency" : "USD",
+    "deposit limit" : 111.11111111111111,
+    "employees" : [ ],
+    "IBAN" : "RO68POOB1848616931405475",
+    "managers" : [ ],
+    "spending limit" : 111.11111111111111,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 0.0
+  },
+  "timestamp" : 381
+}, {
   "command" : "report",
   "output" : {
     "IBAN" : "RO10POOB4354933866366881",
@@ -1627,7 +1642,7 @@
     "lastName" : "Edwards",
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
-      "balance" : 20.621999999999986,
+      "balance" : 5599.366,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "USD",
       "type" : "business",
@@ -1903,7 +1918,7 @@
     "lastName" : "Edwards",
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
-      "balance" : 20.621999999999986,
+      "balance" : 6190.366,
       "IBAN" : "RO68POOB1848616931405475",
       "currency" : "USD",
       "type" : "business",

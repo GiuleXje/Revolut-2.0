@@ -12,7 +12,7 @@ public class ChangeSpendingLimit implements BankingOperations {
         CommandInput commandInput = command.getCommandInput();
         String email = commandInput.getEmail();
         String iban = commandInput.getAccount();
-        double newLimit = commandInput.getSpendingLimit();
+        double newLimit = commandInput.getAmount();
         //int timestamp = commandInput.getTimestamp();
 
         IBANDB ibanDB = command.getIbanDB();

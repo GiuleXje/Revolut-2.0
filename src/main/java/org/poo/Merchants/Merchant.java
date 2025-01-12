@@ -14,9 +14,6 @@ import java.util.HashMap;
 @Getter
 @Setter
 public final class Merchant {
-    private static final int FOOD_TR = 2;
-    private static final int CLOTHES_TR = 5;
-    private static final int TECH_TR = 10;
     private static final double FOOD_CB = 0.02;
     private static final double CLOTHES_CB = 0.05;
     private static final double TECH_CB = 0.1;
@@ -27,6 +24,7 @@ public final class Merchant {
     private final String cashbackPlan;
     // this contains the total spent by each bank account on this specific merchant
     private HashMap<BankAccount, Double> buyers;
+    private HashMap<BankAccount, Integer> transactions;
     private CashbackStrategy cashbackStrategy;
     public Merchant(final String name, final int id, final String account,
                     final String type, final String cashbackPlan) {
@@ -38,6 +36,7 @@ public final class Merchant {
         cashbackStrategy = cashbackPlan.equals("nrOfTransactions") ? new NrOfTransactions()
                 : new SpendingThreshold();
         buyers = new HashMap<>();
+        transactions = new HashMap<>();
     }
 
     public void getCashback(final double amount, BankAccount account, final String plan,
@@ -53,17 +52,18 @@ public final class Merchant {
     }
 
     public void forceCashback(final double amount, final BankAccount bankAccount) {
-        int transactions = bankAccount.getTransactions();
-        if (transactions > FOOD_TR && type.equals("Food") && !bankAccount.isUsedFoodCB()) {
-            bankAccount.setUsedFoodCB(true);
+
+        if (type.equals("Food")
+                && bankAccount.getUsedFoodCB().equals("unlocked")) {
+            bankAccount.setUsedFoodCB("used");
             bankAccount.addFunds(amount * FOOD_CB);
-        } else if (transactions > CLOTHES_TR && type.equals("Clothes")
-                && !bankAccount.isUsedClothesCB()) {
-            bankAccount.setUsedClothesCB(true);
+        } else if (type.equals("Clothes")
+                && bankAccount.getUsedClothesCB().equals("unlocked")) {
+            bankAccount.setUsedClothesCB("used");
             bankAccount.addFunds(amount * CLOTHES_CB);
-        } else if (transactions > TECH_TR && type.equals("Tech")
-                && !bankAccount.isUsedTechCB()) {
-            bankAccount.setUsedTechCB(true);
+        } else if (type.equals("Tech")
+                && bankAccount.getUsedTechCB().equals("unlocked")) {
+            bankAccount.setUsedTechCB("used");
             bankAccount.addFunds(amount * TECH_CB);
         }
     }

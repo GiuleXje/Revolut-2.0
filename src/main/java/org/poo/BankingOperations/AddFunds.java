@@ -2,8 +2,10 @@ package org.poo.BankingOperations;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.BankUsers.BankAccount;
+import org.poo.BankUsers.EmailDB;
 import org.poo.BankUsers.IBANDB;
 import org.poo.BankUsers.User;
+import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.fileio.CommandInput;
 
 public final class AddFunds implements BankingOperations {
@@ -11,11 +13,18 @@ public final class AddFunds implements BankingOperations {
         CommandInput commandInput = command.getCommandInput();
         double funds = commandInput.getAmount();
         double depositLimit = bankAccount.getDepositLimit();
-        if (funds > depositLimit) {
-            // can't add the funds
-            return;
+        String email = commandInput.getEmail();
+        EmailDB emailDB = command.getEmailDB();
+        User user = emailDB.getUser(email);
+        if (bankAccount.getEmployees().contains(user)) {
+            ExchangeRate exchangeRate = command.getExchangeRate();
+            double exRate = exchangeRate.getExchangeRate(bankAccount.getCurrency(), "RON");
+           if (funds * exRate > depositLimit) {
+               return;
+           }
         }
         bankAccount.addFunds(funds);
+        bankAccount.addMore(funds, user, commandInput.getTimestamp());
     }
     @Override
     public ObjectNode execute(final BankOpData command) {

@@ -1599,7 +1599,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 16843.243055555555,
+      "balance" : 17129.805555555555,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -2234,6 +2234,81 @@
   },
   "timestamp" : 837
 }, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 4711.0,
+    "currency" : "CHF",
+    "deposit limit" : 0.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Manuel Baez Anaya Victor"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Charette Gregoire"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Barer-Gehringer Juan"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Camiscione-Rugger Emilio"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "del Ripoll Nicodemo"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Farrell Heather"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Kaiser Hulda"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Stone Elizabeth"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Villa Dorothy"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Carey Frank"
+    } ],
+    "IBAN" : "RO73POOB7862625166958832",
+    "managers" : [ {
+      "deposited" : 3337.0,
+      "spent" : 0.0,
+      "username" : "Arana Trillo Mamen"
+    }, {
+      "deposited" : 923.0,
+      "spent" : 0.0,
+      "username" : "Sheppard Heather"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "del Ripoll Nicodemo"
+    }, {
+      "deposited" : 451.0,
+      "spent" : 0.0,
+      "username" : "du Mendes Thibault"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Charette Gregoire"
+    } ],
+    "spending limit" : 122.22222222222223,
+    "statistics type" : "transaction",
+    "total deposited" : 4711.0,
+    "total spent" : 0.0
+  },
+  "timestamp" : 839
+}, {
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO69POOB9846198978826791",
@@ -2371,7 +2446,7 @@
     "lastName" : "Gould",
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
-      "balance" : 3308.488582417582,
+      "balance" : 3294.282428571428,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "CAD",
       "type" : "classic",
@@ -2394,7 +2469,7 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 0.0,
+      "balance" : 4711.0,
       "IBAN" : "RO73POOB7862625166958832",
       "currency" : "CHF",
       "type" : "business",
@@ -2433,7 +2508,7 @@
     "lastName" : "Kala",
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
-      "balance" : 16843.243055555555,
+      "balance" : 17129.805555555555,
       "IBAN" : "RO58POOB2721178218599590",
       "currency" : "INR",
       "type" : "classic",
@@ -2916,7 +2991,7 @@
     "lastName" : "du Mendes",
     "email" : "Thibault_du_Mendes@zoho.fr",
     "accounts" : [ {
-      "balance" : 145.84199999999996,
+      "balance" : 120.94199999999987,
       "IBAN" : "RO01POOB9893132718323396",
       "currency" : "EUR",
       "type" : "savings",
@@ -2931,7 +3006,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 3308.488582417582,
+    "balance" : 3294.282428571428,
     "currency" : "CAD",
     "transactions" : [ {
       "timestamp" : 620,

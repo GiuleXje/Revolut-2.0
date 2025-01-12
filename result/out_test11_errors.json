@@ -2105,7 +2105,7 @@
 }, {
   "command" : "upgradePlan",
   "output" : {
-    "description" : "You cannot downgrade your plan",
+    "description" : "The user already has the silver plan.",
     "timestamp" : 711
   },
   "timestamp" : 711

@@ -155,7 +155,7 @@ public final class BankOpData {
                 RejectSplitPayment rep = new RejectSplitPayment();
                 returnVal = rep.execute(this);
                 break;
-            case "addNewBusinessAssociated":
+            case "addNewBusinessAssociate":
                 AddNewBusinessAssociate addNewBusinessAssociate = new AddNewBusinessAssociate();
                 returnVal = addNewBusinessAssociate.execute(this);
                 break;
@@ -166,6 +166,10 @@ public final class BankOpData {
             case "changeDepositLimit":
                 ChangeDepositLimit changeDepositLimit = new ChangeDepositLimit();
                 returnVal = changeDepositLimit.execute(this);
+                break;
+            case "businessReport":
+                BusinessReport businessReport = new BusinessReport();
+                returnVal = businessReport.execute(this);
                 break;
             default:
                 returnVal = null;

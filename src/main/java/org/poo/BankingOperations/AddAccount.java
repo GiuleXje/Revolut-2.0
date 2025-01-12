@@ -2,6 +2,7 @@ package org.poo.BankingOperations;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.BankUsers.*;
+import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.Transactions.DataForTransactions;
 import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
@@ -12,8 +13,8 @@ public final class AddAccount implements BankingOperations {
         CommandInput commandInput = command.getCommandInput();
         String email = commandInput.getEmail();
         String currency = commandInput.getCurrency();
-        String accountTye = commandInput.getAccountType();
         EmailDB emailDB = command.getEmailDB();
+        int timestamp = commandInput.getTimestamp();
         User owner = emailDB.getUser(email);
         if (owner == null) {
             return;
@@ -21,13 +22,19 @@ public final class AddAccount implements BankingOperations {
         // business account constructor
         BankAccount bankAccount = new BankAccount(email, currency, owner,
                 commandInput.getTimestamp());
+        ExchangeRate exchangeRate = command.getExchangeRate();
+        double exRate = exchangeRate.getExchangeRate("RON", currency);
+        bankAccount.setDepositLimit(bankAccount.getDepositLimit() * exRate);
+        bankAccount.setSpendingLimit(bankAccount.getSpendingLimit() * exRate);
         IBANDB ibanDB = command.getIbanDB();
         ibanDB.addIBANReference(bankAccount.getIBAN(), owner);
         owner.addBankAccount(bankAccount);
         AliasDB aliasDB = command.getAliasDB();
         aliasDB.addAlias(bankAccount.getIBAN() + email, bankAccount);
+        AccountDB accountDB = command.getAccountDB();
+        accountDB.addAccount(bankAccount.getIBAN(), bankAccount);
         DataForTransactions data = new DataForTransactions().
-                withTimestamp(commandInput.getTimestamp()).
+                withTimestamp(timestamp).
                 withCommand("addAccount");
         TransactionReport transactionReport = command.getTransactionReport();
         ObjectNode report = transactionReport.executeOperation(data);
@@ -59,6 +66,8 @@ public final class AddAccount implements BankingOperations {
         user.addBankAccount(bankAccount);
         aliasDB.addAlias(bankAccount.getIBAN() + user.getEmail(), bankAccount);
         ibanDB.addIBANReference(bankAccount.getIBAN(), user);
+        AccountDB accountDB = command.getAccountDB();
+        accountDB.addAccount(bankAccount.getIBAN(), bankAccount);
         DataForTransactions data = new DataForTransactions().
                 withCommand("addAccount").
                 withTimestamp(commandInput.getTimestamp());

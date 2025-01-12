@@ -1,4 +1,35 @@
 [ {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 0.0,
+    "currency" : "RON",
+    "deposit limit" : 0.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Stanescu Damian"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Voinea Valentin"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Albu Pompilia"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "King Daniel"
+    } ],
+    "IBAN" : "RO69POOB6209498372540635",
+    "managers" : [ ],
+    "spending limit" : 500.0,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 0.0
+  },
+  "timestamp" : 75
+}, {
   "command" : "cashWithdrawal",
   "output" : {
     "description" : "User not found",
@@ -13,166 +44,67 @@
   },
   "timestamp" : 80
 }, {
-  "command" : "payOnline",
+  "command" : "businessReport",
   "output" : {
-    "timestamp" : 81,
-    "description" : "Card not found"
+    "balance" : 2628.063,
+    "currency" : "RON",
+    "deposit limit" : 0.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 253.0,
+      "username" : "Stanescu Damian"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 342.0,
+      "username" : "Voinea Valentin"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Albu Pompilia"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "King Daniel"
+    } ],
+    "IBAN" : "RO69POOB6209498372540635",
+    "managers" : [ ],
+    "spending limit" : 500.0,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 595.0
   },
-  "timestamp" : 81
+  "timestamp" : 84
 }, {
-  "command" : "payOnline",
+  "command" : "businessReport",
   "output" : {
-    "timestamp" : 82,
-    "description" : "Card not found"
+    "balance" : 4500.660025000001,
+    "currency" : "RON",
+    "deposit limit" : 0.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 253.0,
+      "username" : "Stanescu Damian"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 854.05,
+      "username" : "Voinea Valentin"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Albu Pompilia"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "King Daniel"
+    } ],
+    "IBAN" : "RO69POOB6209498372540635",
+    "managers" : [ ],
+    "spending limit" : 500.0,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 1107.05
   },
-  "timestamp" : 82
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 83,
-    "description" : "Card not found"
-  },
-  "timestamp" : 83
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 136,
-    "description" : "Card not found"
-  },
-  "timestamp" : 136
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 137,
-    "description" : "Card not found"
-  },
-  "timestamp" : 137
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 138,
-    "description" : "Card not found"
-  },
-  "timestamp" : 138
-}, {
-  "command" : "checkCardStatus",
-  "output" : {
-    "timestamp" : 139,
-    "description" : "Card not found"
-  },
-  "timestamp" : 139
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 141,
-    "description" : "Card not found"
-  },
-  "timestamp" : 141
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 142,
-    "description" : "Card not found"
-  },
-  "timestamp" : 142
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 143,
-    "description" : "Card not found"
-  },
-  "timestamp" : 143
-}, {
-  "command" : "checkCardStatus",
-  "output" : {
-    "timestamp" : 144,
-    "description" : "Card not found"
-  },
-  "timestamp" : 144
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 146,
-    "description" : "Card not found"
-  },
-  "timestamp" : 146
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 147,
-    "description" : "Card not found"
-  },
-  "timestamp" : 147
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 148,
-    "description" : "Card not found"
-  },
-  "timestamp" : 148
-}, {
-  "command" : "checkCardStatus",
-  "output" : {
-    "timestamp" : 149,
-    "description" : "Card not found"
-  },
-  "timestamp" : 149
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 151,
-    "description" : "Card not found"
-  },
-  "timestamp" : 151
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 152,
-    "description" : "Card not found"
-  },
-  "timestamp" : 152
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 153,
-    "description" : "Card not found"
-  },
-  "timestamp" : 153
-}, {
-  "command" : "checkCardStatus",
-  "output" : {
-    "timestamp" : 154,
-    "description" : "Card not found"
-  },
-  "timestamp" : 154
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 156,
-    "description" : "Card not found"
-  },
-  "timestamp" : 156
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 157,
-    "description" : "Card not found"
-  },
-  "timestamp" : 157
-}, {
-  "command" : "payOnline",
-  "output" : {
-    "timestamp" : 158,
-    "description" : "Card not found"
-  },
-  "timestamp" : 158
-}, {
-  "command" : "checkCardStatus",
-  "output" : {
-    "timestamp" : 159,
-    "description" : "Card not found"
-  },
-  "timestamp" : 159
+  "timestamp" : 161
 }, {
   "command" : "sendMoney",
   "output" : {
