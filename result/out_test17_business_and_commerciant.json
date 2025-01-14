@@ -390,4 +390,52 @@
     "total spent" : 0.0
   },
   "timestamp" : 432
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 582.27,
+    "commerciants" : [ ],
+    "currency" : "USD",
+    "deposit limit" : 107.14285714285714,
+    "IBAN" : "RO98POOB8412955460158769",
+    "spending limit" : 868.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 435
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 723.0,
+    "commerciants" : [ ],
+    "currency" : "USD",
+    "deposit limit" : 107.14285714285714,
+    "IBAN" : "RO32POOB0130532963818359",
+    "spending limit" : 94.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 436
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 859.0,
+    "commerciants" : [ ],
+    "currency" : "RON",
+    "deposit limit" : 500.0,
+    "IBAN" : "RO68POOB1848616931405475",
+    "spending limit" : 473.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 437
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 1117.0,
+    "commerciants" : [ ],
+    "currency" : "RON",
+    "deposit limit" : 500.0,
+    "IBAN" : "RO10POOB4354933866366881",
+    "spending limit" : 500.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 438
 } ]

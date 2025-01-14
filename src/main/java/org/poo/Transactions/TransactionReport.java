@@ -129,7 +129,7 @@ class FailedSplittingBill implements TransactionStrategy {
             accs.add(acc);
         }
         output.set("involvedAccounts", accs);
-        output.put("splitPaymentType", "equal");
+        output.put("splitPaymentType", data.getSplitType());
         output.put("timestamp", data.getTimestamp());
         return output;
     }
@@ -151,6 +151,7 @@ class InvolvedInBill implements TransactionStrategy {
             involved.add(account);
         }
         output.set("involvedAccounts", involved);
+        output.put("splitPaymentType", data.getSplitType());
         return output;
     }
 }
@@ -238,7 +239,7 @@ class CustomSplitPayment implements TransactionStrategy {
         output.put("timestamp", data.getTimestamp());
         output.put("description", "Split payment of "
         + String.format("%.2f", data.getAmount()) + " " + data.getCurrency());
-        output.put("splitPaymentType", "custom");
+        output.put("splitPaymentType", data.getSplitType());
         output.put("currency", data.getCurrency());
         ArrayNode forEach = new ObjectMapper().createArrayNode();
         for (double sum : data.getPayEach()) {
@@ -274,23 +275,46 @@ class FailedCustomSplit implements TransactionStrategy {
             involved.add(account);
         }
         output.set("involvedAccounts", involved);
-        output.put("splitPaymentType", "custom");
+        output.put("splitPaymentType", data.getSplitType());
         output.put("timestamp", data.getTimestamp());
         return output;
     }
 }
 
-class MerchantReport implements TransactionStrategy {
+class RejectSplit implements TransactionStrategy {
     @Override
     public ObjectNode generateReport(final DataForTransactions data) {
-        return null;
+        ObjectNode report = new ObjectMapper().createObjectNode();
+        ArrayNode forEach = new ObjectMapper().createArrayNode();
+        for (double sum : data.getPayEach()) {
+            forEach.add(sum);
+        }
+        report.set("amountForUsers", forEach);
+        report.put("currency", data.getCurrency());
+        report.put("description", "Split payment of "
+                + String.format("%.2f", data.getSplitAmount()) + " " + data.getCurrency());
+        report.put("error", "One user rejected the payment.");
+        ArrayNode involved = new ObjectMapper().createArrayNode();
+        for (String account : data.getAccounts()) {
+            involved.add(account);
+        }
+        report.set("involvedAccounts", involved);
+        report.put("splitPaymentType", data.getSplitType());
+        report.put("timestamp", data.getTimestamp());
+        return report;
     }
 }
 
-class BusinessTransactionReport implements TransactionStrategy {
+class WithdrawSavings implements TransactionStrategy {
     @Override
     public ObjectNode generateReport(final DataForTransactions data) {
-        return null;
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("amount", data.getAmount());
+        output.put("classicAccountIBAN", data.getAccount());
+        output.put("description", "Savings withdrawal");
+        output.put("savingsAccountIBAN", data.getSavingsAccount());
+        output.put("timestamp", data.getTimestamp());
+        return output;
     }
 }
 
@@ -332,8 +356,8 @@ public final class TransactionReport {
                 case "noClassic" -> new NoClassicAccount();
                 case "customSplit" -> new CustomSplitPayment();
                 case "poorFriendV2" -> new FailedCustomSplit();
-                case "merchant" -> new MerchantReport();
-                case "businessTransaction" -> new BusinessTransactionReport();
+                case "rejectSplit" -> new RejectSplit();
+                case "withdrawSavings" -> new WithdrawSavings();
                 default -> null;
             };
         }

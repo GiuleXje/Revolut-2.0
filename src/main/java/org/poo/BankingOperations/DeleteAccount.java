@@ -11,6 +11,12 @@ import org.poo.BankUsers.IBANDB;
 import org.poo.fileio.CommandInput;
 
 public final class DeleteAccount implements BankingOperations {
+    /**
+     * deletes a business account
+     * @param bankAccount -
+     * @param command -
+     * @return -
+     */
     private ObjectNode handleBusinessAccount(final BankAccount bankAccount,
                                              final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();

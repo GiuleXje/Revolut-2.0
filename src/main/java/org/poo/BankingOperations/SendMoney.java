@@ -80,7 +80,7 @@ public final class SendMoney implements BankingOperations {
         }
         merchant.getCashback(amount * toRON, account,
                 giverUser.getPlan(), exchangeRate);
-        merchant.forceCashback(amount, account);
+        merchant.forceCashback(amount * toRON, account);
         if (merchant.getCashbackPlan().equals("nrOfTransactions")) {
             int transactions = merchant.getTransactions().get(account);
             if (transactions >= 2 && account.getUsedFoodCB().equals("locked")) {

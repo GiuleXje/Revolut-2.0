@@ -9,6 +9,11 @@ import org.poo.fileio.CommandInput;
 import java.util.HashSet;
 
 public final class DeleteCard implements BankingOperations {
+    /**
+     * handles a business account card deletion
+     * @param bankAccount -
+     * @param command -
+     */
     private void handleBusinessAccount(final BankAccount bankAccount, final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
         String cardNumber = commandInput.getCardNumber();

@@ -6,12 +6,18 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.BankUsers.AccountDB;
 import org.poo.BankUsers.BankAccount;
 import org.poo.BankUsers.User;
+import org.poo.Merchants.Merchant;
 import org.poo.fileio.CommandInput;
 import org.poo.ExchangeRate.Pair;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
+
+import java.util.*;
 
 public class BusinessReport implements BankingOperations {
+    /**
+     * creates a business' accounts transaction report
+     * @param command -
+     * @return -
+     */
     private ObjectNode transactionReport(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
         int start = commandInput.getStartTimestamp();
@@ -112,9 +118,93 @@ public class BusinessReport implements BankingOperations {
         output.put("timestamp", timestamp);
         return output;
     }
+
+    /**
+     * creates a business' account merchant report
+     * @param command -
+     * @return -
+     */
     private ObjectNode merchantReport(final BankOpData command) {
-        return null;
+        CommandInput commandInput = command.getCommandInput();
+        int start = commandInput.getStartTimestamp();
+        int end = commandInput.getEndTimestamp();
+        String account = commandInput.getAccount();
+        AccountDB accountDB = command.getAccountDB();
+        BankAccount bankAccount = accountDB.getAccounts().get(account);
+        if (bankAccount == null) {
+            return null;
+        }
+
+        LinkedHashMap<Merchant, ArrayList<Pair<Integer,Pair<User, Double>>>> spentOn =
+                bankAccount.getSpentOnMerchants();
+
+        LinkedHashMap<Merchant, ArrayList<Pair<Integer, Pair<User, Double>>>> sortedSpentOn = spentOn.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByKey(Comparator.comparing(Merchant::getName)))
+                .collect(
+                        LinkedHashMap::new,
+                        (map, entry) -> map.put(entry.getKey(), entry.getValue()),
+                        LinkedHashMap::putAll
+                );
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("command", commandInput.getCommand());
+        ObjectNode report = new ObjectMapper().createObjectNode();
+        report.put("balance", bankAccount.getBalance());
+        ArrayNode merchantsArray = new ObjectMapper().createArrayNode();
+        LinkedHashSet<User> employees = bankAccount.getEmployees();
+        LinkedHashSet<User> managers = bankAccount.getManagers();
+
+        for (Merchant merchant : sortedSpentOn.keySet()) {
+            ArrayList<Pair<Integer, Pair<User, Double>>> paid = sortedSpentOn.get(merchant);
+            double totalAmountSpent = 0;
+            ArrayNode emp = new ObjectMapper().createArrayNode();
+            ArrayNode man = new ObjectMapper().createArrayNode();
+            ArrayList<String> empList = new ArrayList<>();
+            ArrayList<String> managerList = new ArrayList<>();
+            ObjectNode merch = new ObjectMapper().createObjectNode();
+            merch.put("commerciant", merchant.getName());
+            if (paid != null) {
+                for (Pair<Integer, Pair<User, Double>> pair : paid) {
+                    if (pair.getKey() >= start && pair.getKey() <= end) {
+                        Pair<User, Double> userPair = pair.getValue();
+                        User user = userPair.getKey();
+                        Double amount = userPair.getValue();
+                        if (employees.contains(user)) {
+                            empList.add(user.getLastName() + " " + user.getFirstName());
+                            totalAmountSpent += amount;
+                        } else if (managers.contains(user)) {
+                            managerList.add(user.getLastName() + " " + user.getFirstName());
+                            totalAmountSpent += amount;
+                        }
+                    }
+                }
+                Collections.sort(empList);
+                Collections.sort(managerList);
+                for (String s : empList) {
+                    emp.add(s);
+                }
+                for (String s : managerList) {
+                    man.add(s);
+                }
+
+                merch.set("employees", emp);
+                merch.set("managers", man);
+                merch.put("total received", totalAmountSpent);
+                merchantsArray.add(merch);
+            }
+        }
+
+        report.set("commerciants", merchantsArray);
+        report.put("currency", bankAccount.getCurrency());
+        report.put("deposit limit", bankAccount.getDepositLimit());
+        report.put("IBAN", bankAccount.getIBAN());
+        report.put("spending limit", bankAccount.getSpendingLimit());
+        report.put("statistics type", "commerciant");
+        output.set("output", report);
+        output.put("timestamp", commandInput.getTimestamp());
+        return output;
     }
+
     @Override
     public ObjectNode execute(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();

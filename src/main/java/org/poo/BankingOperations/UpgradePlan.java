@@ -10,11 +10,17 @@ import org.poo.Transactions.DataForTransactions;
 import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 
-public class UpgradePlan implements BankingOperations {
+public final class UpgradePlan implements BankingOperations {
     static final double STANDARD_TO_SILVER = 100;
     static final double STANDARD_TO_GOLD = 350;
     static final double SILVER_TO_GOLD = 250;
 
+    /**
+     * checks if the user can actually upgrade tot the new plan
+     * @param currPlan -
+     * @param newPlan -
+     * @return -
+     */
     private double downgrade(final String currPlan, final String newPlan) {
         return switch (currPlan) {
             case "student", "standard" -> {
@@ -91,24 +97,13 @@ public class UpgradePlan implements BankingOperations {
             ObjectNode report = transactionReport.executeOperation(data);
             user.addTransactionReport(report);
             bankAccount.addReport(report);
-        } else if (upgradeCost < 0) {
-            ObjectNode output = new ObjectMapper().createObjectNode();
-            output.put("command", "upgradePlan");
-            ObjectNode out = new ObjectMapper().createObjectNode();
-            out.put("description", "You cannot downgrade your plan");
-            out.put("timestamp", commandInput.getTimestamp());
-            output.set("output", out);
-            output.put("timestamp", commandInput.getTimestamp());
-            return output;
         } else {
-            ObjectNode output = new ObjectMapper().createObjectNode();
-            output.put("command", "upgradePlan");
-            ObjectNode out = new ObjectMapper().createObjectNode();
-            out.put("description", "The user already has the " + currPlan + " plan.");
-            out.put("timestamp", commandInput.getTimestamp());
-            output.set("output", out);
-            output.put("timestamp", commandInput.getTimestamp());
-            return output;
+            ObjectNode report = new ObjectMapper().createObjectNode();
+            report.put("description", "The user already has the "
+            + newPlan + " plan.");
+            report.put("timestamp", commandInput.getTimestamp());
+            bankAccount.addReport(report);
+            user.addTransactionReport(report);
         }
 
         return null;

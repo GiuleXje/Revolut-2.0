@@ -39,11 +39,23 @@ public final class Merchant {
         transactions = new HashMap<>();
     }
 
+    /**
+     * calculates the cashback depending on the type of the merchant
+     * @param amount -
+     * @param account -
+     * @param plan -
+     * @param exchangeRate -
+     */
     public void getCashback(final double amount, BankAccount account, final String plan,
                             final ExchangeRate exchangeRate) {
         cashbackStrategy.calculateCashback(amount, account, this, plan, exchangeRate);
     }
 
+    /**
+     * adds more spendings related to a certain bank account
+     * @param amount -
+     * @param bankAccount -
+     */
     public void spendMore(final double amount, final BankAccount bankAccount) {
         double amountSpent = buyers.getOrDefault(bankAccount, 0.0);
         amountSpent += amount;
@@ -51,6 +63,12 @@ public final class Merchant {
         buyers.put(bankAccount, amountSpent);
     }
 
+    /**
+     * in case the merchant is of type spendingThreshold, and we also can apply
+     * the nrOfTransaction cashback
+     * @param amount -
+     * @param bankAccount -
+     */
     public void forceCashback(final double amount, final BankAccount bankAccount) {
 
         if (type.equals("Food")

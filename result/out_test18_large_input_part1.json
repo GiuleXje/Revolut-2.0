@@ -672,7 +672,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -768,6 +768,13 @@
   } ],
   "timestamp" : 430
 }, {
+  "command" : "changeSpendingLimit",
+  "output" : {
+    "description" : "You must be owner in order to change spending limit.",
+    "timestamp" : 436
+  },
+  "timestamp" : 436
+}, {
   "command" : "payOnline",
   "output" : {
     "timestamp" : 445,
@@ -781,6 +788,18 @@
     "description" : "Card not found"
   },
   "timestamp" : 446
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 899.0,
+    "commerciants" : [ ],
+    "currency" : "EUR",
+    "deposit limit" : 100.0,
+    "IBAN" : "RO53POOB7122855990652257",
+    "spending limit" : 357.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 447
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -979,7 +998,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -1279,7 +1298,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -1588,7 +1607,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -1906,7 +1925,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -2233,7 +2252,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -2569,7 +2588,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -2958,7 +2977,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -3333,7 +3352,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -3543,7 +3562,7 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 354.0061861240259,
+      "balance" : 357.3361861240259,
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
@@ -3701,7 +3720,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -3857,6 +3876,18 @@
   } ],
   "timestamp" : 600
 }, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 17247.0,
+    "commerciants" : [ ],
+    "currency" : "NZD",
+    "deposit limit" : 177.77777777777777,
+    "IBAN" : "RO75POOB8279679254660818",
+    "spending limit" : 177.77777777777777,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 601
+}, {
   "command" : "deleteAccount",
   "output" : {
     "error" : "Account couldn't be deleted - see org.poo.transactions for details",
@@ -3927,7 +3958,7 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 354.0061861240259,
+      "balance" : 357.3361861240259,
       "IBAN" : "RO53POOB7122855990652257",
       "currency" : "EUR",
       "type" : "business",
@@ -4089,7 +4120,7 @@
     "lastName" : "del Andres",
     "email" : "Lisandro_del_Andres@hushmail.es",
     "accounts" : [ {
-      "balance" : 1381.0942400000001,
+      "balance" : 1381.1010400000002,
       "IBAN" : "RO33POOB4049920806186500",
       "currency" : "EUR",
       "type" : "classic",
@@ -4103,7 +4134,7 @@
     "lastName" : "Kuhn",
     "email" : "Richard_Kuhn@protonmail.ch",
     "accounts" : [ {
-      "balance" : 1637.0968241758242,
+      "balance" : 1637.1585934065934,
       "IBAN" : "RO69POOB9846198978826791",
       "currency" : "CHF",
       "type" : "classic",
@@ -4206,7 +4237,7 @@
     "lastName" : "Reed",
     "email" : "Marcus_Reed@hushmail.us",
     "accounts" : [ {
-      "balance" : 2315.0237666666667,
+      "balance" : 2315.0239666666666,
       "IBAN" : "RO33POOB9999273999620457",
       "currency" : "USD",
       "type" : "classic",
@@ -4288,7 +4319,7 @@
 }, {
   "command" : "businessReport",
   "output" : {
-    "balance" : 354.0061861240259,
+    "balance" : 357.3361861240259,
     "currency" : "EUR",
     "deposit limit" : 100.0,
     "employees" : [ {

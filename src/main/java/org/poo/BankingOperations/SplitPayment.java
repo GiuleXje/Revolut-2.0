@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class SplitPayment implements BankingOperations {
+    /**
+     * handles a split payment
+     * @param command -
+     * @return -
+     */
     public ObjectNode customSplitPayment(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
         if (commandInput.getSplitPaymentType().equals("custom")) {

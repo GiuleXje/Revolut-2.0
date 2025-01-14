@@ -23,7 +23,7 @@ public class SpendingThreshold implements CashbackStrategy {
     public void calculateCashback(final double amount, final BankAccount bankAccount,
                                   final Merchant merchant,
                                   final String plan, final ExchangeRate exchangeRate) {
-        double spentOn = merchant.getBuyers().get(bankAccount);
+        double spentOn = bankAccount.getSpending();
         double exRate = exchangeRate.getExchangeRate("RON", bankAccount.getCurrency());
         if (spentOn < FIRST_CAP) {
             return;

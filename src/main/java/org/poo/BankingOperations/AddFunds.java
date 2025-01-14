@@ -9,6 +9,11 @@ import org.poo.ExchangeRate.ExchangeRate;
 import org.poo.fileio.CommandInput;
 
 public final class AddFunds implements BankingOperations {
+    /**
+     * handles a business account
+     * @param bankAccount -
+     * @param command -
+     */
     private void handleBusinessAccount(final BankAccount bankAccount, final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
         double funds = commandInput.getAmount();

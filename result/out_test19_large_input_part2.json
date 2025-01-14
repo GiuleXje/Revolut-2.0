@@ -764,76 +764,6 @@
   } ],
   "timestamp" : 360
 }, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the standard plan.",
-    "timestamp" : 587
-  },
-  "timestamp" : 587
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "You cannot downgrade your plan",
-    "timestamp" : 588
-  },
-  "timestamp" : 588
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "You cannot downgrade your plan",
-    "timestamp" : 589
-  },
-  "timestamp" : 589
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the student plan.",
-    "timestamp" : 590
-  },
-  "timestamp" : 590
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the student plan.",
-    "timestamp" : 591
-  },
-  "timestamp" : 591
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "You cannot downgrade your plan",
-    "timestamp" : 592
-  },
-  "timestamp" : 592
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the standard plan.",
-    "timestamp" : 593
-  },
-  "timestamp" : 593
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the standard plan.",
-    "timestamp" : 594
-  },
-  "timestamp" : 594
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "You cannot downgrade your plan",
-    "timestamp" : 595
-  },
-  "timestamp" : 595
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "You cannot downgrade your plan",
-    "timestamp" : 596
-  },
-  "timestamp" : 596
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Omar",
@@ -1912,13 +1842,6 @@
   } ],
   "timestamp" : 619
 }, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "You cannot downgrade your plan",
-    "timestamp" : 665
-  },
-  "timestamp" : 665
-}, {
   "command" : "payOnline",
   "output" : {
     "timestamp" : 678,
@@ -1951,7 +1874,7 @@
   "output" : {
     "balance" : 6537.0,
     "currency" : "USD",
-    "deposit limit" : 0.0,
+    "deposit limit" : 306.0,
     "employees" : [ {
       "deposited" : 0.0,
       "spent" : 0.0,
@@ -2047,111 +1970,6 @@
     "timestamp" : 810
   },
   "timestamp" : 810
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 853
-  },
-  "timestamp" : 853
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 854
-  },
-  "timestamp" : 854
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 855
-  },
-  "timestamp" : 855
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 856
-  },
-  "timestamp" : 856
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 857
-  },
-  "timestamp" : 857
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 864
-  },
-  "timestamp" : 864
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 865
-  },
-  "timestamp" : 865
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 866
-  },
-  "timestamp" : 866
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 867
-  },
-  "timestamp" : 867
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 868
-  },
-  "timestamp" : 868
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 869
-  },
-  "timestamp" : 869
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 870
-  },
-  "timestamp" : 870
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 872
-  },
-  "timestamp" : 872
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 874
-  },
-  "timestamp" : 874
-}, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the gold plan.",
-    "timestamp" : 876
-  },
-  "timestamp" : 876
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -2621,7 +2439,7 @@
   "output" : {
     "balance" : 14677.46,
     "currency" : "USD",
-    "deposit limit" : 0.0,
+    "deposit limit" : 306.0,
     "employees" : [ {
       "deposited" : 0.0,
       "spent" : 0.0,
@@ -2753,7 +2571,7 @@
 }, {
   "command" : "businessReport",
   "output" : {
-    "balance" : 15.407531428571412,
+    "balance" : 16.457771428571384,
     "currency" : "EUR",
     "deposit limit" : 100.0,
     "employees" : [ {
@@ -2819,6 +2637,18 @@
     "total spent" : 0.0
   },
   "timestamp" : 924
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 205.0,
+    "commerciants" : [ ],
+    "currency" : "EUR",
+    "deposit limit" : 100.0,
+    "IBAN" : "RO19POOB5993192794373940",
+    "spending limit" : 838.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 925
 }, {
   "command" : "payOnline",
   "output" : {
@@ -3034,7 +2864,7 @@
   "output" : {
     "balance" : 16696.46,
     "currency" : "USD",
-    "deposit limit" : 0.0,
+    "deposit limit" : 306.0,
     "employees" : [ {
       "deposited" : 0.0,
       "spent" : 0.0,
@@ -3354,7 +3184,7 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 15.407531428571412,
+      "balance" : 16.457771428571384,
       "IBAN" : "RO04POOB3492426980939341",
       "currency" : "EUR",
       "type" : "business",
@@ -3818,7 +3648,7 @@
         "status" : "active"
       } ]
     }, {
-      "balance" : 15.407531428571412,
+      "balance" : 16.457771428571384,
       "IBAN" : "RO04POOB3492426980939341",
       "currency" : "EUR",
       "type" : "business",

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.ExchangeRate.Pair;
+import org.poo.Merchants.Merchant;
 import org.poo.utils.Utils;
 import lombok.Getter;
 import lombok.Setter;
@@ -68,6 +69,7 @@ public final class BankAccount {
     private HashMap<User, ArrayList<Pair<Double,Integer>>> spentByManagers;
     private HashMap<User, ArrayList<Pair<Double,Integer>>> addedByEmployees;
     private HashMap<User, ArrayList<Pair<Double,Integer>>> addedByManagers;
+    private LinkedHashMap<Merchant, ArrayList<Pair<Integer, Pair<User, Double>>>> spentOnMerchants;
     private double spending;
 
     public BankAccount(final String email, final String currency, final String accountType,
@@ -122,6 +124,7 @@ public final class BankAccount {
         addedByManagers = new LinkedHashMap<>();
         spentByManagers = new LinkedHashMap<>();
         spending = 0;
+        spentOnMerchants = new LinkedHashMap<>();
     }
     /**
      * Computes the account's balance for a given interest rate
@@ -259,6 +262,12 @@ public final class BankAccount {
         businessCards.put(card, businessCard);
     }
 
+    /**
+     * adds the amount spent by an account user
+     * @param amount -
+     * @param spender -
+     * @param timestamp -
+     */
     public void spendMore(final double amount, final User spender, final int timestamp) {
         if (employees.contains(spender)) {
             if (!spentByEmployees.containsKey(spender)) {
@@ -273,6 +282,12 @@ public final class BankAccount {
         }
     }
 
+    /**
+     * adds the amount added by an account user
+     * @param amount -
+     * @param adder -
+     * @param timestamp -
+     */
     public void addMore(final double amount, final User adder, final int timestamp) {
         if (employees.contains(adder)) {
             if (!addedByEmployees.containsKey(adder)) {
@@ -287,7 +302,26 @@ public final class BankAccount {
         }
     }
 
+    /**
+     * increase the amount spent for SpendingThreshold merchants
+     * @param amount -
+     */
     public void increaseSpending(final double amount) {
         spending += amount;
+    }
+
+    /**
+     * add the amount spent on a specific merchant by an account user
+     * @param spender -
+     * @param timestamp -
+     * @param amount -
+     * @param merchant -
+     */
+    public void spentMoreOnMerchant(final User spender, final int timestamp,
+                                    final double amount, final Merchant merchant) {
+        if (!spentOnMerchants.containsKey(merchant)) {
+            spentOnMerchants.put(merchant, new ArrayList<>());
+        }
+        spentOnMerchants.get(merchant).add(new Pair<>(timestamp, new Pair<>(spender, amount)));
     }
 }

@@ -35,6 +35,7 @@ public class NrOfTransactions implements CashbackStrategy {
             case "Tech":
                 if (bankAccount.getUsedTechCB().equals("unlocked")) {
                     bankAccount.setUsedTechCB("used");
+                    bankAccount.addFunds(amount * TECH_CASHBACK * exRate);
                 }
                 break;
             default:

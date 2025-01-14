@@ -1,6 +1,8 @@
 package org.poo.BankingOperations;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.sun.jdi.ObjectReference;
 import org.poo.BankUsers.BankAccount;
 import org.poo.BankUsers.EmailDB;
 import org.poo.BankUsers.IBANDB;
@@ -11,11 +13,17 @@ import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 import org.poo.BankUsers.CustomSplit;
 
-import javax.xml.crypto.Data;
+import java.awt.geom.NoninvertibleTransformException;
 import java.util.LinkedHashSet;
 import java.util.List;
 
 public class AcceptSplitPayment implements BankingOperations {
+    /**
+     * handles a case where one of the payers does not have enough money to pay
+     * @param split -
+     * @param bankAccount -
+     * @param command -
+     */
     public void poorFriend(final CustomSplit split, final BankAccount bankAccount,
                            final BankOpData command) {
         DataForTransactions data;
@@ -34,7 +42,8 @@ public class AcceptSplitPayment implements BankingOperations {
                         withAccounts(split.getAccounts()).
                         withCurrency(split.getCurrency()).
                         withPayEach(split.getSplitBill()).
-                        withAmount(split.getTotalAmount());
+                        withAmount(split.getTotalAmount()).
+                        withSplitType(split.getType());
                 TransactionReport transactionReport = command.getTransactionReport();
                 ObjectNode report = transactionReport.executeOperation(data);
                 bkAccount.addReport(report);
@@ -42,9 +51,6 @@ public class AcceptSplitPayment implements BankingOperations {
             }
 
         } else {
-            if (split.getTimestamp() == 28) {
-                System.out.println("Da");
-            }
             data = new DataForTransactions().
                     withCommand("poorFriend").
                     withAccounts(split.getAccounts()).
@@ -52,7 +58,8 @@ public class AcceptSplitPayment implements BankingOperations {
                     withAmount(split.getTotalAmount()).
                     withSplitAmount(split.getSplitBill().getFirst()).
                     withTimestamp(split.getTimestamp()).
-                    withCurrency(split.getCurrency());
+                    withCurrency(split.getCurrency()).
+                    withSplitType(split.getType());
             TransactionReport transactionReport = command.getTransactionReport();
             ObjectNode report = transactionReport.executeOperation(data);
             for (String account : accounts) {
@@ -67,14 +74,18 @@ public class AcceptSplitPayment implements BankingOperations {
     public ObjectNode execute(final BankOpData command) {
         LinkedHashSet<CustomSplit> activeSplits = command.getActiveSplits();
         CommandInput commandInput = command.getCommandInput();
-        int tmp = commandInput.getTimestamp();
-
         String email = commandInput.getEmail();
-        String type = commandInput.getSplitPaymentType();
         EmailDB emailDB = command.getEmailDB();
         User user = emailDB.getUser(email);
         if (user == null) {
-            return null;
+            ObjectNode output = new ObjectMapper().createObjectNode();
+            output.put("command", commandInput.getCommand());
+            ObjectNode out = new ObjectMapper().createObjectNode();
+            out.put("description", "User not found");
+            out.put("timestamp", commandInput.getTimestamp());
+            output.set("output", out);
+            output.put("timestamp", commandInput.getTimestamp());
+            return output;
         }
 
         for (CustomSplit split : activeSplits) { // go through all active splits
@@ -132,7 +143,8 @@ public class AcceptSplitPayment implements BankingOperations {
                                 withCurrency(split.getCurrency()).
                                 withAccounts(accounts).
                                 withPayEach(eachPay).
-                                withCommand("customSplit");
+                                withCommand("customSplit").
+                                withSplitType(split.getType());
                         TransactionReport transactionReport = command.getTransactionReport();
                         ObjectNode report = transactionReport.executeOperation(data);
                         currUser.addTransactionReport(report);
@@ -145,7 +157,8 @@ public class AcceptSplitPayment implements BankingOperations {
                             withPayerIBAN(account).
                             withSplitAmount(toPay).
                             withAccounts(accounts).
-                            withTimestamp(split.getTimestamp());
+                            withTimestamp(split.getTimestamp()).
+                                withSplitType(split.getType());
                         TransactionReport transactionReport = command.getTransactionReport();
                         ObjectNode report = transactionReport.executeOperation(data);
                         currUser.addTransactionReport(report);

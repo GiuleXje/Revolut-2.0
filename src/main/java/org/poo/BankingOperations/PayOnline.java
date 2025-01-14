@@ -17,6 +17,14 @@ public final class PayOnline implements BankingOperations {
     private static final double SILVER_TO_GOLD = 300.0;
     private static final int RANK_UP = 5;
 
+    /**
+     * deletes and creates a new one time card
+     * for business accounts
+     * @param bankAccount -
+     * @param card -
+     * @param payer -
+     * @param command -
+     */
     public void handleOneTimeCard(final BankAccount bankAccount, final Card card,
                                   final User payer, BankOpData command) {
         String cardNumber = card.getNumber();
@@ -166,10 +174,10 @@ public final class PayOnline implements BankingOperations {
                     owner.incrementPayToWin();
                 }
                 bankAccount.pay(toPay + fee);
-                bankAccount.increaseSpending(amountInRON);
                 getCashback(owner, bankAccount, amountInRON, commandInput.getCommerciant(),
                         command);
                 bankAccount.spendMore(toPay, payer, timestamp);
+                bankAccount.spentMoreOnMerchant(payer, timestamp, toPay, merchant);
                 DataForTransactions data = new DataForTransactions().
                             withCommand("payOnline").
                             withAmount(amount * exRate).
@@ -250,12 +258,9 @@ public final class PayOnline implements BankingOperations {
             }
         }
 
-
         merchant.getCashback(paidInRon, bankAccount,
                 user.getPlan(), command.getExchangeRate());
-        ExchangeRate exchangeRate = command.getExchangeRate();
-        double exRate = exchangeRate.getExchangeRate("RON", bankAccount.getCurrency());
-        merchant.forceCashback(paidInRon * exRate, bankAccount);
+        merchant.forceCashback(paidInRon, bankAccount);
         if (merchant.getCashbackPlan().equals("nrOfTransactions")) {
             int transactions = merchant.getTransactions().get(bankAccount);
             if (transactions >= 2 && bankAccount.getUsedFoodCB().equals("locked")) {
@@ -264,8 +269,8 @@ public final class PayOnline implements BankingOperations {
             if (transactions >= 5 && bankAccount.getUsedClothesCB().equals("locked")) {
                 bankAccount.setUsedClothesCB("unlocked");
             }
-            if (transactions >= 10 && bankAccount.getUsedClothesCB().equals("locked")) {
-                bankAccount.setUsedClothesCB("unlocked");
+            if (transactions >= 10 && bankAccount.getUsedTechCB().equals("locked")) {
+                bankAccount.setUsedTechCB("unlocked");
             }
         }
     }

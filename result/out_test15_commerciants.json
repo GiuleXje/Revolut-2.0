@@ -1089,7 +1089,7 @@
     "lastName" : "Wagner",
     "email" : "Anne_Wagner@hotmail.fr",
     "accounts" : [ {
-      "balance" : 3784.6523400000005,
+      "balance" : 3801.4523400000007,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "EUR",
       "type" : "classic",
@@ -1187,7 +1187,7 @@
     "lastName" : "Nicolas",
     "email" : "Chantal_Nicolas@yahoo.fr",
     "accounts" : [ {
-      "balance" : 3708.821420000001,
+      "balance" : 3740.921420000001,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1271,7 +1271,7 @@
     "lastName" : "Gonzales",
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
-      "balance" : 5836.799999999999,
+      "balance" : 5846.182222222222,
       "IBAN" : "RO98POOB8412955460158769",
       "currency" : "USD",
       "type" : "classic",
@@ -1303,7 +1303,7 @@
     "lastName" : "Wagner",
     "email" : "Anne_Wagner@hotmail.fr",
     "accounts" : [ {
-      "balance" : 3784.6523400000005,
+      "balance" : 3801.4523400000007,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "EUR",
       "type" : "classic",
@@ -1401,7 +1401,7 @@
     "lastName" : "Nicolas",
     "email" : "Chantal_Nicolas@yahoo.fr",
     "accounts" : [ {
-      "balance" : 3708.821420000001,
+      "balance" : 3740.921420000001,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1485,7 +1485,7 @@
     "lastName" : "Gonzales",
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
-      "balance" : 5836.799999999999,
+      "balance" : 5846.182222222222,
       "IBAN" : "RO98POOB8412955460158769",
       "currency" : "USD",
       "type" : "classic",
@@ -1652,7 +1652,7 @@
     "lastName" : "Wagner",
     "email" : "Anne_Wagner@hotmail.fr",
     "accounts" : [ {
-      "balance" : 3784.6523400000005,
+      "balance" : 3801.4523400000007,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "EUR",
       "type" : "classic",
@@ -1750,7 +1750,7 @@
     "lastName" : "Nicolas",
     "email" : "Chantal_Nicolas@yahoo.fr",
     "accounts" : [ {
-      "balance" : 3708.821420000001,
+      "balance" : 3740.921420000001,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1778,7 +1778,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3268.661,
+      "balance" : 3269.3,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",
@@ -1834,7 +1834,7 @@
     "lastName" : "Gonzales",
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
-      "balance" : 5836.799999999999,
+      "balance" : 5846.182222222222,
       "IBAN" : "RO98POOB8412955460158769",
       "currency" : "USD",
       "type" : "classic",
@@ -1866,7 +1866,7 @@
     "lastName" : "Wagner",
     "email" : "Anne_Wagner@hotmail.fr",
     "accounts" : [ {
-      "balance" : 3784.6523400000005,
+      "balance" : 3801.4523400000007,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "EUR",
       "type" : "classic",
@@ -1964,7 +1964,7 @@
     "lastName" : "Nicolas",
     "email" : "Chantal_Nicolas@yahoo.fr",
     "accounts" : [ {
-      "balance" : 3708.821420000001,
+      "balance" : 3740.921420000001,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -1992,7 +1992,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3268.661,
+      "balance" : 3269.3,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",
@@ -2048,7 +2048,7 @@
     "lastName" : "Gonzales",
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
-      "balance" : 6925.692222222222,
+      "balance" : 6935.074444444444,
       "IBAN" : "RO98POOB8412955460158769",
       "currency" : "USD",
       "type" : "classic",
@@ -2080,7 +2080,7 @@
     "lastName" : "Wagner",
     "email" : "Anne_Wagner@hotmail.fr",
     "accounts" : [ {
-      "balance" : 3784.6523400000005,
+      "balance" : 3801.4523400000007,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "EUR",
       "type" : "classic",
@@ -2178,7 +2178,7 @@
     "lastName" : "Nicolas",
     "email" : "Chantal_Nicolas@yahoo.fr",
     "accounts" : [ {
-      "balance" : 3708.821420000001,
+      "balance" : 3740.921420000001,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -2206,7 +2206,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3271.156,
+      "balance" : 3271.795,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",
@@ -2262,7 +2262,7 @@
     "lastName" : "Gonzales",
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
-      "balance" : 6925.692222222222,
+      "balance" : 6935.074444444444,
       "IBAN" : "RO98POOB8412955460158769",
       "currency" : "USD",
       "type" : "classic",
@@ -2467,7 +2467,7 @@
     "lastName" : "Wagner",
     "email" : "Anne_Wagner@hotmail.fr",
     "accounts" : [ {
-      "balance" : 3784.6523400000005,
+      "balance" : 3801.4523400000007,
       "IBAN" : "RO69POOB6209498372540635",
       "currency" : "EUR",
       "type" : "classic",
@@ -2495,7 +2495,7 @@
     "lastName" : "de Evrard",
     "email" : "Jeannine_de_Evrard@yahoo.fr",
     "accounts" : [ {
-      "balance" : 1356.2399999999998,
+      "balance" : 1356.28,
       "IBAN" : "RO65POOB8944016386845896",
       "currency" : "EUR",
       "type" : "classic",
@@ -2565,7 +2565,7 @@
     "lastName" : "Nicolas",
     "email" : "Chantal_Nicolas@yahoo.fr",
     "accounts" : [ {
-      "balance" : 3708.821420000001,
+      "balance" : 3740.921420000001,
       "IBAN" : "RO30POOB9523423715747796",
       "currency" : "EUR",
       "type" : "classic",
@@ -2593,7 +2593,7 @@
     "lastName" : "Oprea",
     "email" : "Virginia_Oprea@outlook.ro",
     "accounts" : [ {
-      "balance" : 3271.156,
+      "balance" : 3271.795,
       "IBAN" : "RO00POOB5687892910835215",
       "currency" : "RON",
       "type" : "classic",
@@ -2649,7 +2649,7 @@
     "lastName" : "Gonzales",
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
-      "balance" : 6925.692222222222,
+      "balance" : 6935.074444444444,
       "IBAN" : "RO98POOB8412955460158769",
       "currency" : "USD",
       "type" : "classic",

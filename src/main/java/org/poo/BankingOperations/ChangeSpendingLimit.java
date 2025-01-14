@@ -1,5 +1,6 @@
 package org.poo.BankingOperations;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.BankUsers.BankAccount;
 import org.poo.BankUsers.IBANDB;
@@ -13,7 +14,7 @@ public class ChangeSpendingLimit implements BankingOperations {
         String email = commandInput.getEmail();
         String iban = commandInput.getAccount();
         double newLimit = commandInput.getAmount();
-        //int timestamp = commandInput.getTimestamp();
+        int timestamp = commandInput.getTimestamp();
 
         IBANDB ibanDB = command.getIbanDB();
         User owner = ibanDB.getUserFromIBAN(iban);
@@ -22,7 +23,14 @@ public class ChangeSpendingLimit implements BankingOperations {
         }
         if (!email.equals(owner.getEmail())) {
             // this is not the business account's owner
-            return null;
+            ObjectNode output = new ObjectMapper().createObjectNode();
+            output.put("command", commandInput.getCommand());
+            ObjectNode out = new ObjectMapper().createObjectNode();
+            out.put("description", "You must be owner in order to change spending limit.");
+            out.put("timestamp", commandInput.getTimestamp());
+            output.set("output", out);
+            output.put("timestamp", commandInput.getTimestamp());
+            return output;
         }
 
         BankAccount bankAccount = owner.getBankAccounts().get(iban);

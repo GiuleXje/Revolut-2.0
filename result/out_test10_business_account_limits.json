@@ -1,4 +1,11 @@
 [ {
+  "command" : "changeSpendingLimit",
+  "output" : {
+    "description" : "You must be owner in order to change spending limit.",
+    "timestamp" : 30
+  },
+  "timestamp" : 30
+}, {
   "command" : "businessReport",
   "output" : {
     "balance" : 0.0,
@@ -47,7 +54,7 @@
   "output" : {
     "balance" : 155.35800000000017,
     "currency" : "USD",
-    "deposit limit" : 0.0,
+    "deposit limit" : 104.0,
     "employees" : [ {
       "deposited" : 0.0,
       "spent" : 0.0,

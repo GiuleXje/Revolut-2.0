@@ -2094,6 +2094,20 @@
   } ],
   "timestamp" : 777
 }, {
+  "command" : "changeDepositLimit",
+  "output" : {
+    "description" : "You must be owner in order to change spending limit.",
+    "timestamp" : 794
+  },
+  "timestamp" : 794
+}, {
+  "command" : "changeSpendingLimit",
+  "output" : {
+    "description" : "You must be owner in order to change spending limit.",
+    "timestamp" : 795
+  },
+  "timestamp" : 795
+}, {
   "command" : "payOnline",
   "output" : {
     "timestamp" : 799,
@@ -2238,7 +2252,7 @@
   "output" : {
     "balance" : 4711.0,
     "currency" : "CHF",
-    "deposit limit" : 0.0,
+    "deposit limit" : 211.0,
     "employees" : [ {
       "deposited" : 0.0,
       "spent" : 0.0,
@@ -2308,6 +2322,18 @@
     "total spent" : 0.0
   },
   "timestamp" : 839
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 4711.0,
+    "commerciants" : [ ],
+    "currency" : "CHF",
+    "deposit limit" : 211.0,
+    "IBAN" : "RO73POOB7862625166958832",
+    "spending limit" : 122.22222222222223,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 840
 }, {
   "command" : "spendingsReport",
   "output" : {
@@ -2446,7 +2472,7 @@
     "lastName" : "Gould",
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
-      "balance" : 3294.282428571428,
+      "balance" : 3294.3814285714284,
       "IBAN" : "RO58POOB7344468893732422",
       "currency" : "CAD",
       "type" : "classic",
@@ -3006,7 +3032,7 @@
   "command" : "spendingsReport",
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 3294.282428571428,
+    "balance" : 3294.3814285714284,
     "currency" : "CAD",
     "transactions" : [ {
       "timestamp" : 620,

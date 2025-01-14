@@ -9,6 +9,10 @@ import org.poo.fileio.CommandInput;
 
 
 public final class AddAccount implements BankingOperations {
+    /**
+     * creates a new business account
+     * @param command -
+     */
     private void createBusinessAccount(final BankOpData command) {
         CommandInput commandInput = command.getCommandInput();
         String email = commandInput.getEmail();

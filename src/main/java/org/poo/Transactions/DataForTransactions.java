@@ -30,6 +30,8 @@ public final class DataForTransactions {
     private String newPlan;
     private String location;
     private List<Double> payEach;
+    private String splitType;
+    private String savingsAccount;
 
     /**
      * includes a command
@@ -236,6 +238,26 @@ public final class DataForTransactions {
      */
     public DataForTransactions withPayEach(final List<Double> payEach1) {
         this.payEach = payEach1;
+        return this;
+    }
+
+    /**
+     * includes the split type
+     * @param splitType -
+     * @return -
+     */
+    public DataForTransactions withSplitType(final String splitType) {
+        this.splitType = splitType;
+        return this;
+    }
+
+    /**
+     * includes the savings account
+     * @param savingsAccount1 -
+     * @return -
+     */
+    public DataForTransactions withSavingsAccount(final String savingsAccount1) {
+        this.savingsAccount = savingsAccount1;
         return this;
     }
 }

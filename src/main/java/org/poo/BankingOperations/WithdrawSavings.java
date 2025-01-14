@@ -75,6 +75,18 @@ public final class WithdrawSavings implements BankingOperations {
 
         String currency = commandInput.getCurrency();
         ExchangeRate exchangeRate = command.getExchangeRate();
+        BankAccount classicAccount = user.getFirstAccountWithCurrency(currency);
+        if (classicAccount == null) { // you don't have a classic account
+            DataForTransactions data = new DataForTransactions().
+                    withTimestamp(commandInput.getTimestamp()).
+                    withCommand("noClassic");
+            ObjectNode report = transactionReport.executeOperation(data);
+            assert report != null;
+            user.addTransactionReport(report);
+            bankAccount.addReport(report);
+            return null;
+        }
+
         double amount = commandInput.getAmount();
         double exRate = exchangeRate.getExchangeRate(currency, bankAccount.getCurrency());
         double balance = bankAccount.getBalance();
@@ -89,22 +101,20 @@ public final class WithdrawSavings implements BankingOperations {
             return null;
         }
 
-        BankAccount classicAccount = user.getFirstAccountWithCurrency(currency);
-        if (classicAccount == null) { // you don't have a classic account
-            DataForTransactions data = new DataForTransactions().
-                    withTimestamp(commandInput.getTimestamp()).
-                    withCommand("noClassic");
-            ObjectNode report = transactionReport.executeOperation(data);
-            assert report != null;
-            user.addTransactionReport(report);
-            bankAccount.addReport(report);
-            return null;
-        }
-
         double classicExRate = exchangeRate.getExchangeRate(currency, classicAccount.getCurrency());
         bankAccount.pay(amount * exRate);
         classicAccount.addFunds(amount * classicExRate);
-
+        DataForTransactions data = new DataForTransactions().
+                withAccount(classicAccount.getIBAN()).
+                withSavingsAccount(bankAccount.getIBAN()).
+                withCommand("withdrawSavings").
+                withAmount(amount).
+                withTimestamp(commandInput.getTimestamp());
+        ObjectNode output = transactionReport.executeOperation(data);
+        bankAccount.addReport(output);
+        classicAccount.addReport(output);
+        user.addTransactionReport(output);
+        user.addTransactionReport(output);
         return null;
     }
 }

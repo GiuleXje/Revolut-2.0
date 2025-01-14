@@ -323,6 +323,13 @@
   } ],
   "timestamp" : 149
 }, {
+  "command" : "rejectSplitPayment",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 204
+  },
+  "timestamp" : 204
+}, {
   "command" : "payOnline",
   "output" : {
     "timestamp" : 205,
@@ -350,7 +357,7 @@
     "amountForUsers" : [ 1123.5, 211.0, 912.0, 575.1 ],
     "currency" : "USD",
     "description" : "Split payment of 2821.60 USD",
-    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment.",
+    "error" : "One user rejected the payment.",
     "involvedAccounts" : [ "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
     "splitPaymentType" : "custom",
     "timestamp" : 143
@@ -396,6 +403,13 @@
   } ],
   "timestamp" : 206
 }, {
+  "command" : "acceptSplitPayment",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 210
+  },
+  "timestamp" : 210
+}, {
   "command" : "printTransactions",
   "output" : [ {
     "timestamp" : 1,
@@ -410,7 +424,7 @@
     "amountForUsers" : [ 1123.5, 211.0, 912.0, 575.1 ],
     "currency" : "USD",
     "description" : "Split payment of 2821.60 USD",
-    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment.",
+    "error" : "One user rejected the payment.",
     "involvedAccounts" : [ "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
     "splitPaymentType" : "custom",
     "timestamp" : 143
@@ -462,6 +476,13 @@
     "timestamp" : 211
   } ],
   "timestamp" : 212
+}, {
+  "command" : "acceptSplitPayment",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 216
+  },
+  "timestamp" : 216
 }, {
   "command" : "payOnline",
   "output" : {

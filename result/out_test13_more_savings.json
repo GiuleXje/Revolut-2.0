@@ -111,13 +111,6 @@
   },
   "timestamp" : 210
 }, {
-  "command" : "upgradePlan",
-  "output" : {
-    "description" : "The user already has the silver plan.",
-    "timestamp" : 214
-  },
-  "timestamp" : 214
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Juliette-Gabrielle",
@@ -423,6 +416,9 @@
       "accountIBAN" : "RO65POOB8944016386845896",
       "newPlanType" : "silver"
     }, {
+      "description" : "The user already has the silver plan.",
+      "timestamp" : 214
+    }, {
       "description" : "Interest rate of the account changed to 0.17",
       "timestamp" : 223
     }, {
@@ -444,6 +440,18 @@
   }, {
     "timestamp" : 165,
     "description" : "New account created"
+  }, {
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422",
+    "timestamp" : 195
+  }, {
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422",
+    "timestamp" : 195
   }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 208
@@ -474,6 +482,18 @@
     "timestamp" : 85,
     "description" : "New account created"
   }, {
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365",
+    "timestamp" : 197
+  }, {
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365",
+    "timestamp" : 197
+  }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 201
   } ],
@@ -494,6 +514,9 @@
     "description" : "Upgrade plan",
     "accountIBAN" : "RO65POOB8944016386845896",
     "newPlanType" : "silver"
+  }, {
+    "description" : "The user already has the silver plan.",
+    "timestamp" : 214
   }, {
     "description" : "Interest rate of the account changed to 0.17",
     "timestamp" : 223
@@ -516,6 +539,18 @@
     "timestamp" : 176,
     "description" : "New account created"
   }, {
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590",
+    "timestamp" : 199
+  }, {
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590",
+    "timestamp" : 199
+  }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 209
   } ],
@@ -532,6 +567,18 @@
     "timestamp" : 165,
     "description" : "New account created"
   }, {
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422",
+    "timestamp" : 195
+  }, {
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422",
+    "timestamp" : 195
+  }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 208
   }, {
@@ -539,7 +586,8 @@
     "description" : "Split payment of 1423.00 RON",
     "currency" : "RON",
     "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ],
+    "splitPaymentType" : "equal"
   } ],
   "timestamp" : 237
 }, {
@@ -558,7 +606,8 @@
     "description" : "Split payment of 1423.00 RON",
     "currency" : "RON",
     "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ],
+    "splitPaymentType" : "equal"
   } ],
   "timestamp" : 238
 }, {
@@ -572,6 +621,18 @@
   }, {
     "timestamp" : 85,
     "description" : "New account created"
+  }, {
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365",
+    "timestamp" : 197
+  }, {
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365",
+    "timestamp" : 197
   }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 201
@@ -594,6 +655,9 @@
     "accountIBAN" : "RO65POOB8944016386845896",
     "newPlanType" : "silver"
   }, {
+    "description" : "The user already has the silver plan.",
+    "timestamp" : 214
+  }, {
     "description" : "Interest rate of the account changed to 0.17",
     "timestamp" : 223
   }, {
@@ -606,7 +670,8 @@
     "description" : "Split payment of 1423.00 RON",
     "currency" : "RON",
     "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ],
+    "splitPaymentType" : "equal"
   } ],
   "timestamp" : 240
 }, {
@@ -621,6 +686,18 @@
     "timestamp" : 176,
     "description" : "New account created"
   }, {
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590",
+    "timestamp" : 199
+  }, {
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590",
+    "timestamp" : 199
+  }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 209
   }, {
@@ -628,7 +705,8 @@
     "description" : "Split payment of 1423.00 RON",
     "currency" : "RON",
     "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ],
+    "splitPaymentType" : "equal"
   } ],
   "timestamp" : 241
 }, {
@@ -798,6 +876,9 @@
     "accountIBAN" : "RO65POOB8944016386845896",
     "newPlanType" : "silver"
   }, {
+    "description" : "The user already has the silver plan.",
+    "timestamp" : 214
+  }, {
     "description" : "Interest rate of the account changed to 0.17",
     "timestamp" : 223
   }, {
@@ -810,7 +891,8 @@
     "description" : "Split payment of 1423.00 RON",
     "currency" : "RON",
     "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ],
+    "splitPaymentType" : "equal"
   }, {
     "timestamp" : 248,
     "description" : "Cinema tickets for a weekend outing",
@@ -1545,6 +1627,18 @@
   },
   "timestamp" : 535
 }, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 5599.366,
+    "commerciants" : [ ],
+    "currency" : "USD",
+    "deposit limit" : 1300.0,
+    "IBAN" : "RO68POOB1848616931405475",
+    "spending limit" : 189.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 536
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Juliette-Gabrielle",
@@ -1720,6 +1814,9 @@
     "accountIBAN" : "RO65POOB8944016386845896",
     "newPlanType" : "silver"
   }, {
+    "description" : "The user already has the silver plan.",
+    "timestamp" : 214
+  }, {
     "description" : "Interest rate of the account changed to 0.17",
     "timestamp" : 223
   }, {
@@ -1732,7 +1829,8 @@
     "description" : "Split payment of 1423.00 RON",
     "currency" : "RON",
     "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ],
+    "splitPaymentType" : "equal"
   }, {
     "timestamp" : 248,
     "description" : "Cinema tickets for a weekend outing",
@@ -1741,7 +1839,7 @@
     "amount" : "2760.0 RON",
     "transferType" : "sent"
   }, {
-    "description" : "Insufficient funds",
+    "description" : "You do not have a classic account.",
     "timestamp" : 251
   }, {
     "timestamp" : 386,
@@ -1780,6 +1878,18 @@
     "timestamp" : 165,
     "description" : "New account created"
   }, {
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422",
+    "timestamp" : 195
+  }, {
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422",
+    "timestamp" : 195
+  }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 208
   }, {
@@ -1787,7 +1897,8 @@
     "description" : "Split payment of 1423.00 RON",
     "currency" : "RON",
     "amount" : 355.75,
-    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ],
+    "splitPaymentType" : "equal"
   }, {
     "timestamp" : 461,
     "description" : "Monthly rent payment for an apartment",
@@ -1815,6 +1926,18 @@
   }, {
     "timestamp" : 85,
     "description" : "New account created"
+  }, {
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365",
+    "timestamp" : 197
+  }, {
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "description" : "Savings withdrawal",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365",
+    "timestamp" : 197
   }, {
     "description" : "Account couldn't be deleted - there are funds remaining",
     "timestamp" : 201
