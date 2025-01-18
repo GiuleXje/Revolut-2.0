@@ -38,6 +38,17 @@ public class ChangeSpendingLimit implements BankingOperations {
             return null;
         }
 
+        if (!bankAccount.getAccountType().equals("business")) {
+            ObjectNode output = new ObjectMapper().createObjectNode();
+            output.put("command", commandInput.getCommand());
+            ObjectNode out = new ObjectMapper().createObjectNode();
+            out.put("description", "This is not a business account");
+            out.put("timestamp", commandInput.getTimestamp());
+            output.set("output", out);
+            output.put("timestamp", commandInput.getTimestamp());
+            return output;
+        }
+
         bankAccount.setSpendingLimit(newLimit);
         return null;
     }

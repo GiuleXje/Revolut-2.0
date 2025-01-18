@@ -35,7 +35,6 @@ public class CashWithdrawal implements BankingOperations {
             output.put("timestamp", timestamp);
             return output;
         }
-
         CardDB cardDB = command.getCardDB();
         BankAccount bankAccount = cardDB.getAssociatedCards().get(cardNumber);
         if (bankAccount == null) { // account not found
@@ -47,6 +46,23 @@ public class CashWithdrawal implements BankingOperations {
             output.set("output", out);
             output.put("timestamp", timestamp);
             return output;
+        }
+        if (timestamp == 439) {
+            System.out.println(bankAccount.getTimestamp());
+        }
+        if (bankAccount.getAccountType().equals("business")) {
+            if (!bankAccount.getEmployees().contains(user)
+            && !bankAccount.getManagers().contains(user) &&
+            !bankAccount.getOwner().equals(user)) {
+                ObjectNode output = new ObjectMapper().createObjectNode();
+                output.put("command", "cashWithdrawal");
+                ObjectNode out = new ObjectMapper().createObjectNode();
+                out.put("description", "Card not found");
+                out.put("timestamp", timestamp);
+                output.set("output", out);
+                output.put("timestamp", timestamp);
+                return output;
+            }
         }
         String currency = bankAccount.getCurrency();
         ExchangeRate exchangeRate = command.getExchangeRate();
@@ -68,8 +84,6 @@ public class CashWithdrawal implements BankingOperations {
         }
 
         bankAccount.pay(withdrawAmount + fee);
-        if (timestamp == 8)
-            System.out.println(fee);
         DataForTransactions data = new DataForTransactions().
                 withTimestamp(timestamp).
                 withAmount(amount).

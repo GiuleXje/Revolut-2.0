@@ -22,9 +22,7 @@ public final class AddFunds implements BankingOperations {
         EmailDB emailDB = command.getEmailDB();
         User user = emailDB.getUser(email);
         if (bankAccount.getEmployees().contains(user)) {
-            ExchangeRate exchangeRate = command.getExchangeRate();
-            double exRate = exchangeRate.getExchangeRate(bankAccount.getCurrency(), "RON");
-           if (funds * exRate > depositLimit) {
+           if (funds > depositLimit) {
                return;
            }
         }

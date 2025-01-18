@@ -14,6 +14,12 @@ import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 
 public final class SendMoney implements BankingOperations {
+    /**
+     * handle payments towards a merchant
+     * @param command -
+     * @param merchant -
+     * @return -
+     */
     public ObjectNode itIsAMerchant(final BankOpData command, final Merchant merchant) {
         CommandInput commandInput = command.getCommandInput();
         TransactionReport transactionReport = command.getTransactionReport();
@@ -92,6 +98,10 @@ public final class SendMoney implements BankingOperations {
             if (transactions >= 10 && account.getUsedTechCB().equals("locked")) {
                 account.setUsedTechCB("unlocked");
             }
+        }
+        if (account.getAccountType().equals("business")) {
+            account.spendMore(amount, giverUser, commandInput.getTimestamp());
+            account.spentMoreOnMerchant(giverUser, commandInput.getTimestamp(), amount, merchant);
         }
         DataForTransactions data =
                 new DataForTransactions().
@@ -185,6 +195,10 @@ public final class SendMoney implements BankingOperations {
                             giverAccount.pay(amount + fee);
                             receiverBAccount.
                                     addFunds(amount * exRate);
+                            if (giverAccount.getAccountType().equals("business")) {
+                                giverAccount.spendMore(amount, giverUser,
+                                        commandInput.getTimestamp());
+                            }
                             DataForTransactions data =
                                     new DataForTransactions().
                                             withCommand("sendMoney").
@@ -284,6 +298,9 @@ public final class SendMoney implements BankingOperations {
         if (amount + fee
                 <= giverAccount.getBalance()) {
             giverAccount.pay(amount + fee);
+            if (giverAccount.getAccountType().equals("business")) {
+                giverAccount.spendMore(amount, giver, commandInput.getTimestamp());
+            }
             receiverAccount.addFunds(amount * exRate);
             DataForTransactions data = new DataForTransactions().
                     withCommand("sendMoney").

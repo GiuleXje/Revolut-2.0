@@ -111,7 +111,9 @@ public final class PayOnline implements BankingOperations {
         }
 
         HashMap<String, User> businessCards = bankAccount.getBusinessCards();
-        if (!businessCards.containsKey(cardNumber)) { // the card does not exist
+        if (!businessCards.containsKey(cardNumber) || (!bankAccount.getEmployees().contains(payer)
+                && !bankAccount.getManagers().contains(payer)
+                && !bankAccount.getOwner().equals(payer))) { // the card does not exist
             ObjectNode output = new ObjectMapper().createObjectNode();
             output.put("command", "payOnline");
             ObjectNode aux = new ObjectMapper().createObjectNode();
@@ -282,6 +284,7 @@ public final class PayOnline implements BankingOperations {
         IBANDB ibanDB = command.getIbanDB();
         ExchangeRate exchangeRate = command.getExchangeRate();
 
+        int timestamp = commandInput.getTimestamp();
         String cardNumber = commandInput.getCardNumber();
         BankAccount bankAccount = cardDB.
                 getAssociatedCards().
@@ -289,6 +292,8 @@ public final class PayOnline implements BankingOperations {
         String merchant = commandInput.getCommerciant();
         if (bankAccount != null) {
             if (bankAccount.getAccountType().equals("business")) {
+                if (timestamp == 136)
+                    System.out.println("da");
                 return handleBusinessAccount(bankAccount, command);
             }
             double amount = commandInput.getAmount();

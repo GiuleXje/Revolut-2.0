@@ -283,6 +283,13 @@
   } ],
   "timestamp" : 349
 }, {
+  "command" : "changeSpendingLimit",
+  "output" : {
+    "description" : "This is not a business account",
+    "timestamp" : 350
+  },
+  "timestamp" : 350
+}, {
   "command" : "cashWithdrawal",
   "output" : {
     "description" : "Card not found",

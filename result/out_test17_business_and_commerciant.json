@@ -241,27 +241,27 @@
 }, {
   "command" : "businessReport",
   "output" : {
-    "balance" : 554.0,
+    "balance" : 1254.0,
     "currency" : "USD",
     "deposit limit" : 107.14285714285714,
     "employees" : [ {
-      "deposited" : 0.0,
+      "deposited" : 163.0,
       "spent" : 0.0,
       "username" : "Lee Joe"
     }, {
-      "deposited" : 0.0,
+      "deposited" : 40.0,
       "spent" : 0.0,
       "username" : "Albu Dida"
     }, {
-      "deposited" : 0.0,
+      "deposited" : 84.0,
       "spent" : 0.0,
       "username" : "Marin Silvia"
     }, {
-      "deposited" : 0.0,
+      "deposited" : 281.0,
       "spent" : 0.0,
       "username" : "Poulain Gilbert"
     }, {
-      "deposited" : 0.0,
+      "deposited" : 132.0,
       "spent" : 0.0,
       "username" : "Booker James"
     } ],
@@ -281,18 +281,18 @@
     } ],
     "spending limit" : 868.0,
     "statistics type" : "transaction",
-    "total deposited" : 435.0,
+    "total deposited" : 1135.0,
     "total spent" : 0.0
   },
   "timestamp" : 429
 }, {
   "command" : "businessReport",
   "output" : {
-    "balance" : 723.0,
+    "balance" : 1024.0,
     "currency" : "USD",
     "deposit limit" : 107.14285714285714,
     "employees" : [ {
-      "deposited" : 0.0,
+      "deposited" : 301.0,
       "spent" : 0.0,
       "username" : "Vallee Genevieve"
     } ],
@@ -316,7 +316,7 @@
     } ],
     "spending limit" : 94.0,
     "statistics type" : "transaction",
-    "total deposited" : 684.0,
+    "total deposited" : 985.0,
     "total spent" : 0.0
   },
   "timestamp" : 430
@@ -393,7 +393,7 @@
 }, {
   "command" : "businessReport",
   "output" : {
-    "balance" : 582.27,
+    "balance" : 1282.27,
     "commerciants" : [ ],
     "currency" : "USD",
     "deposit limit" : 107.14285714285714,
@@ -405,7 +405,7 @@
 }, {
   "command" : "businessReport",
   "output" : {
-    "balance" : 723.0,
+    "balance" : 1024.0,
     "commerciants" : [ ],
     "currency" : "USD",
     "deposit limit" : 107.14285714285714,

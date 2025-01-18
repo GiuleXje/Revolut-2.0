@@ -319,9 +319,12 @@ public final class BankAccount {
      */
     public void spentMoreOnMerchant(final User spender, final int timestamp,
                                     final double amount, final Merchant merchant) {
-        if (!spentOnMerchants.containsKey(merchant)) {
-            spentOnMerchants.put(merchant, new ArrayList<>());
+        if (employees.contains(spender)
+                || managers.contains(spender)) {
+            if (!spentOnMerchants.containsKey(merchant)) {
+                spentOnMerchants.put(merchant, new ArrayList<>());
+            }
+            spentOnMerchants.get(merchant).add(new Pair<>(timestamp, new Pair<>(spender, amount)));
         }
-        spentOnMerchants.get(merchant).add(new Pair<>(timestamp, new Pair<>(spender, amount)));
     }
 }
