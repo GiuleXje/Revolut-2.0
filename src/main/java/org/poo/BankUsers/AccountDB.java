@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountDB {
+public final class AccountDB {
     private LinkedHashMap<String, BankAccount> accounts;
 
     public AccountDB() {

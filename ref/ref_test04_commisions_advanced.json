@@ -142,6 +142,13 @@
   } ],
   "timestamp" : 39
 }, {
+  "command" : "sendMoney",
+  "output" : {
+    "timestamp" : 41,
+    "description" : "User not found"
+  },
+  "timestamp" : 41
+}, {
   "command" : "printTransactions",
   "output" : [ {
     "timestamp" : 37,
@@ -154,7 +161,8 @@
     "account" : "RO76POOB4035116042454483"
   }, {
     "timestamp" : 43,
-    "description" : "Insufficient funds"
+    "description" : "Cash withdrawal of 100000.0",
+    "amount" : 100000.0
   } ],
   "timestamp" : 44
 }, {
@@ -259,7 +267,7 @@
     "email" : "Dennis_Norris@yahoo.us",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 100846.0,
+      "balance" : 79374.57142857143,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -315,10 +323,7 @@
     "timestamp" : 49,
     "description" : "Card payment",
     "amount" : 18.0,
-    "commerciant" : "Samsung"
-  }, {
-    "timestamp" : 50,
-    "description" : "Insufficient funds"
+    "commerciant" : "Nike"
   }, {
     "timestamp" : 51,
     "description" : "Visit to a local healthcare clinic",
@@ -328,6 +333,13 @@
     "transferType" : "sent"
   } ],
   "timestamp" : 52
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "timestamp" : 57,
+    "description" : "User not found"
+  },
+  "timestamp" : 57
 }, {
   "command" : "printTransactions",
   "output" : [ {
@@ -343,10 +355,7 @@
     "timestamp" : 49,
     "description" : "Card payment",
     "amount" : 18.0,
-    "commerciant" : "Samsung"
-  }, {
-    "timestamp" : 50,
-    "description" : "Insufficient funds"
+    "commerciant" : "Nike"
   }, {
     "timestamp" : 51,
     "description" : "Visit to a local healthcare clinic",
@@ -363,10 +372,11 @@
     "timestamp" : 56,
     "description" : "Card payment",
     "amount" : 244.0,
-    "commerciant" : "Burger King"
+    "commerciant" : "Samsung"
   }, {
     "timestamp" : 59,
-    "description" : "Insufficient funds"
+    "description" : "Cash withdrawal of 600.0",
+    "amount" : 600.0
   } ],
   "timestamp" : 60
 }, {
@@ -398,7 +408,7 @@
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO37POOB7013767509830666",
-      "balance" : 2046.57,
+      "balance" : 1917.6274285714285,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -480,7 +490,7 @@
     "email" : "Dennis_Norris@yahoo.us",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 100849.0,
+      "balance" : 79377.57142857143,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -521,6 +531,13 @@
     "accounts" : [ ]
   } ],
   "timestamp" : 61
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "timestamp" : 65,
+    "description" : "User not found"
+  },
+  "timestamp" : 65
 }, {
   "command" : "printTransactions",
   "output" : [ {
@@ -572,7 +589,7 @@
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO37POOB7013767509830666",
-      "balance" : 2046.57,
+      "balance" : 1917.6274285714285,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -617,7 +634,7 @@
     "email" : "Jason_Carpenter@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 102.0,
+      "balance" : 2773.4285714285716,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -657,7 +674,7 @@
     "email" : "Dennis_Norris@yahoo.us",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 100849.0,
+      "balance" : 79377.57142857143,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {

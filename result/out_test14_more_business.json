@@ -1,0 +1,245 @@
+[ {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 0.0,
+    "currency" : "RON",
+    "deposit limit" : 135.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Stanescu Damian"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Voinea Valentin"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Albu Pompilia"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "King Daniel"
+    } ],
+    "IBAN" : "RO69POOB6209498372540635",
+    "managers" : [ ],
+    "spending limit" : 500.0,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 0.0
+  },
+  "timestamp" : 75
+}, {
+  "command" : "cashWithdrawal",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 79
+  },
+  "timestamp" : 79
+}, {
+  "command" : "cashWithdrawal",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 80
+  },
+  "timestamp" : 80
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 2628.063,
+    "currency" : "RON",
+    "deposit limit" : 135.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 253.0,
+      "username" : "Stanescu Damian"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 342.0,
+      "username" : "Voinea Valentin"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Albu Pompilia"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "King Daniel"
+    } ],
+    "IBAN" : "RO69POOB6209498372540635",
+    "managers" : [ ],
+    "spending limit" : 500.0,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 595.0
+  },
+  "timestamp" : 84
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 136,
+    "description" : "Card not found"
+  },
+  "timestamp" : 136
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 137,
+    "description" : "Card not found"
+  },
+  "timestamp" : 137
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 138,
+    "description" : "Card not found"
+  },
+  "timestamp" : 138
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 142,
+    "description" : "Card not found"
+  },
+  "timestamp" : 142
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 143,
+    "description" : "Card not found"
+  },
+  "timestamp" : 143
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 148,
+    "description" : "Card not found"
+  },
+  "timestamp" : 148
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 153,
+    "description" : "Card not found"
+  },
+  "timestamp" : 153
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 156,
+    "description" : "Card not found"
+  },
+  "timestamp" : 156
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "timestamp" : 158,
+    "description" : "Card not found"
+  },
+  "timestamp" : 158
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 13323.888625,
+    "currency" : "RON",
+    "deposit limit" : 135.0,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 253.0,
+      "username" : "Stanescu Damian"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 854.05,
+      "username" : "Voinea Valentin"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Albu Pompilia"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "King Daniel"
+    } ],
+    "IBAN" : "RO69POOB6209498372540635",
+    "managers" : [ ],
+    "spending limit" : 500.0,
+    "statistics type" : "transaction",
+    "total deposited" : 0.0,
+    "total spent" : 1107.05
+  },
+  "timestamp" : 161
+}, {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 13323.888625,
+    "commerciants" : [ {
+      "commerciant" : "Amazon",
+      "employees" : [ "Voinea Valentin" ],
+      "managers" : [ ],
+      "total received" : 220.04999999999998
+    }, {
+      "commerciant" : "H&M",
+      "employees" : [ "Stanescu Damian" ],
+      "managers" : [ ],
+      "total received" : 253.0
+    }, {
+      "commerciant" : "Samsung",
+      "employees" : [ "Voinea Valentin" ],
+      "managers" : [ ],
+      "total received" : 342.0
+    }, {
+      "commerciant" : "Zara",
+      "employees" : [ "Voinea Valentin", "Voinea Valentin" ],
+      "managers" : [ ],
+      "total received" : 292.0
+    } ],
+    "currency" : "RON",
+    "deposit limit" : 135.0,
+    "IBAN" : "RO69POOB6209498372540635",
+    "spending limit" : 500.0,
+    "statistics type" : "commerciant"
+  },
+  "timestamp" : 162
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 210
+  },
+  "timestamp" : 210
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 395
+  },
+  "timestamp" : 395
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 396
+  },
+  "timestamp" : 396
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 398
+  },
+  "timestamp" : 398
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 399
+  },
+  "timestamp" : 399
+}, {
+  "command" : "sendMoney",
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 400
+  },
+  "timestamp" : 400
+} ]

@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.BankUsers.BankAccount;
 import org.poo.BankUsers.IBANDB;
 import org.poo.BankUsers.User;
+import org.poo.Transactions.DataForTransactions;
+import org.poo.Transactions.TransactionReport;
 import org.poo.fileio.CommandInput;
 
 public final class AddInterest implements BankingOperations {
@@ -40,7 +42,20 @@ public final class AddInterest implements BankingOperations {
             return output;
         }
 
-        bankAccount.setBalance(bankAccount.calculateInterest());
+        double interest = bankAccount.calculateInterest();
+        bankAccount.addFunds(interest);
+
+        DataForTransactions data = new DataForTransactions().
+                withTimestamp(commandInput.getTimestamp()).
+                withAmount(interest).withCommand("interest").
+                withCurrency(bankAccount.getCurrency());
+        TransactionReport transactionReport = command.getTransactionReport();
+        ObjectNode report = transactionReport.executeOperation(data);
+        assert (report != null);
+
+        bankAccount.addReport(report);
+        user.addTransactionReport(report);
+
         return null;
     }
 }

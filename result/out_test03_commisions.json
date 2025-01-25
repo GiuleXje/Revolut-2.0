@@ -1,0 +1,144 @@
+[ {
+  "command" : "printTransactions",
+  "output" : [ {
+    "timestamp" : 1,
+    "description" : "New account created"
+  }, {
+    "account" : "RO58POOB7344468893732422",
+    "card" : "8207906978464446",
+    "cardHolder" : "Aurica_Dinu@outlook.ro",
+    "description" : "New card created",
+    "timestamp" : 4
+  }, {
+    "amount" : 401.0,
+    "commerciant" : "Samsung",
+    "description" : "Card payment",
+    "timestamp" : 5
+  }, {
+    "timestamp" : 6,
+    "description" : "Cinema tickets for a weekend outing",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635",
+    "amount" : "101.0 RON",
+    "transferType" : "sent"
+  }, {
+    "description" : "Insufficient funds",
+    "timestamp" : 8
+  } ],
+  "timestamp" : 9
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Consuela",
+    "lastName" : "Mazilescu",
+    "email" : "Consuela_Mazilescu@gmail.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Aurica",
+    "lastName" : "Dinu",
+    "email" : "Aurica_Dinu@outlook.ro",
+    "accounts" : [ {
+      "balance" : 676.688,
+      "IBAN" : "RO58POOB7344468893732422",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ]
+    } ]
+  }, {
+    "firstName" : "Rada",
+    "lastName" : "Nita",
+    "email" : "Rada_Nita@gmail.ro",
+    "accounts" : [ {
+      "balance" : 101.0,
+      "IBAN" : "RO69POOB6209498372540635",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  } ],
+  "timestamp" : 11
+}, {
+  "command" : "cashWithdrawal",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 15
+  },
+  "timestamp" : 15
+}, {
+  "command" : "printTransactions",
+  "output" : [ {
+    "timestamp" : 2,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 6,
+    "description" : "Cinema tickets for a weekend outing",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635",
+    "amount" : "101.0 RON",
+    "transferType" : "received"
+  }, {
+    "account" : "RO69POOB6209498372540635",
+    "card" : "7901879264253296",
+    "cardHolder" : "Rada_Nita@gmail.ro",
+    "description" : "New card created",
+    "timestamp" : 13
+  }, {
+    "amount" : 428.0,
+    "commerciant" : "H&M",
+    "description" : "Card payment",
+    "timestamp" : 14
+  }, {
+    "account" : "RO69POOB6209498372540635",
+    "card" : "7901879264253296",
+    "cardHolder" : "Rada_Nita@gmail.ro",
+    "description" : "The card has been destroyed",
+    "timestamp" : 14
+  }, {
+    "account" : "RO69POOB6209498372540635",
+    "card" : "7004757825892043",
+    "cardHolder" : "Rada_Nita@gmail.ro",
+    "description" : "New card created",
+    "timestamp" : 14
+  } ],
+  "timestamp" : 16
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Consuela",
+    "lastName" : "Mazilescu",
+    "email" : "Consuela_Mazilescu@gmail.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Aurica",
+    "lastName" : "Dinu",
+    "email" : "Aurica_Dinu@outlook.ro",
+    "accounts" : [ {
+      "balance" : 687.344,
+      "IBAN" : "RO58POOB7344468893732422",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ]
+    } ]
+  }, {
+    "firstName" : "Rada",
+    "lastName" : "Nita",
+    "email" : "Rada_Nita@gmail.ro",
+    "accounts" : [ {
+      "balance" : 896.856,
+      "IBAN" : "RO69POOB6209498372540635",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ]
+    } ]
+  } ],
+  "timestamp" : 20
+} ]

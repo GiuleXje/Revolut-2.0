@@ -4,21 +4,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
-import org.poo.BankUsers.User;
-import org.poo.BankUsers.EmailDB;
-import org.poo.BankUsers.AccountDB;
-import org.poo.BankUsers.CardDB;
-import org.poo.BankUsers.IBANDB;
-import org.poo.BankUsers.AliasDB;
+import org.poo.BankUsers.*;
 import org.poo.BankingOperations.BankOpData;
 import org.poo.ExchangeRate.ExchangeRate;
+import org.poo.Merchants.MerchantAccounts;
 import org.poo.checker.Checker;
 import org.poo.checker.CheckerConstants;
-import org.poo.fileio.CommandInput;
-import org.poo.fileio.ExchangeInput;
-import org.poo.fileio.ObjectInput;
-import org.poo.fileio.UserInput;
+import org.poo.fileio.*;
 import org.poo.utils.Utils;
+import org.poo.Merchants.Merchant;
+import org.poo.Merchants.MerchantsDB;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,6 +22,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedHashSet;
 import java.util.Objects;
 
 /**
@@ -92,6 +88,7 @@ public final class Main {
         // get all the data needed from the input
         UserInput[] usersInfo = inputData.getUsers();
         ExchangeInput[] exRates = inputData.getExchangeRates();
+        CommerciantInput[] merchants = inputData.getCommerciants();
         CommandInput[] commands = inputData.
                 getCommands();
 
@@ -108,20 +105,36 @@ public final class Main {
         AliasDB aliasDB = new AliasDB();
         // set a new accounts(IBAN) database
         AccountDB accountDB = new AccountDB();
-
+        // set a new merchants database
+        MerchantsDB merchantsDB = new MerchantsDB();
         //reset the card and IBAN generator
         Utils.resetRandom();
+        // set a new merchant account database
+        MerchantAccounts merchantAccounts = new MerchantAccounts();
+        // new custom split
+        LinkedHashSet<CustomSplit> activeSplits = new LinkedHashSet<>();
 
         // get the users
         for (UserInput user : usersInfo) {
             emailDB.addUser(new User(user.getFirstName(),
-                    user.getLastName(), user.getEmail()));
+                    user.getLastName(), user.getEmail(), user.getBirthDate(),
+                    user.getOccupation()));
+        }
+
+        // get each merchant
+        for (CommerciantInput merchant : merchants) {
+            Merchant newMerchant = new Merchant(merchant.getCommerciant(),
+                    merchant.getId(), merchant.getAccount(),
+                    merchant.getType(), merchant.getCashbackStrategy());
+            merchantsDB.addMerchant(newMerchant);
+            merchantAccounts.addMerchAccount(newMerchant.getAccount(), newMerchant);
         }
 
         // get each action
         for (CommandInput command : commands) {
             BankOpData commandHandler = new BankOpData(command, emailDB, ibanDB, cardDB,
-                    exchangeRate, aliasDB, accountDB);
+                    exchangeRate, aliasDB, accountDB, merchantsDB, merchantAccounts,
+                    activeSplits);
             commandHandler.execute(); // handle the given command
 
             // output for JSON, if needed

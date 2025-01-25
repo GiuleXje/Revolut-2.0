@@ -27,6 +27,11 @@ public final class DataForTransactions {
     private double splitAmount;
     private String transferType;
     private double interestRate;
+    private String newPlan;
+    private String location;
+    private List<Double> payEach;
+    private String splitType;
+    private String savingsAccount;
 
     /**
      * includes a command
@@ -201,6 +206,58 @@ public final class DataForTransactions {
      */
     public DataForTransactions withInterestRate(final double interest) {
         this.interestRate = interest;
+        return this;
+    }
+
+    /**
+     * includes the new plan
+     * @param newPlan1
+     * -
+     * @return
+     * -
+     */
+    public DataForTransactions withNewPlan(final String newPlan1) {
+        this.newPlan = newPlan1;
+        return this;
+    }
+
+    /**
+     * sets the location of a cash withdrawal
+     * @param location1 -
+     * @return -
+     */
+    public DataForTransactions withLocation(final String location1) {
+        this.location = location1;
+        return this;
+    }
+
+    /**
+     * sets the amount that has to be paid by each bank account
+     * @param payEach1 -
+     * @return -
+     */
+    public DataForTransactions withPayEach(final List<Double> payEach1) {
+        this.payEach = payEach1;
+        return this;
+    }
+
+    /**
+     * includes the split type
+     * @param splitType -
+     * @return -
+     */
+    public DataForTransactions withSplitType(final String splitType) {
+        this.splitType = splitType;
+        return this;
+    }
+
+    /**
+     * includes the savings account
+     * @param savingsAccount1 -
+     * @return -
+     */
+    public DataForTransactions withSavingsAccount(final String savingsAccount1) {
+        this.savingsAccount = savingsAccount1;
         return this;
     }
 }

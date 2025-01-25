@@ -35,7 +35,8 @@ class SendMoneyReport implements TransactionStrategy {
         output.put("description", data.getDescription());
         output.put("senderIBAN", data.getPayerIBAN());
         output.put("receiverIBAN", data.getReceiverIBAN());
-        output.put("amount", data.getAmount() + " " + data.getCurrency());
+        output.put("amount", data.getAmount()
+                + " " + data.getCurrency());
         output.put("transferType", data.getTransferType());
         return output;
     }
@@ -128,6 +129,7 @@ class FailedSplittingBill implements TransactionStrategy {
             accs.add(acc);
         }
         output.set("involvedAccounts", accs);
+        output.put("splitPaymentType", data.getSplitType());
         output.put("timestamp", data.getTimestamp());
         return output;
     }
@@ -149,6 +151,7 @@ class InvolvedInBill implements TransactionStrategy {
             involved.add(account);
         }
         output.set("involvedAccounts", involved);
+        output.put("splitPaymentType", data.getSplitType());
         return output;
     }
 }
@@ -169,6 +172,147 @@ class ChangeInterest implements TransactionStrategy {
         ObjectNode output = new ObjectMapper().createObjectNode();
         output.put("description", "Interest rate of the account changed to "
                 + data.getInterestRate());
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class ChangeOfPlan implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("timestamp", data.getTimestamp());
+        output.put("description", "Upgrade plan");
+        output.put("accountIBAN", data.getAccount());
+        output.put("newPlanType", data.getNewPlan());
+        return output;
+    }
+}
+
+class TooYoung implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("description", "You don't have the minimum age required.");
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class CashWithdrawal implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("amount", Math.round(data.getAmount() * 100) / 100.0);
+        output.put("description", "Cash withdrawal of " + data.getAmount());
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class InterestRate implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("amount", data.getAmount());
+        output.put("currency", data.getCurrency());
+        output.put("description", "Interest rate income");
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class NoClassicAccount implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("description", "You do not have a classic account.");
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class CustomSplitPayment implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("timestamp", data.getTimestamp());
+        output.put("description", "Split payment of "
+        + String.format("%.2f", data.getAmount()) + " " + data.getCurrency());
+        output.put("splitPaymentType", data.getSplitType());
+        output.put("currency", data.getCurrency());
+        ArrayNode forEach = new ObjectMapper().createArrayNode();
+        for (double sum : data.getPayEach()) {
+            forEach.add(sum);
+        }
+        output.set("amountForUsers", forEach);
+        ArrayNode involved = new ObjectMapper().createArrayNode();
+        List<String> accounts = data.getAccounts();
+        for (String account : accounts) {
+            involved.add(account);
+        }
+        output.set("involvedAccounts", involved);
+        return output;
+    }
+}
+
+class FailedCustomSplit implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        ArrayNode forEach = new ObjectMapper().createArrayNode();
+        for (double sum : data.getPayEach()) {
+            forEach.add(sum);
+        }
+        output.set("amountForUsers", forEach);
+        output.put("currency", data.getCurrency());
+        output.put("description", "Split payment of " + String.format("%.2f", data.getAmount())
+                + " " + data.getCurrency());
+        output.put("error", "Account " + data.getAccount() + " has insufficient " +
+                "funds for a split payment.");
+        ArrayNode involved = new ObjectMapper().createArrayNode();
+        for (String account : data.getAccounts()) {
+            involved.add(account);
+        }
+        output.set("involvedAccounts", involved);
+        output.put("splitPaymentType", data.getSplitType());
+        output.put("timestamp", data.getTimestamp());
+        return output;
+    }
+}
+
+class RejectSplit implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode report = new ObjectMapper().createObjectNode();
+        ArrayNode forEach = new ObjectMapper().createArrayNode();
+        for (double sum : data.getPayEach()) {
+            forEach.add(sum);
+        }
+        report.set("amountForUsers", forEach);
+        report.put("currency", data.getCurrency());
+        report.put("description", "Split payment of "
+                + String.format("%.2f", data.getSplitAmount()) + " " + data.getCurrency());
+        report.put("error", "One user rejected the payment.");
+        ArrayNode involved = new ObjectMapper().createArrayNode();
+        for (String account : data.getAccounts()) {
+            involved.add(account);
+        }
+        report.set("involvedAccounts", involved);
+        report.put("splitPaymentType", data.getSplitType());
+        report.put("timestamp", data.getTimestamp());
+        return report;
+    }
+}
+
+class WithdrawSavings implements TransactionStrategy {
+    @Override
+    public ObjectNode generateReport(final DataForTransactions data) {
+        ObjectNode output = new ObjectMapper().createObjectNode();
+        output.put("amount", data.getAmount());
+        output.put("classicAccountIBAN", data.getAccount());
+        output.put("description", "Savings withdrawal");
+        output.put("savingsAccountIBAN", data.getSavingsAccount());
         output.put("timestamp", data.getTimestamp());
         return output;
     }
@@ -205,6 +349,15 @@ public final class TransactionReport {
                 case "poorFriend" -> new FailedSplittingBill();
                 case "noAcc" -> new NoAcc();
                 case "changeInterest" -> new ChangeInterest();
+                case "tooYoung" -> new TooYoung();
+                case "changeOfPlan" -> new ChangeOfPlan();
+                case "cashWithdrawal" -> new CashWithdrawal();
+                case "interest" -> new InterestRate();
+                case "noClassic" -> new NoClassicAccount();
+                case "customSplit" -> new CustomSplitPayment();
+                case "poorFriendV2" -> new FailedCustomSplit();
+                case "rejectSplit" -> new RejectSplit();
+                case "withdrawSavings" -> new WithdrawSavings();
                 default -> null;
             };
         }

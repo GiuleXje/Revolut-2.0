@@ -3,6 +3,11 @@ package org.poo.BankUsers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.poo.BankUsers.ServicePlan.GoldPlan;
+import org.poo.BankUsers.ServicePlan.ServicePlan;
+import org.poo.BankUsers.ServicePlan.StudentPlan;
+import org.poo.BankUsers.ServicePlan.SilverPlan;
+import org.poo.BankUsers.ServicePlan.StandardPlan;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,19 +16,30 @@ import java.util.LinkedHashMap;
 
 @Setter
 @Getter
-public final class User {
+public class User {
     private final String firstName;
     private final String lastName;
     private final String email;
+    private final String birthDate;
+    private final String occupation;
     private LinkedHashMap<String, BankAccount> bankAccounts;
     private ArrayList<ObjectNode> transactionReport;
+    private ServicePlan servicePlan;
+    private String plan;
+    private int payToWin;
 
-    public User(final String firstName, final String lastName, final String email) {
+    public User(final String firstName, final String lastName, final String email,
+                final String birthDate, final String occupation) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         bankAccounts = new LinkedHashMap<>();
         transactionReport = new ArrayList<>();
+        this.birthDate = birthDate;
+        this.occupation = occupation;
+        servicePlan = occupation.equals("student") ? new StudentPlan() : new StandardPlan();
+        plan = occupation.equals("student") ? "student" : "standard";
+        payToWin = 0;
     }
 
     /**
@@ -77,6 +93,50 @@ public final class User {
             }
         }
         return transactions;
+    }
+
+    /**
+     * finds the first account with a given currency
+     * @param currency
+     * the currency we're looking for
+     * @return
+     * the account, if it exists
+     */
+    public BankAccount getFirstAccountWithCurrency(final String currency) {
+        for (BankAccount bankAccount : bankAccounts.values()) {
+            if (bankAccount.getCurrency().equals(currency)
+                    && bankAccount.getAccountType().equals("classic")) {
+                return bankAccount;
+            }
+        }
+        return null;
+    }
+
+    public void incrementPayToWin() {
+        payToWin++;
+    }
+    /**
+     * switches to a new service plan and pay the needed price
+     * @param newPlan
+     * the new plan chosen
+     */
+    public void changeServicePlan(final String newPlan) {
+        switch (newPlan) {
+            case "silver":
+                servicePlan = new SilverPlan();
+                plan = "silver";
+                payToWin = 0;
+                break;
+            case "gold":
+                servicePlan = new GoldPlan();
+                plan = "gold";
+                break;
+            default:
+                servicePlan = new StandardPlan();
+                plan = "standard";
+                payToWin = 0;
+                break;
+        }
     }
 
     @Override

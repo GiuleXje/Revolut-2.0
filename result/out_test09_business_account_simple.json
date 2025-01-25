@@ -1,0 +1,32 @@
+[ {
+  "command" : "businessReport",
+  "output" : {
+    "balance" : 9543.999499999998,
+    "currency" : "EUR",
+    "deposit limit" : 119.04761904761904,
+    "employees" : [ {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Becker Antoine"
+    }, {
+      "deposited" : 0.0,
+      "spent" : 0.0,
+      "username" : "Johnson John"
+    } ],
+    "IBAN" : "RO58POOB2721178218599590",
+    "managers" : [ {
+      "deposited" : 3357.0,
+      "spent" : 186.0,
+      "username" : "Diaconu Artemisa"
+    }, {
+      "deposited" : 3005.0,
+      "spent" : 214.0,
+      "username" : "Coulon Christophe-Adrien"
+    } ],
+    "spending limit" : 339.0,
+    "statistics type" : "transaction",
+    "total deposited" : 6362.0,
+    "total spent" : 400.0
+  },
+  "timestamp" : 280
+} ]

@@ -143,74 +143,74 @@
   ],
   "commerciants": [
     {
-      "commerciant": "Burger King",
-      "id": 106,
+      "commerciant": "Samsung",
+      "id": 113,
       "account": "RO22POOB3875162728202296",
-      "type": "Food",
+      "type": "Tech",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "KFC",
-      "id": 106,
+      "id": 100,
       "account": "RO28POOB5923933391234057",
       "type": "Food",
       "cashbackStrategy": "spendingThreshold"
     },
     {
-      "commerciant": "Amazon",
-      "id": 126,
+      "commerciant": "Burger King",
+      "id": 108,
       "account": "RO25POOB4386521661484930",
-      "type": "Tech",
-      "cashbackStrategy": "spendingThreshold"
-    },
-    {
-      "commerciant": "Samsung",
-      "id": 116,
-      "account": "RO32POOB8964686295716974",
-      "type": "Tech",
-      "cashbackStrategy": "nrOfTransactions"
-    },
-    {
-      "commerciant": "McDonalds",
-      "id": 98,
-      "account": "RO75POOB9251835314648427",
       "type": "Food",
-      "cashbackStrategy": "spendingThreshold"
+      "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "Nike",
-      "id": 88,
-      "account": "RO15POOB4333403266660236",
+      "id": 90,
+      "account": "RO32POOB8964686295716974",
       "type": "Clothes",
-      "cashbackStrategy": "spendingThreshold"
-    },
-    {
-      "commerciant": "H&M",
-      "id": 83,
-      "account": "RO95POOB9807857732666986",
-      "type": "Clothes",
-      "cashbackStrategy": "nrOfTransactions"
-    },
-    {
-      "commerciant": "Microsoft",
-      "id": 126,
-      "account": "RO66POOB9463355196372136",
-      "type": "Tech",
       "cashbackStrategy": "spendingThreshold"
     },
     {
       "commerciant": "Apple",
-      "id": 113,
-      "account": "RO01POOB5884922951883378",
+      "id": 112,
+      "account": "RO75POOB9251835314648427",
       "type": "Tech",
+      "cashbackStrategy": "nrOfTransactions"
+    },
+    {
+      "commerciant": "Amazon",
+      "id": 118,
+      "account": "RO15POOB4333403266660236",
+      "type": "Tech",
+      "cashbackStrategy": "spendingThreshold"
+    },
+    {
+      "commerciant": "McDonalds",
+      "id": 99,
+      "account": "RO95POOB9807857732666986",
+      "type": "Food",
+      "cashbackStrategy": "spendingThreshold"
+    },
+    {
+      "commerciant": "H&M",
+      "id": 84,
+      "account": "RO66POOB9463355196372136",
+      "type": "Clothes",
       "cashbackStrategy": "nrOfTransactions"
     },
     {
       "commerciant": "Zara",
       "id": 79,
-      "account": "RO17POOB8495306331082091",
+      "account": "RO01POOB5884922951883378",
       "type": "Clothes",
       "cashbackStrategy": "nrOfTransactions"
+    },
+    {
+      "commerciant": "Microsoft",
+      "id": 116,
+      "account": "RO17POOB8495306331082091",
+      "type": "Tech",
+      "cashbackStrategy": "spendingThreshold"
     }
   ],
   "exchangeRates": [
@@ -339,9 +339,9 @@
     {
       "command": "cashWithdrawal",
       "cardNumber": "8207906978464446",
-      "amount": 100000,
       "email": "Dennis_Norris@yahoo.us",
-      "location": "Hendersonside",
+      "amount": 100000,
+      "location": "Wieringerwerf",
       "timestamp": 43
     },
     {
@@ -381,17 +381,17 @@
       "currency": "USD",
       "timestamp": 49,
       "description": "Online payment",
-      "commerciant": "Samsung"
+      "commerciant": "Nike"
     },
     {
       "command": "payOnline",
       "email": "Brandi_Schultz@outlook.us",
       "cardNumber": "7901879264253296",
-      "amount": 10,
+      "amount": 0,
       "currency": "EUR",
       "timestamp": 50,
       "description": "Online payment",
-      "commerciant": "Microsoft"
+      "commerciant": "H&M"
     },
     {
       "command": "sendMoney",
@@ -435,7 +435,7 @@
       "currency": "USD",
       "timestamp": 56,
       "description": "Online payment",
-      "commerciant": "Burger King"
+      "commerciant": "Samsung"
     },
     {
       "command": "sendMoney",
@@ -456,9 +456,9 @@
     {
       "command": "cashWithdrawal",
       "cardNumber": "7901879264253296",
-      "amount": 600,
       "email": "Brandi_Schultz@outlook.us",
-      "location": "Huizinge",
+      "amount": 600,
+      "location": "West Miranda",
       "timestamp": 59
     },
     {
@@ -508,9 +508,9 @@
     {
       "command": "cashWithdrawal",
       "cardNumber": "7004757825892043",
-      "amount": 600,
       "email": "Jason_Carpenter@hotmail.us",
-      "location": "Allain",
+      "amount": 600,
+      "location": "Howardberg",
       "timestamp": 67
     },
     {

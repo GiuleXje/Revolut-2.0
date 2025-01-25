@@ -1,0 +1,377 @@
+[ {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Carla",
+    "lastName" : "Dobre",
+    "email" : "Carla_Dobre@yahoo.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Leslie",
+    "lastName" : "Turner",
+    "email" : "Leslie_Turner@outlook.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Niculina",
+    "lastName" : "Popa",
+    "email" : "Niculina_Popa@outlook.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Tami",
+    "lastName" : "Hughes",
+    "email" : "Tami_Hughes@hotmail.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Jessica",
+    "lastName" : "Chandler",
+    "email" : "Jessica_Chandler@hotmail.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Simone-Christiane",
+    "lastName" : "Poulain",
+    "email" : "Simone-Christiane_Poulain@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 1
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Carla",
+    "lastName" : "Dobre",
+    "email" : "Carla_Dobre@yahoo.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Leslie",
+    "lastName" : "Turner",
+    "email" : "Leslie_Turner@outlook.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Niculina",
+    "lastName" : "Popa",
+    "email" : "Niculina_Popa@outlook.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Tami",
+    "lastName" : "Hughes",
+    "email" : "Tami_Hughes@hotmail.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Jessica",
+    "lastName" : "Chandler",
+    "email" : "Jessica_Chandler@hotmail.us",
+    "accounts" : [ {
+      "balance" : 0.0,
+      "IBAN" : "RO58POOB7344468893732422",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Simone-Christiane",
+    "lastName" : "Poulain",
+    "email" : "Simone-Christiane_Poulain@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 3
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Carla",
+    "lastName" : "Dobre",
+    "email" : "Carla_Dobre@yahoo.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Leslie",
+    "lastName" : "Turner",
+    "email" : "Leslie_Turner@outlook.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Niculina",
+    "lastName" : "Popa",
+    "email" : "Niculina_Popa@outlook.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Tami",
+    "lastName" : "Hughes",
+    "email" : "Tami_Hughes@hotmail.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Jessica",
+    "lastName" : "Chandler",
+    "email" : "Jessica_Chandler@hotmail.us",
+    "accounts" : [ {
+      "balance" : 0.0,
+      "IBAN" : "RO58POOB7344468893732422",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ ]
+    }, {
+      "balance" : 734.0,
+      "IBAN" : "RO69POOB6209498372540635",
+      "currency" : "USD",
+      "type" : "savings",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Simone-Christiane",
+    "lastName" : "Poulain",
+    "email" : "Simone-Christiane_Poulain@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 7
+}, {
+  "command" : "printTransactions",
+  "output" : [ {
+    "timestamp" : 2,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 4,
+    "description" : "New account created"
+  }, {
+    "description" : "You don't have the minimum age required.",
+    "timestamp" : 6
+  }, {
+    "timestamp" : 9,
+    "description" : "Visit to a local healthcare clinic",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO90POOB5450777208072365",
+    "amount" : "666.0 USD",
+    "transferType" : "sent"
+  }, {
+    "account" : "RO58POOB7344468893732422",
+    "card" : "8207906978464446",
+    "cardHolder" : "Jessica_Chandler@hotmail.us",
+    "description" : "New card created",
+    "timestamp" : 12
+  }, {
+    "amount" : 44.14285714285714,
+    "commerciant" : "Apple",
+    "description" : "Card payment",
+    "timestamp" : 13
+  }, {
+    "account" : "RO69POOB6209498372540635",
+    "card" : "7901879264253296",
+    "cardHolder" : "Jessica_Chandler@hotmail.us",
+    "description" : "New card created",
+    "timestamp" : 15
+  }, {
+    "description" : "Insufficient funds",
+    "timestamp" : 18
+  }, {
+    "amount" : 481.0,
+    "commerciant" : "Nike",
+    "description" : "Card payment",
+    "timestamp" : 20
+  } ],
+  "timestamp" : 21
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Carla",
+    "lastName" : "Dobre",
+    "email" : "Carla_Dobre@yahoo.ro",
+    "accounts" : [ {
+      "balance" : 0.0,
+      "IBAN" : "RO76POOB4035116042454483",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Leslie",
+    "lastName" : "Turner",
+    "email" : "Leslie_Turner@outlook.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Niculina",
+    "lastName" : "Popa",
+    "email" : "Niculina_Popa@outlook.ro",
+    "accounts" : [ {
+      "balance" : 3108.0,
+      "IBAN" : "RO90POOB5450777208072365",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Tami",
+    "lastName" : "Hughes",
+    "email" : "Tami_Hughes@hotmail.us",
+    "accounts" : [ {
+      "balance" : 0.0,
+      "IBAN" : "RO65POOB8944016386845896",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ ]
+    }, {
+      "balance" : 0.0,
+      "IBAN" : "RO58POOB2721178218599590",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Jessica",
+    "lastName" : "Chandler",
+    "email" : "Jessica_Chandler@hotmail.us",
+    "accounts" : [ {
+      "balance" : 328.90128571428573,
+      "IBAN" : "RO58POOB7344468893732422",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ]
+    }, {
+      "balance" : 157.0,
+      "IBAN" : "RO69POOB6209498372540635",
+      "currency" : "USD",
+      "type" : "savings",
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ]
+    } ]
+  }, {
+    "firstName" : "Simone-Christiane",
+    "lastName" : "Poulain",
+    "email" : "Simone-Christiane_Poulain@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 22
+}, {
+  "command" : "printTransactions",
+  "output" : [ {
+    "timestamp" : 2,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 4,
+    "description" : "New account created"
+  }, {
+    "description" : "You don't have the minimum age required.",
+    "timestamp" : 6
+  }, {
+    "timestamp" : 9,
+    "description" : "Visit to a local healthcare clinic",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO90POOB5450777208072365",
+    "amount" : "666.0 USD",
+    "transferType" : "sent"
+  }, {
+    "account" : "RO58POOB7344468893732422",
+    "card" : "8207906978464446",
+    "cardHolder" : "Jessica_Chandler@hotmail.us",
+    "description" : "New card created",
+    "timestamp" : 12
+  }, {
+    "amount" : 44.14285714285714,
+    "commerciant" : "Apple",
+    "description" : "Card payment",
+    "timestamp" : 13
+  }, {
+    "account" : "RO69POOB6209498372540635",
+    "card" : "7901879264253296",
+    "cardHolder" : "Jessica_Chandler@hotmail.us",
+    "description" : "New card created",
+    "timestamp" : 15
+  }, {
+    "description" : "Insufficient funds",
+    "timestamp" : 18
+  }, {
+    "amount" : 481.0,
+    "commerciant" : "Nike",
+    "description" : "Card payment",
+    "timestamp" : 20
+  }, {
+    "timestamp" : 23,
+    "description" : "Black Friday shopping spree",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO90POOB5450777208072365",
+    "amount" : "167.0 USD",
+    "transferType" : "sent"
+  } ],
+  "timestamp" : 24
+}, {
+  "command" : "deleteAccount",
+  "output" : {
+    "error" : "Account couldn't be deleted - see org.poo.transactions for details",
+    "timestamp" : 25
+  },
+  "timestamp" : 25
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Carla",
+    "lastName" : "Dobre",
+    "email" : "Carla_Dobre@yahoo.ro",
+    "accounts" : [ {
+      "balance" : 0.0,
+      "IBAN" : "RO76POOB4035116042454483",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Leslie",
+    "lastName" : "Turner",
+    "email" : "Leslie_Turner@outlook.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Niculina",
+    "lastName" : "Popa",
+    "email" : "Niculina_Popa@outlook.ro",
+    "accounts" : [ {
+      "balance" : 3887.3333333333335,
+      "IBAN" : "RO90POOB5450777208072365",
+      "currency" : "RON",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Tami",
+    "lastName" : "Hughes",
+    "email" : "Tami_Hughes@hotmail.us",
+    "accounts" : [ {
+      "balance" : 0.0,
+      "IBAN" : "RO65POOB8944016386845896",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ ]
+    }, {
+      "balance" : 0.0,
+      "IBAN" : "RO58POOB2721178218599590",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ ]
+    } ]
+  }, {
+    "firstName" : "Jessica",
+    "lastName" : "Chandler",
+    "email" : "Jessica_Chandler@hotmail.us",
+    "accounts" : [ {
+      "balance" : 161.90128571428573,
+      "IBAN" : "RO58POOB7344468893732422",
+      "currency" : "USD",
+      "type" : "classic",
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ]
+    }, {
+      "balance" : 157.0,
+      "IBAN" : "RO69POOB6209498372540635",
+      "currency" : "USD",
+      "type" : "savings",
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ]
+    } ]
+  }, {
+    "firstName" : "Simone-Christiane",
+    "lastName" : "Poulain",
+    "email" : "Simone-Christiane_Poulain@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 26
+} ]
